@@ -19,4 +19,5 @@ What you see is what you mean.
 Vrij eenvoudige taal. Had dit snel onder de knie.
 
 ### Resultaat
-    Dit document is geschreven in Markdown. En bevat alle onderdelen die nodig zijn voor de opdracht,  daarom dat het resultaat in een codeblok staat. 
+    Dit document is geschreven in Markdown. En bevat alle onderdelen die nodig zijn voor de opdracht, 
+    daarom dat het resultaat in een codeblok staat. 
