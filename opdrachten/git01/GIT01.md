@@ -38,5 +38,12 @@ nl.differbetween.com
 Nieuwe software omgeving. Ik moet zoeken naar mogelijkheden en waar de functies zich bevinden.
 
 ## Resultaat
-Repostories verschenen in mijn account. (Dit) Bestand is verschenen in mijn Techgrounds repository.
+Repositories verschenen in mijn account. (Dit) Bestand is verschenen in mijn Techgrounds repository.
+
+Toestemming voor mijn repository:
+![Git01 - repository permission](https://user-images.githubusercontent.com/129735945/229525387-8586f504-cba7-4f57-a434-768b38a4d389.png)
+
+Mijn repository in de desktop app:
+![Git01 - techgrounds-rogier clone in desktop](https://user-images.githubusercontent.com/129735945/229525519-4ae6935c-fe66-4749-a616-a620475396d5.png)
+
 
