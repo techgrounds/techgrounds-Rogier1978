@@ -2,11 +2,14 @@
 Bestuderen van Markdown en hiermee een document maken.
 
 ## Key-terms
-**Markdown**  Markdown is a lightweight markup language for creating formatted text using a plain-text editor. 
+**Markdown**
+Markdown is a lightweight markup language for creating formatted text using a plain-text editor. 
 
-**WYSIWYG**  What you see is what you get.
+**WYSIWYG**  
+What you see is what you get.
 
-**WYSIWYM**  What you see is what you mean.
+**WYSIWYM**  
+What you see is what you mean.
 
 ## Gebruikte bronnen
 [Wikpedia](https://Wikipedia.org)  
