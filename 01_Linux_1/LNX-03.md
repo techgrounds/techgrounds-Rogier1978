@@ -29,4 +29,6 @@ Hoofdlettergevoelig
 
 
 ### Resultaat
-[Omschrijf hoe je weet dat je opdracht gelukt is (gebruik screenshots waar nodig).]
+Heeft een extra lijn aan het textbestand toegevoegd uit de vorige oefening (LNX-02). In de sceenshot hierondeer is te zien dat de regel met het woord Techgrounds als output is weergegeven. Ook voor de laatste stap is te zien dat er een textbestand (techground.txt) is gecreëerd met de Techgrounds regel.  
+![](https://github.com/techgrounds/techgrounds-Rogier1978/blob/main/00_includes/LNX-03%20grep.png)
+
