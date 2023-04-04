@@ -43,3 +43,6 @@ Repostories verschenen in mijn account. (Dit) Bestand is verschenen in mijn Tech
 Toestemming voor mijn repository:  
 ![Git01 - repository permission](https://github.com/techgrounds/techgrounds-Rogier1978/blob/main/00_includes/Git01%20-%20repository%20permission.png)
 
+Depository in  mijn desktop app:
+![Git01 desktop](https://github.com/techgrounds/techgrounds-Rogier1978/blob/main/00_includes/Git01%20-%20techgrounds-rogier%20clone%20in%20desktop.png)
+
