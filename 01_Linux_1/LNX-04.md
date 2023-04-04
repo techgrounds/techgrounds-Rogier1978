@@ -23,7 +23,8 @@ laat encrypted passwords zien van alle gebruikers.
 laat alle groepen in linux zien.
 
 **logout**  
-log de nieuwe user uit en de 
+log de user uit
+
 
 ## Opdracht
 ### Gebruikte bronnen
@@ -35,3 +36,4 @@ https://devconnected.com/how-to-list-users-and-groups-on-linux/
 
 ### Resultaat
 Met adduser een account aangemaakt voor test_user hierbij werd tevens een een password aangemaakt (test1234). Met moduser lid gemaakt van de sudo groep. Deze kon de root directory inzien. Via de 3 cat commands in de keyterms kan je informatie vinden van alle gebruikers. Hieronder screenshot van cat etc/group command. De sudo group is highlighted. 
+![](https://github.com/techgrounds/techgrounds-Rogier1978/blob/main/00_includes/LNX-04%20user%20groups.png)
