@@ -40,3 +40,6 @@ Nieuwe software omgeving. Ik moet zoeken naar mogelijkheden en waar de functies 
 ## Resultaat
 Repostories verschenen in mijn account. (Dit) Bestand is verschenen in mijn Techgrounds repository.
 
+Toestemming voor mijn repository:
+![Git01 - repository permission](techgrounds-Rogier1978/00_includes/Git01 - repository permission.png)
+
