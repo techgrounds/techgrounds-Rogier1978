@@ -43,3 +43,7 @@ Repostories verschenen in mijn account. (Dit) Bestand is verschenen in mijn Tech
 Toestemming voor mijn repository:  
 ![Git01 - repository permission](00_includes/Git01 - repository permission.png)
 
+
+
+            Git01 - repository permission.png
+          
