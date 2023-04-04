@@ -34,4 +34,4 @@ https://learn.microsoft.com/nl-nl/powershell/scripting/overview?view=powershell-
 Vind bestandslocaties lastig.
 
 ### Resultaat
-[Omschrijf hoe je weet dat je opdracht gelukt is (gebruik screenshots waar nodig).]
+![](https://github.com/techgrounds/techgrounds-Rogier1978/blob/main/00_includes/LNX-01%20inlog.png)
