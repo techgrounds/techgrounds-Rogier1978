@@ -32,3 +32,6 @@ Met het "cd" command heb ik kunnen navigeren tussen de verschillende mappen. Met
 
 Nano Text editor
 ![](https://github.com/techgrounds/techgrounds-Rogier1978/blob/main/00_includes/LNX-02%20Linux%20Nano%20textbestand.png)
+
+Navigeren in Linux
+![](https://github.com/techgrounds/techgrounds-Rogier1978/blob/main/00_includes/LNX-02%20Linux%20navigatie.png)
