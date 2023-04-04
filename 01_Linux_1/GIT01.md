@@ -41,5 +41,5 @@ Nieuwe software omgeving. Ik moet zoeken naar mogelijkheden en waar de functies 
 Repostories verschenen in mijn account. (Dit) Bestand is verschenen in mijn Techgrounds repository.
 
 Toestemming voor mijn repository:  
-![Git01 - repository permission]([./00_includes/Git01 - repository permission.png](https://github.com/techgrounds/techgrounds-Rogier1978/blob/main/00_includes/Git01%20-%20repository%20permission.png))
+![Git01 - repository permission](https://github.com/techgrounds/techgrounds-Rogier1978/blob/main/00_includes/Git01%20-%20repository%20permission.png)
 
