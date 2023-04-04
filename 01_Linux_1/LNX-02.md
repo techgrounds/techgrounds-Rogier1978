@@ -8,7 +8,7 @@ lijst van een directory.
 **mkdir**  
 maakt een nieuwe directory.
 
-**nano "filename.ext"**  
+**nano**  
 opent tekstverwerking in Linux.
 
 **touch**  
