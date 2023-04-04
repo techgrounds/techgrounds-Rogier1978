@@ -21,7 +21,7 @@ print de output van de opdracht naar een textbestand.
 ## Opdracht
 ### Gebruikte bronnen
 https://askubuntu.com/questions/420981/how-do-i-save-terminal-output-to-a-file  
-https://www.linode.com/docs/guides/how-to-grep-for-text-in-files/
+https://www.linode.com/docs/guides/how-to-grep-for-text-in-files/  
 https://stackoverflow.com/questions/16631423/output-grep-results-to-text-file-need-cleaner-output
 
 ### Ervaren problemen
