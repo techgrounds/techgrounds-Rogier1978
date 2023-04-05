@@ -31,7 +31,12 @@ https://docs.oracle.com/cd/E19683-01/806-4078/6jd6cjs2v/index.html
 
 ### Resultaat
 De aangemaakt textfile had als permissions -rw-rw-r--, dat is read en write of owner en usergroup, read voor others. Rogier is in dit geval de eigenaar en group user. Na aanpassing van de permissions is dit te zien in het ls -l command. De file is door de eigenaar nog steeds te lezen met het head command. (zie screenshot)  
+![](https://github.com/techgrounds/techgrounds-Rogier1978/blob/main/00_includes/LNX-05%20chmod.png)
 
 Met het command chown de owner verandert naar test_user. Na het ls -l command is te zien dat het bestand van eigenaar is verandert. Ook kan ik als andere user het bestand niet meer lezen met het head command.  
+![](https://github.com/techgrounds/techgrounds-Rogier1978/blob/main/00_includes/LNX-05%20chown.png)  
+
 Tot slot met command chgrp de user group verandert naar sudo group.  
+![](https://github.com/techgrounds/techgrounds-Rogier1978/blob/main/00_includes/LNX-05%20chgrp.png)
+
 
