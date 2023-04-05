@@ -9,6 +9,7 @@ Installeert telnet
 Lijst van Linux processen. Aanvullen met "| Grep " om processen te zoeken met een bepaald term. (bc ps aux | grep telnet)
 
 **systemctl status inetd**  
+Geeft status weer van het Inetd proces. Systemctl is er om systemd en service manager te beheren.
 
 
 
@@ -22,6 +23,4 @@ https://devconnected.com/understanding-processes-on-linux/
 [Geef een korte beschrijving van de problemen waar je tegenaan bent gelopen met je gevonden oplossing.]
 
 ### Resultaat
-Telnet geïnstalleerd met command "sudo apt install telnetd -y". Dit start automatisch het telnet process.  
-
-Heb via "ps aux | grep inetd" een overzicht gekregen van de inetd processen. Er kwam een proces naar voren, en ik vermoed dat dat het ps command is.
+Telnet geïnstalleerd met command "sudo apt install telnetd -y". Dit start automatisch het telnet process. Daarna heb ik via "sudo systemctl status inetd" een overzicht gekregen dat het proces actief is.
