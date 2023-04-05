@@ -27,5 +27,5 @@ Telnet geïnstalleerd met command "sudo apt install telnetd -y". Dit start autom
 ![](https://github.com/techgrounds/techgrounds-Rogier1978/blob/main/00_includes/LNX-06%2001install.png)
 
 Met de commando's "sudo systemctl start inetd" en "sudo systemctl stop inetd" kun je de service starten en stoppen. Met het commando "ps aux | grep inetd" kan je info over de inet processen inzien, waaronder PID, processor gebruik en geheugengebruik.
-
+![](https://github.com/techgrounds/techgrounds-Rogier1978/blob/main/00_includes/LNX-06%2002%20startenstop.png)
 
