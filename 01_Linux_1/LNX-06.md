@@ -24,3 +24,4 @@ https://devconnected.com/understanding-processes-on-linux/
 
 ### Resultaat
 Telnet geïnstalleerd met command "sudo apt install telnetd -y". Dit start automatisch het telnet process. Daarna heb ik via "sudo systemctl status inetd" een overzicht gekregen dat het proces actief is.
+![](https://github.com/techgrounds/techgrounds-Rogier1978/blob/main/00_includes/LNX-06%2001install.png)
