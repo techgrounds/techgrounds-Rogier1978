@@ -17,10 +17,11 @@ Start, geeft status en stopt het Inetd proces. Systemctl is er om systemd en ser
 ### Gebruikte bronnen
 https://adamtheautomator.com/linux-to-install-telnet/  
 https://www.cyberciti.biz/faq/how-to-check-running-process-in-linux-using-command-line/  
-https://devconnected.com/understanding-processes-on-linux/
+https://devconnected.com/understanding-processes-on-linux/  
+https://itslinuxfoss.com/start-stop-and-restart-services-ubuntu/
 
 ### Ervaren problemen
-[Geef een korte beschrijving van de problemen waar je tegenaan bent gelopen met je gevonden oplossing.]
+Veel problemen gehad met deze opdracht waar ik eigenlijk moeilijk mijn vinger op kon leggen. Kreeg in de processen overzicht na het "ps aux"-commando niet het gewenste resultaat. Ook na de status opdracht van de systemctl kreeg ik foutmeldingen over "failed logins". Nadat ik onderzocht had hoe het "inetd" proces te sluiten, vielen alle problemen weg en functioneerde het op een logische manier.
 
 ### Resultaat
 Telnet geïnstalleerd met command "sudo apt install telnetd -y". Dit start automatisch het telnet process. Daarna heb ik via "sudo systemctl status inetd" een overzicht gekregen dat het proces actief is. 
