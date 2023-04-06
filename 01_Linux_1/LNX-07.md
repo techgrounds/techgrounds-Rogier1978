@@ -35,7 +35,12 @@ Eerste keer sinds lange tijd script geschreven. Veel trial and error. Gebruik va
 ### Resultaat
 **Exercise 1**  
 Met MKDIR commando een "scripts" directory aangemaakt. Met "echo $PATH" kan je zien welke directories in de directory PATH staan. Met het commando "export PATH="/~/scripts:$PATH" Heb ik de scripts dierctory daaraan toegevoegd en weer gecontrolleerd met "echo $PATH".
+Ook aan .profile toegevoegd zodat het script werkt in alle directories.
+![](https://github.com/techgrounds/techgrounds-Rogier1978/blob/main/00_includes/LNX-07%201%20scripts%20in%20.profile.png)  
+
 I Eerste script is een regel. Echo met de text "Nieuwe regel" gevolgd door >> met de bestandsnaam appline.txt. Hierdoor word elke keer als het bestand appline.sh wordt uitgevoerd een nieuwe regel aa het textbestand appline.txt toegevoegd. De tweede regel heb ik toegevoegd om een feedback te krijgen wat het bestand heeft gedaan. In het bestand appline.txt is na elke "run" inderdaad een nieuwe regel toegevoegd.  
+![](https://github.com/techgrounds/techgrounds-Rogier1978/blob/main/00_includes/LNX-07%201%20appline%20script.png)  
+
 II Heb een scipt aangemaakt met de naam httpd.sh. Onder elkaar de commandos geplaatst voor installatie, upgrade enabling en status. Voor de installatie van de Apache2 software heb ik sudo commands gebruikt. Ook een password ingesteld omdat de installatie daarom vroeg. Hieronder het resultaat van het script.  
 
 **Exercise 2**  
