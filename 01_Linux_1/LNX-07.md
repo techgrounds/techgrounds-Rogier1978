@@ -41,7 +41,10 @@ Ook aan .profile toegevoegd zodat het script werkt in alle directories.
 I Eerste script is een regel. Echo met de text "Nieuwe regel" gevolgd door >> met de bestandsnaam appline.txt. Hierdoor word elke keer als het bestand appline.sh wordt uitgevoerd een nieuwe regel aa het textbestand appline.txt toegevoegd. De tweede regel heb ik toegevoegd om een feedback te krijgen wat het bestand heeft gedaan. In het bestand appline.txt is na elke "run" inderdaad een nieuwe regel toegevoegd.  
 ![](https://github.com/techgrounds/techgrounds-Rogier1978/blob/main/00_includes/LNX-07%201%20appline%20script.png)  
 
-II Heb een scipt aangemaakt met de naam httpd.sh. Onder elkaar de commandos geplaatst voor installatie, upgrade enabling en status. Voor de installatie van de Apache2 software heb ik sudo commands gebruikt. Ook een password ingesteld omdat de installatie daarom vroeg. Hieronder het resultaat van het script.  
+II Heb een scipt aangemaakt met de naam httpd.sh. Onder elkaar de commandos geplaatst voor installatie, upgrade enabling en status. Voor de installatie van de Apache2 software heb ik sudo commands gebruikt. Ook een password ingesteld omdat de installatie daarom vroeg. Hieronder het script.  
+![](https://github.com/techgrounds/techgrounds-Rogier1978/blob/main/00_includes/LNX-07%201%20script.png)
+En de uitvoer.
+![](https://github.com/techgrounds/techgrounds-Rogier1978/blob/main/00_includes/LNX-07%201%20uitvoer%20van%20script.png)
 
 **Exercise 2**  
 Eerst random waarde aan R toegevoegd mvia R=$((random%10)). Vervolgens met commando echo $R >> ~/scripts/randomizer.txt het getal aan het txt bestand toegevoegd.  
