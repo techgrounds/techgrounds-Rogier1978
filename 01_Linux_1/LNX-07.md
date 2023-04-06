@@ -48,9 +48,12 @@ En de uitvoer.
 
 **Exercise 2**  
 Eerst random waarde aan R toegevoegd mvia R=$((random%10)). Vervolgens met commando echo $R >> ~/scripts/randomizer.txt het getal aan het txt bestand toegevoegd.  
+![](https://github.com/techgrounds/techgrounds-Rogier1978/blob/main/00_includes/LNX-07%202%20script.png)
 
 
 **Exercise 3**  
-Randomizer gebruitke asl is exercise 2. Daarna met if..then..else..fi command voorwaardes gesteld voor wat te doen. Het script en resultaat staan hieronder afgebeeld.
+Randomizer gebruitke asl is exercise 2. Daarna met if..then..else..fi command voorwaardes gesteld voor wat te doen. Het script:
+![](https://github.com/techgrounds/techgrounds-Rogier1978/blob/main/00_includes/LNX-07%203%20script.png)
 
-
+en de textfile.
+![](https://github.com/techgrounds/techgrounds-Rogier1978/blob/main/00_includes/LNX-07%203%20textfile.png)  
