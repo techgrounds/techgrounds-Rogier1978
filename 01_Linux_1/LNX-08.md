@@ -33,7 +33,7 @@ https://www.atatus.com/blog/df-command-in-linux-with-examples/
 
 
 ### Ervaren problemen
-Permissions van var/log/diskspace.txt (solved)
+Permissions van var/log/diskspace.txt (solved). Er is een tijdsverschil tussen linux tijd en lokale tijd. 
 
 
 ### Resultaat
