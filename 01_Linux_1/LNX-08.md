@@ -18,12 +18,12 @@ Laat datum zien.
 3 - Met crontab -e kom je in de crontab editor. Hier kan je cronjobs invoeren. eerst 5 sterren die vertegenwoordigem tijdseenheden (min - uren - dag vd maand - maand - dag vd week). Hierachter plaats je het script wat je periodiek wilt uitvoeren.  
 4 - Script dat datum toevoegd aan date.txt in crontab editor toevoegen. Eerst tijdsinterval aan de hand van de 5 sterren (*/1 * * * * = elke minuut) gevolgd door script. 
 
-5 - uitzoeken hoe je diskspace laat zien. Dit doe je met df command. (-h - geeft weer in M(egabytes), G(igabytes), -- total - laat totaal onderaan de lijst zien). Gecombineerd met |grep total laat alleen de totaal lijn zien.
-6 - script schrijven om de diskspace in een bestand toe te voegen. Eerst met een tijdelijk tekstbestand. "df -h --total | grep total >> diskspace.txt" script functioneert. Voegt steeds regel met diskspace aan tekstbestand.txt.
+5 - uitzoeken hoe je diskspace laat zien. Dit doe je met df command. (-h - geeft weer in M(egabytes), G(igabytes), -- total - laat totaal onderaan de lijst zien). Gecombineerd met |grep total laat alleen de totaal lijn zien.  
+6 - script schrijven om de diskspace in een bestand toe te voegen. Eerst met een tijdelijk tekstbestand. "df -h --total | grep total >> diskspace.txt" script functioneert. Voegt steeds regel met diskspace aan tekstbestand.txt.  
 7 - var/log directory gevonden. Plan om een diskspace.txt bestand te creëeren om de diskspace naar weg te schrijven.
-8 - Cronjob toevoegen met crontab -e (editor). Command 0 0 * * 0 ~/scripts/diskspace.sh toegevoegd. Dit laat elke zondag om 0:00u het bestand updaten.
-9 - tot slot heb ik het bestand in het script aangepast naar var/log/diskspace.txt.
-10 - Na het uitvoeren bleek dat de permissions niet voldeden. Ik heb de permissions aangepast naar rw voor user, group en others("sudo chmod g=rw  diskspace.txt" en "sudo chmod o=rw  diskspace.txt"). Dit resulteerde dat na het uitvoeren van het script de diskspace regel was toegevoegd aan het diskspace bestand.
+8 - Cronjob toevoegen met crontab -e (editor). Command 0 0 * * 0 ~/scripts/diskspace.sh toegevoegd. Dit laat elke zondag om 0:00u het bestand updaten.  
+9 - tot slot heb ik het bestand in het script aangepast naar var/log/diskspace.txt.  
+10 - Na het uitvoeren bleek dat de permissions niet voldeden. Ik heb de permissions aangepast naar rw voor user, group en others("sudo chmod g=rw  diskspace.txt" en "sudo chmod o=rw  diskspace.txt"). Dit resulteerde dat na het uitvoeren van het script de diskspace regel was toegevoegd aan het diskspace bestand.  
 11 - heb crontab -e verandert in "0 12 * * 5 ~/scripts/diskspace.sh". Zou op vrijdag 12 uur de info bij moeten schrijven dus snellere controle.
 
 ### Gebruikte bronnen
