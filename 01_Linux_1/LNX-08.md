@@ -47,5 +47,8 @@ De crontab:
 ![](https://github.com/techgrounds/techgrounds-Rogier1978/blob/main/00_includes/LNX-08%203%20crontab.png)
 
 Date.txt:
-![](https://github.com/techgrounds/techgrounds-Rogier1978/blob/main/00_includes/LNX-08%204%20date%20txt%20file.png)
+![](https://github.com/techgrounds/techgrounds-Rogier1978/blob/main/00_includes/LNX-08%204%20date%20txt%20file.png)  
+
+En het diskspace.txt bestand.
+![](https://github.com/techgrounds/techgrounds-Rogier1978/blob/main/00_includes/LNX-08%205%20-%20diskspace%20textbestand.png)
 
