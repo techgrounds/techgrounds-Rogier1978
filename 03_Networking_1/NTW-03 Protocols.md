@@ -40,12 +40,11 @@ Om een internet protocol te maken moet je een RFC (Request For Comments) opstell
 
 Hieronder een voorbeeld van een TCP protocol in wireshark. De eerste is een farme van mijn computer naar ip-adres 34.213.147.188. Bij de info kolom op het eind staat SYNC. Dit staat voor SYNChronise en betekent dat mijn computer contact wil met 34.213.147.188. Dit IP adres reageert en dit is de tweede regel. Deze zegt SYN,ACK. Dit is een vraag voor synchronisatie van mijn PC en een ACKnowledgement van mijn request tot sysnchronisatie. Tot slot reageert mijn computer met een ACK packlet op de derde regel en bevestigt zijn acknowledgement, en de verbinding is tot stand gekomen.
 ![](https://github.com/techgrounds/techgrounds-Rogier1978/blob/main/00_includes/NTW-03%20-%20TCP.png)  
-
-In de screenshot hieronder zie je een onderdeel van frame 35. Dit is het eerste frame wat is verstuurd (het SYNC request). Hier staat een source poort (14402) dit port nummer is willekeurig toegewezen aan mijn PC. De destination port is 443. Dit berekent dat dit verzoek is om een HTTPS verbinding. Voor de verdere communicatie worden deze port nummers icm IP adres gebruikt tot de verbinding gesloten wordt.
-
+In de screenshot hieronder zie je een onderdeel van frame 35. Dit is het eerste frame wat is verstuurd (het SYNC request). Hier staat een source poort (14402) dit port nummer is willekeurig toegewezen aan mijn PC. De destination port is 443. Dit berekent dat dit verzoek is om een HTTPS verbinding. Voor de verdere communicatie worden deze port nummers icm IP adres gebruikt tot de verbinding gesloten wordt.  
+![](https://github.com/techgrounds/techgrounds-Rogier1978/blob/main/00_includes/NTW-03%20-%20frame.png)
+(Bron CCNA certified guide)
 
 ### Ervaren problemen
-[Geef een korte beschrijving van de problemen waar je tegenaan bent gelopen met je gevonden oplossing.]
 
 ### Resultaat
 
