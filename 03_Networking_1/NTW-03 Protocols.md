@@ -31,7 +31,7 @@ https://en.wikipedia.org/wiki/List_of_network_protocols_(OSI_model)
 
 Who decides Internet protocols?  
 The Internet Engineering Task Force (IETF) and the Internet Society that oversees the IETF oversee the Internet protocols, and the Internet Consortium for Assigned Names and Numbers (ICANN) controls the DNS hierarchy and the allocation of IP addresses.
-![](https://bjc.edc.org/June2017/bjc-r/cur/programming/4-internet/3-communication-protocols/4-who-is-in-charge.html?topic=nyc_bjc%2F4-internet.topic&course=bjc4nyc.html&novideo&noassignment)  
+https://bjc.edc.org/June2017/bjc-r/cur/programming/4-internet/3-communication-protocols/4-who-is-in-charge.html?topic=nyc_bjc%2F4-internet.topic&course=bjc4nyc.html&novideo&noassignment  
 
 Om een internet protocol te maken moet je een RFC (Request For Comments) opstellen. Dit is een document dat het protocol omschrijft en wat de vereisten zijn. Als dit goed in elkaar zit kan je protocol indienen bij de IETF.
 
