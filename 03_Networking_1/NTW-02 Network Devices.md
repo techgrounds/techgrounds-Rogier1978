@@ -26,5 +26,6 @@ https://kinsta.com/nl/blog/wat-is-een-firewall/
 ### Resultaat
 Ik kan de aangesloten apparatuur vinden in mijn DHCP lijst. Tevens vind je daar het toegewezen IP-adres, mac adres pool waar het zich in bevind en expiration date.
 Tevens kan ik hier mijn DHCP instellen. Zie screenshot voor alle info.  
+![](https://github.com/techgrounds/techgrounds-Rogier1978/blob/main/00_includes/NTW-02%20-%20DHCP.png)  
 
 Mijn DHCP heeft 51 ip addressen beschikbaar waarvan er 9 in gebruik. Rechtsboven in het DHCP scherm zie je ranges etc.
