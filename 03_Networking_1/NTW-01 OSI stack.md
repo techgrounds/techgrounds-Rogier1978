@@ -26,6 +26,7 @@ The physical layer is responsible for the physical cable or wireless connection 
 ## Opdracht
 ### Gebruikte bronnen
 https://www.imperva.com/learn/application-security/osi-model/  
+https://int0x33.medium.com/day-51-understanding-the-osi-model-f22d5f3df756
 
 
 ### Resultaat
