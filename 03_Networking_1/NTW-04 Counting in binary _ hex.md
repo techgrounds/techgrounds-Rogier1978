@@ -20,4 +20,4 @@ Gebruik rijtje: 128 - 64 - 32 - 16 - 8 - 4 - 2 - 1 voor elk octet in een ip adre
 -
 
 ### Resultaat
-[Omschrijf hoe je weet dat je opdracht gelukt is (gebruik screenshots waar nodig).]
+![](https://github.com/techgrounds/techgrounds-Rogier1978/blob/main/00_includes/03_Networking/NTW-04%20excercise.png)
