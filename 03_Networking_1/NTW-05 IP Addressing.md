@@ -28,7 +28,10 @@ Dynamic Hosting Configuration Protocol. Protocol dat automatisch ip adressen kan
 ## Opdracht  
 - Via whatismyipaddress.com kan je opvragen wat het publieke ip adres is van je netwerk apparaat. 
 Screenshot telefoon:  
+![](https://github.com/techgrounds/techgrounds-Rogier1978/blob/main/00_includes/03_Networking/NTW-05%20screenshot%20android.jpg)  
 Screenshot PC:  
+![](https://github.com/techgrounds/techgrounds-Rogier1978/blob/main/00_includes/03_Networking/NTW-05%20screenshot%20PC.png)  
+
 
 De ip adressen zijn gelijk omdat ze beide gebruik maken van mijn internetverbinding thuis via wifi en LAN.  
 
