@@ -12,7 +12,7 @@ Layer 2: address resolution protocol. Protocol om MAC adressen te ontdekken in e
 Layer 3: Open Shortest Path First. Protocol voor routers om routes naar netwerken te ontdekken.
 
 **TCP**  
-Layer 4: Transmission Control Protocol. Main protocol in de IP suite. Zorgt ervoor dat applicaties en computers data kunnen uitwisselen.
+Layer 4: Transmission Control Protocol. Main protocol in de IP suite. Hiermee worden gegevens overgedragen op het internet via netwerkverbindingen, maar ook op computernetwerken. TCP kan gegevens in een datastroom versturen, wat betekent dat deze gegevens gegarandeerd aankomen op hun bestemming.
 
 **SMB**  
 Layer 5: Server Message Block. Communicatie protocol voor gedeelde toegang naar files en printers over een netwerk.
