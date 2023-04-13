@@ -2,6 +2,9 @@
 Onderzoek de verschillende protocollen in verschillende layers.
 
 ## Key-terms
+**PROTOCOLS**  
+Network protocols are a set of rules outlining how connected devices communicate across a network to exchange information easily and safely. Protocols serve as a common language for devices to enable communication irrespective of differences in software, hardware, or internal processes.  
+
 **10BASE-T**  
 Layer 1 protocol: 10 Mbit verbinding
 
