@@ -58,4 +58,5 @@ https://cloudcasts.io/course/vpc-basics/private-vs-public-subnets
 Vinden van de correcte images in app.diagrams.net.  
 
 ### Resultaat
-Hieronder het diagram van het netwerk:
+Hieronder het diagram van het netwerk:  
+![](https://github.com/techgrounds/techgrounds-Rogier1978/blob/main/00_includes/03_Networking/NTW-06%20-%20diagram.jpg)
