@@ -26,7 +26,11 @@ Network Address Translation. Onderdeel in het netwerk dat private addresses kan 
 Netwerk onderdeel dat ervoor zorgt dat 
 
 **Subnetmask**  
-Mask dat bepaald welk deel van het ip adres het netwerk aangeeft en welk deel de hosts aangeeft. Het netwerkdeel is heet eerste (linker) deel van het adres en bestaat uit 1-en. Het achterste deel (rechter) deel bestaat uit 0-en en is het host deel (bv. 11111111.11111111.11111111.10000000 is 255.255.255.128, of een /25 ip-adres). De eerste bits in het adres geven het netwerk id aan en is in het hele subnet hetzelfde, het laatste deel verandert. Zijn het allemaal 0-en is het het netwerk-ID, zijn het allemaal 1-en is het de broadcast. Deze twee adressen kunnen niet gebruikt worden voor hosts.
+Mask dat bepaald welk deel van het ip adres het netwerk aangeeft en welk deel de hosts aangeeft. Het netwerkdeel is heet eerste (linker) deel van het adres en bestaat uit 1-en. Het achterste deel (rechter) deel bestaat uit 0-en en is het host deel (bv. 11111111.11111111.11111111.10000000 is 255.255.255.128, of een /25 ip-adres). 
+In dit voorbeeld zijn de bits die overeenkomen met de plaats van een 1 in het binair geschreven ip adres het netwerkdeel. De nullen zijn dan het hostdeel het hostdeel. Hieronder een voorbeeld met 192.168.1.0/26  
+1 1 1 1 1 1 1 1 . 1 1 1 1 1 1 1 1 . 1 1 1 1 1 1 1 1 . 1 1|0 0 0 0 0 0  = subnetmask  
+1 1 0 0 0 0 0 0 . 1 0 1 0 0 1 0 0 . 0 0 0 0 0 0 0 1 . 0 0|0 0 0 0 0 0  = ip adres  
+                         netwerk deel                    |  hostdeel  
 
 
 ## Opdracht  
