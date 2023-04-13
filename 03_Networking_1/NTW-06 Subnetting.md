@@ -30,7 +30,7 @@ Mask dat bepaald welk deel van het ip adres het netwerk aangeeft en welk deel de
 In dit voorbeeld zijn de bits die overeenkomen met de plaats van een 1 in het binair geschreven ip adres het netwerkdeel. De nullen zijn dan het hostdeel het hostdeel. Hieronder een voorbeeld met 192.168.1.0/26  
 1 1 1 1 1 1 1 1 . 1 1 1 1 1 1 1 1 . 1 1 1 1 1 1 1 1 . 1 1|0 0 0 0 0 0  = subnetmask  
 1 1 0 0 0 0 0 0 . 1 0 1 0 0 1 0 0 . 0 0 0 0 0 0 0 1 . 0 0|0 0 0 0 0 0  = ip adres  
-.........................................netwerk deel....................................|....hostdeel...|  
+.........................................netwerk deel....................................|..hostdeel..|  
 
 
 ## Opdracht  
