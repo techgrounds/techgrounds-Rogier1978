@@ -24,7 +24,7 @@ Layer 5: Server Message Block. Communicatie protocol voor gedeelde toegang naar 
 Layer 6: Secure Socket Tunneling. Een protocol gebruikt in VPN. Kan een point-to-point verbinding maken via een HTTPS protocol.
 
 **HTTP**  
-Layer 7: Hypertext Transfer Protocol. Protocol voor samenwerkende hypermedia informatie systemen.
+Layer 7: Hypertext Transfer Protocol. Protocol om samenwerkende hypermedia informatie systemen.
 
 
 
