@@ -33,9 +33,11 @@ Red Hat Enterprise Linux is een Linuxdistributie voor professioneel gebruik.
 
 4. Met command "ufw allow #" en "ufw deny #", waarbij # poortnummer is, kan je poorten openen en sluiten. Ingevoerd "ufw allow 22" om SSH poort te openen en "ufw deny 80" om HTTP poort te sluiten.
 
-5. "ufw enable" zet de firewall aan. "ufw status" laat overzicht van poorten zien die geopend of gesloten zijn. In mijn webbrowser is de default pagina niet meer te zien na sluiten van poort 80.  
+5. "ufw enable" zet de firewall aan. "ufw status" laat overzicht van poorten zien die geopend of gesloten zijn. 
 
 ![](https://github.com/techgrounds/techgrounds-Rogier1978/blob/main/00_includes/04_Security/SEC_02%20ufw%20status.jpg)  
+
+In mijn webbrowser is de default pagina niet meer te zien na sluiten van poort 80.  
 
 
 
