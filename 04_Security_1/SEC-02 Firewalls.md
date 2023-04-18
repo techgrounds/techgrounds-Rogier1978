@@ -26,6 +26,9 @@ Red Hat Enterprise Linux is een Linuxdistributie voor professioneel gebruik.
 
 2. In mijn webbrowser het publieke ip-adres ingevoerde gevolgd door mijn eigen poortnummer. "18.157.179.30:58007". Dit laat mijn Apache 2 Ubuntu default page zien.  
 
+![](https://github.com/techgrounds/techgrounds-Rogier1978/blob/main/00_includes/04_Security/SEC_02%20apache%20default%20page.jpg)  
+
+
 3. UFW geïnstalleer met "sudo apt-get install ufw" 
 
 4. Met command "ufw allow #" en "ufw deny #", waarbij # poortnummer is, kan je poorten openen en sluiten. Ingevoerd "ufw allow 22" om SSH poort te openen en "ufw deny 80" om HTTP poort te sluiten.
