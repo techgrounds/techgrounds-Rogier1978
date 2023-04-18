@@ -25,7 +25,8 @@ https://www.vpngids.nl/privacy/anoniem-browsen/wat-is-een-proxy-server/
 
 
 ### Ervaren problemen
-[Geef een korte beschrijving van de problemen waar je tegenaan bent gelopen met je gevonden oplossing.]
+Lastig te bepalen hoe je de dataserver veilig in het systeem kan implementeren. Moet goede toegang zijn tot webserver, maar ik denk ook dat de office toegang moet krijgen voor als er onderhoud o.i.d. nodig is.
 
 ### Resultaat
-[Omschrijf hoe je weet dat je opdracht gelukt is (gebruik screenshots waar nodig).]
+![](https://github.com/techgrounds/techgrounds-Rogier1978/blob/main/00_includes/03_Networking/NTW-07%20-%20diagram.jpg)  
+
