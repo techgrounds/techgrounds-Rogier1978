@@ -33,4 +33,5 @@ https://www.quora.com/How-does-a-web-server-communicate-with-a-database-1
 Lastig te bepalen hoe je de dataserver veilig in het systeem kan implementeren. Moet goede toegang zijn tot webserver, maar ik denk ook dat de office toegang moet krijgen voor als er onderhoud o.i.d. nodig is.
 
 ### Resultaat
-Heb twee netwerken gecreëerd. Één office netwerk en een webserver netwerk (zie opdracht).
+Heb twee netwerken gecreëerd. Één office netwerk en een webserver netwerk (zie opdracht).  
+![](https://github.com/techgrounds/techgrounds-Rogier1978/blob/main/00_includes/03_Networking/NTW-07%20-%20diagram.jpg)
