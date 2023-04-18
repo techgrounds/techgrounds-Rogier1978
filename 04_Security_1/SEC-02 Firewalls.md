@@ -39,6 +39,9 @@ Red Hat Enterprise Linux is een Linuxdistributie voor professioneel gebruik.
 
 In mijn webbrowser is de default pagina niet meer te zien na sluiten van poort 80.  
 
+![](https://github.com/techgrounds/techgrounds-Rogier1978/blob/main/00_includes/04_Security/SEC_02%20apache%20denied.jpg)  
+
+
 
 
 ### Gebruikte bronnen  
