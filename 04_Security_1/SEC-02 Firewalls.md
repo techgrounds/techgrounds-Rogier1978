@@ -52,5 +52,6 @@ https://www.configserverfirewall.com/ufw-ubuntu-firewall/ufw-block-ports/
 ### Ervaren problemen
 
 
-### Resultaat
+### Resultaat  
+Website was niet meer te zien op mijn webbrowser. Betekend dat de firewall de HTTP poort heeft gesloten.
 
