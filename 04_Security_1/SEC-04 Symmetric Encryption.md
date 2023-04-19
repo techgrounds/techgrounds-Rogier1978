@@ -9,7 +9,7 @@ In cryptography, encryption is the process of encoding information. This process
 **Caesar cipher**  
 Caesar ciphers use a substitution method where letters in the alphabet are shifted by some fixed number of spaces to yield an encoding alphabet. A Caesar cipher with a shift of 1 would encode an A as a B, an M as an N, and a Z as an A, and so on.  
 
-**Ciphers (coderen)**
+**Ciphers (coderen)**  
 Algorithms for encoding text to make it unreadable to voyeurs.
 
 **Keys**
