@@ -64,7 +64,7 @@ https://en.wikipedia.org/wiki/Enigma_machine
 
 2. Digitale symmetrische ciphers zijn onder ander AES (Advanced Encrypt Standard), en DES (Data Encryption Standards).  
 
-3. Eerst gaan kijken hoe je encryption kan maken. Met wat geëxpeimenteer in de groep ben ik voor devglan.com gaan gebruiken. Dit is een website waar je kan encrypten en decrypten in verschillende codes. Ik heb AES gebruikt. Hieronder een afbeelding van devglan.com en hoe je een zin encrypt (links) en decrypt (rechts) met ECB en 128 bit key size.  
+3. Eerst gaan kijken hoe je encryption kan maken. Met wat geëxpeimenteer in de groep ben ik devglan.com gaan gebruiken. Dit is een website waar je kan encrypten en decrypten in verschillende codes. Ik heb AES gebruikt. Hieronder een afbeelding van devglan.com en hoe je een zin encrypt (links) en decrypt (rechts) met ECB en 128 bit key size.  
 
 
 
