@@ -66,7 +66,7 @@ https://en.wikipedia.org/wiki/Enigma_machine
 
 3. Eerst gaan kijken hoe je encryption kan maken. Met wat geëxpeimenteer in de groep ben ik devglan.com gaan gebruiken. Dit is een website waar je kan encrypten en decrypten in verschillende codes. Ik heb AES gebruikt. Hieronder een afbeelding van devglan.com en hoe je een zin encrypt (links) en decrypt (rechts) met ECB en 128 bit key size.  
 
-
+![](https://github.com/techgrounds/techgrounds-Rogier1978/blob/main/00_includes/04_Security/SEC_04%20devglan%20aes.png)
 
 4. Nu kan je de encrypted output van de linkerkant versturen samen met de Secret Key. Als je deze invult aan de rechter kant kan je de cipher text weer terug coderen naar plain text. Probleem met deze methode is dat de key op een of andere manier naar de ontvanger mee moet worden gezonden en dus een veiligheidsrisico kan zijn.
 
