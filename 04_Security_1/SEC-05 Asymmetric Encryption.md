@@ -18,7 +18,7 @@ https://www.devglan.com/online-tools/rsa-encryption-decryption
 
 
 ### Ervaren problemen
-
+Puzzelen om te zien hoe dit veilig is.
 
 ### Resultaat
 Encrypted communication in the chat. Term public en private key zijn nu logisch:
