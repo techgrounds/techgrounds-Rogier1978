@@ -39,7 +39,7 @@ Encrypts per entire block (e.g. 128 bit blocks)
 **Digital signatures**  
 Checksums that verify that a message has not been forged or tampered with  
 
-**Digital certificates**
+**Digital certificates**  
 Identifying information, verified and signed by a trusted organization  
 
 ## Opdracht  
