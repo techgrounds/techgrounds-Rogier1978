@@ -28,12 +28,14 @@ In cryptography, X.509 is an International Telecommunication Union (ITU) standar
 
 2. Ben bezig geweest onder SSH certificaten dit was niet de bedoeling. Moet SSL zijn.
 
-3. Nu commando opgezocht dat met openssl een certificaat aanmaakt volgens x509 standaard. Heb het commando "openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout rogier_sec06.key -out rogier_sec06.crt" gevonden op website sslcertificaten.nl. Na dit command zijn er twee bestanden bijgeschreven. rogier_sec_06.key en rogier_sec06.crt. Dit is een private key en een self-signed certificate. Deze bestanden hadden moeten staan in de map /etc/ssl/certs. Heb commando nog een keer uitgevoerd in deze map. En de eerdere bestanden verwijderd, Hieronder reseltaat.  
+3. Nu commando opgezocht dat met openssl een certificaat aanmaakt volgens x509 standaard. Heb het commando "openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout rogier_sec06.key -out rogier_sec06.crt" gevonden op website sslcertificaten.nl. Na dit command zijn er twee bestanden bijgeschreven. rogier_sec_06.key en rogier_sec06.crt. Dit is een private key en een self-signed certificate. Deze bestanden hadden moeten staan in de map /etc/ssl/certs. Heb commando nog een keer uitgevoerd in deze map. En de eerdere bestanden verwijderd, Hieronder resultaat.  
 
 5. ![](https://github.com/techgrounds/techgrounds-Rogier1978/blob/main/00_includes/04_Security/SEC_06%20openssl%20crt.jpg)  
 
 
-Gechecked of het certificate gesigned was. Hieronder het certificate. Je ziet dat subject en issuer hetzelfde zijn. Dit laat zien dat het certificate self-signed is.
+Gechecked of het certificate gesigned was. Hieronder het certificate. Je ziet dat subject en issuer hetzelfde zijn. Dit laat zien dat het certificate self-signed is.  
+
+![](https://github.com/techgrounds/techgrounds-Rogier1978/blob/main/00_includes/04_Security/SEC_06%20cert%20details.jpg)  
 
 4. Sites hebben vaak verschillende certificates. Hieronder zie je de certificate paths van abnamro.nl. De paths beginnen allemaal bij een CA. Dat is een Certificate Authority. Daaronder een overzicht van vertrouwde certificaten in Firefox. Je ziet dat de CA van ABN-Amro in de lijst van certificaten staat vermeld. Dit wil zeggen dat mijn browser dit certificate certrouwd, maar ook certificates die door dit certificate zijn aangeboden.
 
