@@ -37,7 +37,13 @@ Gechecked of het certificate gesigned was. Hieronder het certificate. Je ziet da
 
 ![](https://github.com/techgrounds/techgrounds-Rogier1978/blob/main/00_includes/04_Security/SEC_06%20cert%20details.jpg)  
 
-4. Sites hebben vaak verschillende certificates. Hieronder zie je de certificate paths van abnamro.nl. De paths beginnen allemaal bij een CA. Dat is een Certificate Authority. Daaronder een overzicht van vertrouwde certificaten in Firefox. Je ziet dat de CA van ABN-Amro in de lijst van certificaten staat vermeld. Dit wil zeggen dat mijn browser dit certificate certrouwd, maar ook certificates die door dit certificate zijn aangeboden.
+4. Sites hebben vaak verschillende certificates. Hieronder zie je de certificate paths van abnamro.nl. De paths beginnen allemaal bij een CA. Dat is een Certificate Authority. Daaronder een overzicht van vertrouwde certificaten in Firefox. Je ziet dat de CA van ABN-Amro in de lijst van certificaten staat vermeld. Dit wil zeggen dat mijn browser dit certificate certrouwd, maar ook certificates die door dit certificate zijn aangeboden.  
+
+![](https://github.com/techgrounds/techgrounds-Rogier1978/blob/main/00_includes/04_Security/SEC_06%20abnamro.jpg)  
+
+En hieronder een aantal vertrouwde certificaten in mijn Firefox browser. Zie de Entrust certificates hierboven en hieronder:  
+
+![](https://github.com/techgrounds/techgrounds-Rogier1978/blob/main/00_includes/04_Security/SEC_06%20firefox%20cert.jpg)  
 
 ### Gebruikte bronnen
 https://en.wikipedia.org/wiki/Public_key_infrastructure
