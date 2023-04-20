@@ -45,6 +45,16 @@ En hieronder een aantal vertrouwde certificaten in mijn Firefox browser. Zie de 
 
 ![](https://github.com/techgrounds/techgrounds-Rogier1978/blob/main/00_includes/04_Security/SEC_06%20firefox%20cert.jpg)  
 
+5. In de afbeelding hierboven is een onderdeel van de lijst te zien van mijn browser waar de trusted certificates gemeld staan. (Firefox > Settings > Privacy & security > Certificates)  
+
+Met het commando "gawk -vc="openssl x509 -noout -subject" '{print|c}/^-----END/{close(c)}'  <ca-certificates.crt" krijg je een lijst met namen van de certificates in linux ide staan vermeld in ca-certificates.crt file. Hieronder een fragment:
+
+
+
+
+
+
+
 ### Gebruikte bronnen
 https://en.wikipedia.org/wiki/Public_key_infrastructure
 https://www.okta.com/identity-101/hashing-algorithms/  
