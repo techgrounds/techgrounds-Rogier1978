@@ -30,6 +30,8 @@ In cryptography, X.509 is an International Telecommunication Union (ITU) standar
 
 3. Nu commando opgezocht dat met openssl een certificaat aanmaakt volgens x509 standaard. Heb het commando "openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout rogier_sec06.key -out rogier_sec06.crt" gevonden op website sslcertificaten.nl. Na dit command zijn er twee bestanden bijgeschreven. rogier_sec_06.key en rogier_sec06.crt. Dit is een private key en een self-signed certificate. Deze bestanden hadden moeten staan in de map /etc/ssl/certs. Heb commando nog een keer uitgevoerd in deze map. En de eerdere bestanden verwijderd, Hieronder reseltaat.  
 
+5. ![](https://github.com/techgrounds/techgrounds-Rogier1978/blob/main/00_includes/04_Security/SEC_06%20openssl%20crt.jpg)  
+
 
 Gechecked of het certificate gesigned was. Hieronder het certificate. Je ziet dat subject en issuer hetzelfde zijn. Dit laat zien dat het certificate self-signed is.
 
