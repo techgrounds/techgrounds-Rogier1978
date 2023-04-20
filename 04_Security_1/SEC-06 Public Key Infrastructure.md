@@ -49,10 +49,7 @@ En hieronder een aantal vertrouwde certificaten in mijn Firefox browser. Zie de 
 
 Met het commando "gawk -vc="openssl x509 -noout -subject" '{print|c}/^-----END/{close(c)}'  <ca-certificates.crt" krijg je een lijst met namen van de certificates in linux ide staan vermeld in ca-certificates.crt file. Hieronder een fragment:
 
-
-
-
-
+![](https://github.com/techgrounds/techgrounds-Rogier1978/blob/main/00_includes/04_Security/SEC_06%20Linux%20cert.jpg)  
 
 
 ### Gebruikte bronnen
@@ -63,7 +60,6 @@ https://www.sslcertificaten.nl/support/OpenSSL/OpenSSL_-_Aanmaken_self-signed_ce
 https://security.stackexchange.com/questions/93162/how-to-know-if-certificate-is-self-signed
 
 ### Ervaren problemen
-[Geef een korte beschrijving van de problemen waar je tegenaan bent gelopen met je gevonden oplossing.]
+Ben verkeerd begonnen door wel SSL te installeren, maar daarna een SSH key pair te maken?????  
 
 ### Resultaat
-[Omschrijf hoe je weet dat je opdracht gelukt is (gebruik screenshots waar nodig).]
