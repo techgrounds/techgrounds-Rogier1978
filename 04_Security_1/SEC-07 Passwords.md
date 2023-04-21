@@ -19,7 +19,7 @@ In cryptography, a salt is random data that is used as an additional input to a 
 ## Opdracht
 1. Hashing is a one way encryption (see key terms). Is preferred over symmetric encryption because its hard (impossible) to decrypt.  
 
-2. Met crackstation.net heb ik de hashes ingevoerd. De eerste hash resulteerde in password "Welldone!". De tweede resulteerde in "not found"  
+2. Met crackstation.net heb ik de hashes ingevoerd. De eerste hash resulteerde in password "Welldone!". De tweede resulteerde in a not found result. Dit laat zien dat een sterk wachtwoord de veiligere keuze is tegen Rainbow Table attacks.  
 
 3. Newuser aangemaakt met wachtwoord 12345. Informatie over user wachtwoord etc. is opgeslagen in /etc/shadow file. Zie afbeelding. De onderste regel is info over het "newuser" account. $6$ = SHA-512. Daarna volg een reeks tekens wat de hash van het wachtwoord is. Aan het eind tussen dubbele punten staan: last :password change:minimum between changes:maximum days valid:warn before expiration:days inactive:expiration.  
 
