@@ -68,7 +68,10 @@ https://en.wikipedia.org/wiki/Enigma_machine
 
 ![](https://github.com/techgrounds/techgrounds-Rogier1978/blob/main/00_includes/04_Security/SEC_04%20devglan%20aes.png)
 
-4. Nu kan je de encrypted output van de linkerkant versturen samen met de Secret Key. Als je deze invult aan de rechter kant kan je de cipher text weer terug coderen naar plain text. Probleem met deze methode is dat de key op een of andere manier naar de ontvanger mee moet worden gezonden en dus een veiligheidsrisico kan zijn.
+4. Nu kan je de encrypted output van de linkerkant versturen samen met de Secret Key. Als je deze invult aan de rechter kant kan je de cipher text weer terug coderen naar plain text. Probleem met deze methode is dat de key op een of andere manier naar de ontvanger mee moet worden gezonden en dus een veiligheidsrisico kan zijn.  
+
+5. Mijn opdracht in de slack. Het wachtwoord van de key zit verborgen in het plaatje.
+![](https://github.com/techgrounds/techgrounds-Rogier1978/blob/main/00_includes/04_Security/SEC_04%20opdracht%20slack.jpg)  
 
 ### Gebruikte bronnen
 https://brilliant.org/wiki/caesar-cipher/  
