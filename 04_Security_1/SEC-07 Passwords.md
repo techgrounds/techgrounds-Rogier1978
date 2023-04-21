@@ -26,7 +26,7 @@ In cryptography, a salt is random data that is used as an additional input to a 
 
 3. Account "newuser" aangemaakt met wachtwoord 12345. Informatie over user wachtwoord etc. is opgeslagen in /etc/shadow file. Zie afbeelding. De onderste regel is info over het "newuser" account. $6$ = SHA-512. Daarna volg een reeks tekens wat de hash van het wachtwoord is. De reeks voor het dollarteken is de "salt". Aan het eind tussen dubbele punten staan: last :password change:minimum between changes:maximum days valid:warn before expiration:days inactive:expiration.  
 ![](https://github.com/techgrounds/techgrounds-Rogier1978/blob/main/00_includes/04_Security/SEC_07%20etc_shadow.jpg)  
-4. Mijn hash vergeleken met die van iemand anders uit mijn groep (Danny). Hieronder kan je zien dat de keys verschillend zijn terwijl de wachtwoorden bij allebei 12345 is (zelfde opdracht). De "Salt" zorgt  voor deze willekeur tussen de hashes.
+4. Mijn hash vergeleken met die van iemand anders uit mijn groep (Danny). Hieronder kan je zien dat de keys verschillend zijn terwijl de wachtwoorden bij allebei 12345 is (zelfde opdracht). De "Salt" zorgt  voor deze willekeur tussen de hashes.  
 ![](https://github.com/techgrounds/techgrounds-Rogier1978/blob/main/00_includes/04_Security/SEC_07%20hash%20compare.jpg)  
 
 
