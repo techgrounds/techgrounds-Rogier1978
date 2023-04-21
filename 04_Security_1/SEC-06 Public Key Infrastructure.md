@@ -19,10 +19,7 @@ SSL is een afkorting voor Secure Socket Layer. SSL en de opvolger TLS (Transport
 **Hashing Algorithm**  
 A hashing algorithm is a mathematical function that garbles data and makes it unreadable.
 Hashing algorithms are one-way programs, so the text can’t be unscrambled and decoded by anyone else. And that’s the point. Hashing protects data at rest, so even if someone gains access to your server, the items stored there remain unreadable. 
-Hashing can also help you prove that data isn’t adjusted or altered after the author is finished with it. And some people use hashing to help them make sense of reams of data. 
-
-**certificate authority**  
-Een instantie dat digitale certificaten opslaat, tekent en uitgeeft.  
+Hashing can also help you prove that data isn’t adjusted or altered after the author is finished with it. And some people use hashing to help them make sense of reams of data.  
 
 **X.509**  
 In cryptography, X.509 is an International Telecommunication Union (ITU) standard defining the format of public key certificates. An X.509 certificate binds an identity to a public key using a digital signature. A certificate contains an identity (a hostname, or an organization, or an individual) and a public key (RSA, DSA, ECDSA, ed25519, etc.), and is either signed by a certificate authority or is self-signed.  
