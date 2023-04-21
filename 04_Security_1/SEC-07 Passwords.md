@@ -33,6 +33,7 @@ In cryptography, a salt is random data that is used as an additional input to a 
 ### Gebruikte bronnen
 https://en.wikipedia.org/wiki/Rainbow_table  
 https://kestas.kuliukas.com/RainbowTables/  
+https://www.cyberciti.biz/faq/understanding-etcshadow-file/  
 
 ### Ervaren problemen
 
