@@ -23,7 +23,7 @@ Nmap (“Network Mapper”) is an open source tool for network exploration and s
 
 2. In mijn wireshark ip adressen geblokkeerd die op dit moment veel gebruikt zijn. Heb mijn Zoom hiervoor afgesloten en filter "ip.addr!=192.168.1.47" ingevoerd. Dit was ip verbinding met mijn telefoon.
 
-3. De wireshark liet data zien in 192.168.1.0/24 domein (mijn prive netwerk), iets in het 170.114.15.96 domein dat werd aangeduid als Application Data in de info kolom. En een aantal adressen in de 200 en hoger range (oa 239.255.255.250). Dit is een multicast adres. Dit is een adres dat word gebruikt om bepaalde apparaten te berieken binnen een netwerk.
+3. De wireshark liet data zien in 192.168.1.0/24 domein (mijn prive netwerk), iets in het 170.114.15.96 domein dat werd aangeduid als Application Data in de info kolom. En een aantal adressen in de 200 en hoger range (oa 239.255.255.250). Dit is waarschijnlijk een multicast adres. Dat is een adres dat word gebruikt om een bepaalde groep apparaten te bereiken binnen een netwerk.
 
 4. Na openen browser zie ik HTTP en DNS captures verschijnen. Ook de IP adressen komen uit het WWW.  
   
