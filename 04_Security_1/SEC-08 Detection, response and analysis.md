@@ -37,7 +37,7 @@ is the maximum acceptable interval during which transactional data is lost from 
 
 **Recovery Time Objective (RTO)**  
 is the targeted duration of time and a service level within which a business process must be restored after a disruption in order to avoid a break in business continuity. i.e. The target amount of time that it should take for systems to be restored.  
-
+![](https://github.com/techgrounds/techgrounds-Rogier1978/blob/main/00_includes/04_Security/SEC_08%20rpo_rto.png)  
 
 
 ## Opdracht  
@@ -45,7 +45,6 @@ is the targeted duration of time and a service level within which a business pro
 
 
 - The RTO is the time of recovery from the incident untill it back online. It will take 8 minutes to power up and update the website. These 8 minutes will be the same as the RTO.
-![](https://github.com/techgrounds/techgrounds-Rogier1978/blob/main/00_includes/04_Security/SEC_08%20rpo_rto.png)  
 
 ### Gebruikte bronnen  
 https://www.kaspersky.com/resource-center/definitions/what-is-social-engineering  
