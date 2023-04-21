@@ -19,7 +19,7 @@ Nmap (“Network Mapper”) is an open source tool for network exploration and s
 ![](https://github.com/techgrounds/techgrounds-Rogier1978/blob/main/00_includes/04_Security/SEC_01%20nmap.jpg)  
 
 
-1. In de tweede opdracht eerst de zoom geïdentificeerd in wireshark. Mijn verwachting is dat Zoom veel UDP frames genereert vanwege de video (UDP is snel maar minder veilig dan TCP, een frame in een videoverbinding is te overzien, een frame uit bv. een website is een groter probleem). Er verschijnt inderdaad een grote hoeveelheid UDP met hetzelfde IP adres (159.124.3.44). Op de Zoom website staat dit ip adres op een lijst van ip-adressen die ze gebruiken.  
+1. In de tweede opdracht eerst de zoom geïdentificeerd in wireshark. Mijn verwachting is dat Zoom veel UDP frames genereert vanwege de video (UDP is snel maar minder veilig dan TCP, een frame in een videoverbinding missen is te overzien, een frame uit bv. een website is een groter probleem). Er verschijnt inderdaad een grote hoeveelheid UDP met hetzelfde IP adres (159.124.3.44). Op de Zoom website staat dit ip adres op een lijst van ip-adressen die ze gebruiken.  
 
 2. In mijn wireshark ip adressen geblokkeerd die op dit moment veel gebruikt zijn. Heb mijn Zoom hiervoor afgesloten en filter "ip.addr!=192.168.1.47" ingevoerd. Dit was ip verbinding met mijn telefoon.
 
