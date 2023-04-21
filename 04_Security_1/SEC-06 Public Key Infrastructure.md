@@ -5,6 +5,10 @@ Maak een certificaat in Linux. Bestudeer een aantal certificaten.
 **public key infrastructure (PKI)**  
 is a set of roles, policies, hardware, software and procedures needed to create, manage, distribute, use, store and revoke digital certificates and manage public-key encryption.
 Deze houdt de connectie bij van public keys met mensen en/of organisaties.  
+PKI consists of:
+  **Certificate Authority** Stores, signs and issues digital certificates.
+  **Registration Authority** Verifies the identity of entities, requesting their digital certificiates to be stored at the CA.
+  **Central Directory** Secure location in which keys are stored and indexed.
 
 You have public key and private key to encrypt dat for e.g. a website. This public key is distributed via a certificate. This certificate is released by a certificate authority (CA). This CA is a trusted organisation or Trusted Third Party (TTP). CA has a private key that is trusted, that's why the distributed certificate is trusted.  
 
