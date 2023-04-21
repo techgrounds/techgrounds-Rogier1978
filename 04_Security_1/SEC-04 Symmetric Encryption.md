@@ -82,7 +82,6 @@ https://www.simplilearn.com/tutorials/cryptography-tutorial/symmetric-encryption
 https://www.devglan.com/cryptotools/cryptography-tools
 
 ### Ervaren problemen
-De voorbeelden in de Slack van klasgenoten ware erg creatief, kon er op het moment niet aan tippen.
 
 ### Resultaat
 Ik ben in staat via devglan.com een zin te encrypten en vie een paswoord weer te decrypten. Deze code samen met paswoord zijn makkelijk te verspreiden, creativiteit is nodig om het op een veilige manier te doen.
