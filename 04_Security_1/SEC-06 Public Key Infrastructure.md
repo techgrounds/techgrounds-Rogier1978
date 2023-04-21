@@ -12,6 +12,7 @@ PKI consists of:
 -  **Central Directory** Secure location in which keys are stored and indexed.  
 
 You have public key and private key to encrypt dat for e.g. a website. This public key is distributed via a certificate. This certificate is released by a certificate authority (CA). This CA is a trusted organisation or Trusted Third Party (TTP). CA has a private key that is trusted, that's why the distributed certificate is trusted.  
+
 **Public Key Certificate**  
 Public key certificates, which are also known as digital certificates, include the public key, identity information about the owner and the name of the issuing certificate authority (CA).
 
