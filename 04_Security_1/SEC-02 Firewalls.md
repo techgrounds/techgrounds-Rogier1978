@@ -24,7 +24,7 @@ Red Hat Enterprise Linux is een Linuxdistributie voor professioneel gebruik.
 ## Opdracht  
 1. Eerst moest ik even mijn geheugen opfrissen, maar na een half uurtje wist ik weer aardig de weg. Met commando "sudo systemctl status apache2" kom ik de status van apache2 controleren. Deze had ik al geïnstalleerd in week 1. Het command liet zien dat deze nog actief was.  
 
-2. In mijn webbrowser het publieke ip-adres ingevoerde gevolgd door mijn eigen poortnummer. "18.157.179.30:58007". Dit laat mijn Apache 2 Ubuntu default page zien.  
+2. In mijn webbrowser het publieke ip-adres ingevoerd gevolgd door mijn eigen poortnummer. "18.157.179.30:58007". Dit laat mijn Apache 2 Ubuntu default page zien.  
 
 ![](https://github.com/techgrounds/techgrounds-Rogier1978/blob/main/00_includes/04_Security/SEC_02%20apache%20default%20page.jpg)  
 
