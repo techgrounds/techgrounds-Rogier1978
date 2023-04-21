@@ -21,7 +21,7 @@ In cryptography, a salt is random data that is used as an additional input to a 
 
 2. Met crackstation.net heb ik de hashes ingevoerd. De eerste hash resulteerde in password "Welldone!". De tweede resulteerde in a not found result. Dit laat zien dat een sterk wachtwoord de veiligere keuze is tegen Rainbow Table attacks.  
 ![](https://github.com/techgrounds/techgrounds-Rogier1978/blob/main/00_includes/04_Security/SEC_07%20crack%20pass_01.jpg)  
-1[](https://github.com/techgrounds/techgrounds-Rogier1978/blob/main/00_includes/04_Security/SEC_07%20crack%20pass_02.jpg)  
+![](https://github.com/techgrounds/techgrounds-Rogier1978/blob/main/00_includes/04_Security/SEC_07%20crack%20pass_02.jpg)  
 
 
 3. Newuser aangemaakt met wachtwoord 12345. Informatie over user wachtwoord etc. is opgeslagen in /etc/shadow file. Zie afbeelding. De onderste regel is info over het "newuser" account. $6$ = SHA-512. Daarna volg een reeks tekens wat de hash van het wachtwoord is. Aan het eind tussen dubbele punten staan: last :password change:minimum between changes:maximum days valid:warn before expiration:days inactive:expiration.  
