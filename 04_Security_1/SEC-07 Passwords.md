@@ -24,9 +24,9 @@ In cryptography, a salt is random data that is used as an additional input to a 
 ![](https://github.com/techgrounds/techgrounds-Rogier1978/blob/main/00_includes/04_Security/SEC_07%20crack%20pass_02.jpg)  
 
 
-3. Newuser aangemaakt met wachtwoord 12345. Informatie over user wachtwoord etc. is opgeslagen in /etc/shadow file. Zie afbeelding. De onderste regel is info over het "newuser" account. $6$ = SHA-512. Daarna volg een reeks tekens wat de hash van het wachtwoord is. Aan het eind tussen dubbele punten staan: last :password change:minimum between changes:maximum days valid:warn before expiration:days inactive:expiration.  
-
-4. 
+3. Account "newuser" aangemaakt met wachtwoord 12345. Informatie over user wachtwoord etc. is opgeslagen in /etc/shadow file. Zie afbeelding. De onderste regel is info over het "newuser" account. $6$ = SHA-512. Daarna volg een reeks tekens wat de hash van het wachtwoord is. De reeks voor het dollarteken is de "salt". Aan het eind tussen dubbele punten staan: last :password change:minimum between changes:maximum days valid:warn before expiration:days inactive:expiration.  
+![](https://github.com/techgrounds/techgrounds-Rogier1978/blob/main/00_includes/04_Security/SEC_07%20etc_shadow.jpg)  
+4.  
 
 
 ### Gebruikte bronnen
