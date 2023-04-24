@@ -17,7 +17,7 @@ Operational Expenditures. Returning costs or operational costs. This can be leas
 Capital Expenditures. One-time Cost or costs investment costs. I.e. new company car, network infrastructure or a building.
 
 **TCO-calculator**  
-Total Cost of Ownership calculator. Makes a calculation of a complete infrastructure model with average use. Here you can compare the cost reduction of Azure vs on premise. Fill in the requirements of the needed services and the calculator shows the costs it decrease.
+Total Cost of Ownership calculator. Makes a calculation of a complete infrastructure model with average use. Here you can compare the cost reduction of Azure vs on premise. Fill in the requirements of the needed services and the calculator shows the costs it decrease. Here an impression of the TCO after I have filled in some random data:  
 ![](https://github.com/techgrounds/techgrounds-Rogier1978/blob/main/00_includes/05_Azure_1/AZ_02%20TCO.png)  
 
 
@@ -27,6 +27,7 @@ Free subscription in azure gives you $200 of Azure credits for 30 days. After th
 
 1. I have created a cost alert by firtst creating a budget. Type in "budget" in the search bar en go to the budget service.  
 2. On the budget page click on add. Here you can give the budget a name, give it some time periods and the budget itself. I created budget "AZ_02budget" with an amount of €40.00 for 1 year.  
+![](https://github.com/techgrounds/techgrounds-Rogier1978/blob/main/00_includes/05_Azure_1/AZ_02%20budget.png)  
 3. When you click next you can configure the alert conditions. Here you can assign an email adres, and various characteristics of the alert. After saving you can see the name of the budget in a list and can review and inspect it. I configured it that after 80% expenditure of the €40.00 I will receive an email.  
 
 
