@@ -18,8 +18,7 @@ Capital Expenditures. One-time Cost or costs investment costs. I.e. new company 
 
 **TCO-calculator**  
 Total Cost of Ownership calculator. Makes a calculation of a complete infrastructure model with average use. Here you can compare the cost reduction of Azure vs on premise. Fill in the requirements of the needed services and the calculator shows the costs it decrease.
-
-
+![](https://github.com/techgrounds/techgrounds-Rogier1978/blob/main/00_includes/05_Azure_1/AZ_02%20TCO.png)  
 
 
 ## Opdracht  
