@@ -32,7 +32,8 @@ Free subscription in azure gives you $200 of Azure credits for 30 days. After th
 ![](https://github.com/techgrounds/techgrounds-Rogier1978/blob/main/00_includes/05_Azure_1/AZ_02%20budget-02.png)  
 
 
-Under cost management you can click on analysis. Here you can find an overview of the costs in graphs. One graph will show cost over time. There are als circle diagrams that can show the costs divided in different categories (like services or named tags etc.).
+Under cost management you can click on analysis. Here you can find an overview of the costs in graphs. One graph will show cost over time. There are als circle diagrams that can show the costs divided in different categories (like services or named tags etc.).  
+![](https://github.com/techgrounds/techgrounds-Rogier1978/blob/main/00_includes/05_Azure_1/AZ_02%20cost%20analysis.jpg)  
 
 
 
