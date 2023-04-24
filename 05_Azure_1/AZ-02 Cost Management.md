@@ -29,6 +29,7 @@ Free subscription in azure gives you $200 of Azure credits for 30 days. After th
 2. On the budget page click on add. Here you can give the budget a name, give it some time periods and the budget itself. I created budget "AZ_02budget" with an amount of €40.00 for 1 year.  
 ![](https://github.com/techgrounds/techgrounds-Rogier1978/blob/main/00_includes/05_Azure_1/AZ_02%20budget.png)  
 3. When you click next you can configure the alert conditions. Here you can assign an email adres, and various characteristics of the alert. After saving you can see the name of the budget in a list and can review and inspect it. I configured it that after 80% expenditure of the €40.00 I will receive an email.  
+![](https://github.com/techgrounds/techgrounds-Rogier1978/blob/main/00_includes/05_Azure_1/AZ_02%20budget-02.png)  
 
 
 Under cost management you can click on analysis. Here you can find an overview of the costs in graphs. One graph will show cost over time. There are als circle diagrams that can show the costs divided in different categories (like services or named tags etc.).
