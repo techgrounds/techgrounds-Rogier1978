@@ -19,7 +19,9 @@ Azure availability zones are data centres connected by a high-performance networ
 Store data and software over more regions. If one region fails another region can take over. The end-user will not notice any change.
 
 **Azure Region Pair**  
-Region pairing is the relationship between two Azure regions within the same geographic area to provide geographically redundant solutions. This is decided by Micrsoft.
+Region pairing is the relationship between two Azure regions within the same geographic area to provide geographically redundant solutions. This is decided by Micrsoft.  
+
+![](https://github.com/techgrounds/techgrounds-Rogier1978/blob/main/00_includes/05_Azure_1/AZ_01%20MS%20regions.png)  
 
 ## Opdracht  
 You choose a region for the following reasons:  
