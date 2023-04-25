@@ -27,4 +27,3 @@ Hardest part was the permission for the public key. Maybe use the WSL on Windows
 
 ### Resultaat  
 The login was a succes
-[Omschrijf hoe je weet dat je opdracht gelukt is (gebruik screenshots waar nodig).]
