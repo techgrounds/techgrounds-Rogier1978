@@ -7,8 +7,12 @@ Azure Virtual Machines are image service instances that provide on-demand and sc
 
 ## Opdracht
 ### Gebruikte bronnen
-1. After the previous excercise, I now knew how to create a new service. I started creating a virtual machine by clicking on the virtual machine icon on the Azure home page. Next I could fill in the supplied information to create this machine.  
-![](https://github.com/techgrounds/techgrounds-Rogier1978/blob/main/00_includes/05_Azure_1/AZ_06%20vm%20settings.png)  
+1. After the previous excercise, I now knew how to create a new service. I started creating a virtual machine by clicking on the virtual machine icon on the Azure home page. Next I could fill in the supplied information to create this machine. Below a screen with some settings:  
+![](https://github.com/techgrounds/techgrounds-Rogier1978/blob/main/00_includes/05_Azure_1/AZ_06%20vm%20settings.png) 
+
+2. After clicking create Azure starts making my machine and aftfe a while he notified me about the succes.  
+![](https://github.com/techgrounds/techgrounds-Rogier1978/blob/main/00_includes/05_Azure_1/AZ_06%20vm%20notification.png)  
+
 
 
 ### Ervaren problemen
