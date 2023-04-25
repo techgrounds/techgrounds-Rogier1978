@@ -13,6 +13,9 @@ Azure Virtual Machines are image service instances that provide on-demand and sc
 2. After clicking create Azure starts making my machine and aftfe a while he notified me about the succes.  
 ![](https://github.com/techgrounds/techgrounds-Rogier1978/blob/main/00_includes/05_Azure_1/AZ_06%20vm%20notification.png)  
 
+3. On the home page we can see the resources that were created. That is the Virtual Machine (rogiervm), A public IP address (rogiervm-ip, in this case it was 20.77.87.99) and a networkinterface (rogiervm283).  
+![](https://github.com/techgrounds/techgrounds-Rogier1978/blob/main/00_includes/05_Azure_1/AZ_06%20resources.png)  
+
 
 
 ### Ervaren problemen
