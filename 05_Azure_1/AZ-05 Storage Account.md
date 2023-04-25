@@ -21,7 +21,9 @@ I have filled in all pages seen on the top, and created a storage account with d
 ![](https://github.com/techgrounds/techgrounds-Rogier1978/blob/main/00_includes/05_Azure_1/AZ_05%20storage%20containers.png)  
 
 3. On my computer I installed Azure Storage Explorer. After the login I was able to show the contents of my Storage Containers. Below you can see the picture in the Explorer app in my pc. 
-![](https://github.com/techgrounds/techgrounds-Rogier1978/blob/main/00_includes/05_Azure_1/AZ_05%20Azure%20storage%20explorer.png)
+![](https://github.com/techgrounds/techgrounds-Rogier1978/blob/main/00_includes/05_Azure_1/AZ_05%20Azure%20storage%20explorer.png)  
+
+Afterwards I deleted the Storage account to save costs.
 
 ### Gebruikte bronnen
 https://learn.microsoft.com/en-us/azure/storage/blobs/storage-blobs-introduction  
