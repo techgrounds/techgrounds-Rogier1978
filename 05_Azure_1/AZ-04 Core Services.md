@@ -11,4 +11,4 @@ Read the AZ900 Exam Guide
 ### Ervaren problemen
 
 ### Resultaat
-Copied the exam guide to my desktop and read it. I am gonna use this as a checklist to prepare the exam.
+Copied the exam guide to my desktop and read it. I am gonna use this as a checklist/reference to prepare the exam.
