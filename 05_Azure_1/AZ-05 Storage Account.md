@@ -17,6 +17,9 @@ Azure Blob Storage is Microsoft's object storage solution for the cloud.
 I have filled in all pages seen on the top, and created a storage account with details below:
 ![](https://github.com/techgrounds/techgrounds-Rogier1978/blob/main/00_includes/05_Azure_1/AZ_05%20storage%20account%20overview.png)  
 
+2. In the storage browser I have created two containers. One called "tijger" for the picture and one called "awswebsite" for the supplied website I uploaded a picture in the first and the files for the website in the second. Because the picture needs private access I have clicked on the link for the container were I could adjust the Public access level to Private. This will result that everybody can access the weblink but only I can see the picture.  
+![](https://github.com/techgrounds/techgrounds-Rogier1978/blob/main/00_includes/05_Azure_1/AZ_05%20storage%20containers.png)  
+
 
 
 
