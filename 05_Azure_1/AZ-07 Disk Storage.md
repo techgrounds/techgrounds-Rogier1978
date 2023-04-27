@@ -20,15 +20,16 @@ A managed disk snapshot is a read-only crash-consistent full copy of a managed d
 1. First I have created 2 VM's (rogiervm01 & rogiervm02). After previous excercise this has become an easy task. Below the logins of the VM's on my PC. I used standard SSD drives and selected availability zone 1. Als on the bottom of the screen of the Disk section of the setup you can already create or assign harddrives to the VM.  
 ![](https://github.com/techgrounds/techgrounds-Rogier1978/blob/main/00_includes/05_Azure_1/AZ_07%20create%20a%20new%20data%20disk%20on%20rogvm01.png)  
 
-2. Now we create a managed disk. You can do this when you create your VM when selecting the harddrive. You can also do this afterwards via the Disk section of the Azure Portal. You have to select a LUN (Logical Unique Number). This is a number that must be unique in each VM linking it with a HD. After this we go to the second VM and connect the drive via the Disk menu option of this VM menu. Here we discover why it is important that the availability zones match. You ad an excisting disk and if the zones don't match the disk will not show in the menu. When we use the correct setting we can select the drive connect it to the VM number 2 (rogvm02)  
-![](https://github.com/techgrounds/techgrounds-Rogier1978/blob/main/00_includes/05_Azure_1/AZ_07%20managed%20disk.jpg)  
+2. And here we assigned the harddrive created for rogvm01 to rogvm02:
+![](https://github.com/techgrounds/techgrounds-Rogier1978/blob/main/00_includes/05_Azure_1/AZ_07%20rogvm02%20disks.png)  
 
 3. Now we can go to the Linux shell. I opened two instances, one for each VM. On the first VM we use these commands:
 - sudo parted /dev/sdc --script mklabel gpt mkpart xfspart xfs 0% 100%  
 - sudo mkfs.xfs /dev/sdc1  
 - sudo partprobe /dev/sdc1  
 The "parted"command is to create a partition. "mklabel gpt" makes this a GPT partition. "mkpart xfspart" makes this an partition with an XFS filesystem. The "0% 100%" makes the complete drive part of the partition (from 0% to 100% of the drive.).
-The "mkfs.xfs" fromats the drive to the XFS filesystem.
+The "mkfs.xfs" fromats the drive to the XFS filesystem.  
+![](https://github.com/techgrounds/techgrounds-Rogier1978/blob/main/00_includes/05_Azure_1/AZ_07%20mkfs.png)  
 The "partprobe" command makes the kernel aware of the new partition.
 
 4. Now that the partition is created I need to mount it. I make the directory "/datadrive" with the makdir /datdrive" command and mount it with "sudo mount /dev/sdc1 /datadrive". You can find the drives with the command:
