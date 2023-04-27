@@ -60,7 +60,8 @@ https://learn.microsoft.com/en-us/azure/virtual-machines/linux/attach-disk-porta
 https://learn.microsoft.com/en-us/azure/virtual-machines/disks-shared-enable?tabs=azure-portal https://learn.microsoft.com/en-us/answers/questions/874923/why-shared-drive-is-not-showing-content-from-one-a
 
 ### Ervaren problemen
-Lots of variables needs to be right to make this work (availability zones, harddrive types among others). If you forget a thing you need to start over. You need to restart the VM's to make the drives appear in the Linux shell.
+Lots of variables needs to be right to make this work (availability zones, harddrive types among others). If you forget a thing you need to start over. You need to restart the VM's to make the drives appear in the Linux shell.  
+This was challenging, but I improved my navigation skills in Azure and how fast things react. I have a basic knowledge about storage in Azure.
 
 ### Resultaat
-[Omschrijf hoe je weet dat je opdracht gelukt is (gebruik screenshots waar nodig).]
+In the final screenshot you see the testfile created in step 6 is shown in VM by copying the drive to a snapshot and mount the drive created from the snapshot in VM02.
