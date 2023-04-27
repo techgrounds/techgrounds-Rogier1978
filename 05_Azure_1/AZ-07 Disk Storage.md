@@ -17,7 +17,8 @@ A managed disk snapshot is a read-only crash-consistent full copy of a managed d
 
 
 ## Opdracht
-1. First I have created 2 VM's (rogiervm01 & rogiervm02). After previous excercise this has become a lot easier. Below the logins of the VM's on my PC. I used standard SSD drives and selected availability zone 1.
+1. First I have created 2 VM's (rogiervm01 & rogiervm02). After previous excercise this has become an easy task. Below the logins of the VM's on my PC. I used standard SSD drives and selected availability zone 1. Als on the bottom of the screen of the Disk section of the setup you can already create or assign harddrives to the VM.  
+![](https://github.com/techgrounds/techgrounds-Rogier1978/blob/main/00_includes/05_Azure_1/AZ_07%20create%20a%20new%20data%20disk%20on%20rogvm01.png)  
 
 2. Now we create a managed disk. You can do this when you create your VM when selecting the harddrive. You can also do this afterwards via the Disk section of the Azure Portal. You have to select a LUN (Logical Unique Number). This is a number that must be unique in each VM linking it with a HD. After this we go to the second VM and connect the drive via the Disk menu option of this VM menu. Here we discover why it is important that the availability zones match. You ad an excisting disk and if the zones don't match the disk will not show in the menu. When we use the correct setting we can select the drive connect it to the VM number 2 (rogvm02)  
 ![](https://github.com/techgrounds/techgrounds-Rogier1978/blob/main/00_includes/05_Azure_1/AZ_07%20managed%20disk.jpg)  
