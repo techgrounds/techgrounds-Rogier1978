@@ -44,7 +44,7 @@ https://learn.microsoft.com/en-us/answers/questions/874923/why-shared-drive-is-n
 ![](https://github.com/techgrounds/techgrounds-Rogier1978/blob/main/00_includes/05_Azure_1/AZ_07%20testfile.png)  
 
 7. Now we create a snapshot of the drive. In Azure we go to the Disk page and select the managed drive. On top you can click on "create snapshot". After adjusting some settings about the name, type of drive and availabilty you click on create and a snapshot (rogsnapshot) is created.  
-![](https://github.com/techgrounds/techgrounds-Rogier1978/blob/main/00_includes/05_Azure_1/AZ_07%20snapshot.jpg)  
+![](https://github.com/techgrounds/techgrounds-Rogier1978/blob/main/00_includes/05_Azure_1/AZ_07%20create%20snapshot.png)
 
 9. Now we need to make a disk from the snapshot to mount on the second VM. So we select the snapshot, click on create disk and we create a disk. We attach this to VM02 (rogvm02) in the VM page in the portal. Now we can look the disk up in the Linux shell of vm02 with the lsblk command, and mount it to a directory I created called "snapshot". When this was succeful the snapshot drive could be seen and the file we created on the first VM was also found.
 
