@@ -46,10 +46,13 @@ https://learn.microsoft.com/en-us/answers/questions/874923/why-shared-drive-is-n
 7. Now we create a snapshot of the drive. In Azure we go to the Disk page and select the managed drive. On top you can click on "create snapshot". After adjusting some settings about the name, type of drive and availabilty you click on create and a snapshot (rogsnapshot) is created.  
 ![](https://github.com/techgrounds/techgrounds-Rogier1978/blob/main/00_includes/05_Azure_1/AZ_07%20create%20snapshot.png)
 
-9. Now we need to make a disk from the snapshot to mount on the second VM. So we select the snapshot, click on create disk and we create a disk. We attach this to VM02 (rogvm02) in the VM page in the portal. Now we can look the disk up in the Linux shell of vm02 with the lsblk command, and mount it to a directory I created called "snapshot". When this was succeful the snapshot drive could be seen and the file we created on the first VM was also found.
+9. Now we need to make a disk from the snapshot to mount on the second VM. So we select the snapshot, click on create disk and we create a disk. We attach this to VM02 (rogvm02) in the VM page in the portal. 
+![](https://github.com/techgrounds/techgrounds-Rogier1978/blob/main/00_includes/05_Azure_1/AZ_07%20vm02%20snapshotdrive.png)  
+
+10. Now we can look the disk up in the Linux shell of vm02 with the lsblk command, and mount it to a directory I created called "snapshot". When this was succeful the snapshot drive could be seen and the file we created on the first VM was also found.  
+![](https://github.com/techgrounds/techgrounds-Rogier1978/blob/main/00_includes/05_Azure_1/AZ_07%20vm02%20mount%20snapshotdrive.png)  
 
 
-2. 
 ### Gebruikte bronnen
 https://learn.microsoft.com/en-us/azure/virtual-machines/managed-disks-overview#managed-disk-snapshots  
 https://www.communicationsquare.com/news/azure-managed-disks-vs-unmanaged-disks/  
@@ -57,7 +60,7 @@ https://learn.microsoft.com/en-us/azure/virtual-machines/linux/attach-disk-porta
 https://learn.microsoft.com/en-us/azure/virtual-machines/disks-shared-enable?tabs=azure-portal https://learn.microsoft.com/en-us/answers/questions/874923/why-shared-drive-is-not-showing-content-from-one-a
 
 ### Ervaren problemen
-Lots of variables needs to be right to make this work (availability zones, harddrive types among others). If you forget a thing you need to start over.
+Lots of variables needs to be right to make this work (availability zones, harddrive types among others). If you forget a thing you need to start over. You need to restart the VM's to make the drives appear in the Linux shell.
 
 ### Resultaat
 [Omschrijf hoe je weet dat je opdracht gelukt is (gebruik screenshots waar nodig).]
