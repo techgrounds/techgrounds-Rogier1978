@@ -32,12 +32,12 @@ The "mkfs.xfs" fromats the drive to the XFS filesystem.
 ![](https://github.com/techgrounds/techgrounds-Rogier1978/blob/main/00_includes/05_Azure_1/AZ_07%20mkfs.png)  
 The "partprobe" command makes the kernel aware of the new partition.
 
-4. Now that the partition is created I need to mount it. I make the directory "/datadrive" with the makdir /datdrive" command and mount it with "sudo mount /dev/sdc1 /datadrive". You can find the drives with the command:
+4. Now that the partition is created I need to mount it. I make the directory "/datadrive" with the mkdir /datadrive" command and mount it with "sudo mount /dev/sdc1 /datadrive". You can find the drives with the command:
 - lsblk -o NAME,HCTL,SIZE,MOUNTPOINT | grep -i "sd" 
-With -o you can select some output coloms. In this example Name, HCTL, size and mountpoint. HCTL is Host, Channel, Target, LUN. I found LUN the most important to ID the correct drive. 
+With -o you can select some output coloms. In this example Name, HCTL, size and mountpoint. HCTL is Host, Channel, Target, LUN. I found LUN and the size the most important to ID the correct drive. 
 
 5. On the second VM (rogvm02) we only need to mount the drive, because partitions and filesystem are already created. I first created the directory  "datadrive" and gave it a mount command as in the first VM. At first this didn't work because he didn't recognise the file system. But after reboot of the VM's in the portal this worked and we can see the two mounted drives below.  
-![](https://github.com/techgrounds/techgrounds-Rogier1978/blob/main/00_includes/05_Azure_1/AZ_07%20vm%20mounts.jpg)  
+![](https://github.com/techgrounds/techgrounds-Rogier1978/blob/main/00_includes/05_Azure_1/AZ_07%20hd%20mounts.png)  
 
 6. Now create a file on tthe first drive. With "sudo touch testfile.txt" it creates a testfile.txt in the right directory. On the other drive however, this file will not show. You need a failover cluster.  
 https://learn.microsoft.com/en-us/answers/questions/874923/why-shared-drive-is-not-showing-content-from-one-a  
