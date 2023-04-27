@@ -40,7 +40,10 @@ With -o you can select some output coloms. In this example Name, HCTL, size and 
 6. Now create a file on tthe first drive. With "sudo touch testfile.txt" it creates a testfile.txt in the right directory. On the other drive however, this file will not show. You need a failover cluster.  
 https://learn.microsoft.com/en-us/answers/questions/874923/why-shared-drive-is-not-showing-content-from-one-a  
 
-7. Now we create a snapshot of the drive. In Azure we go to the Disk page and select the managed drive. On top you can click on "create snapshot". After adjusting some settings about the name, type of drive and availabilty you click on create and a snapshot (rogsnapshot) is created in the resources list of the resource group.Now we need to make a disk from the snapshot to mount on the second VM. So we select the snapshot, click on create disk and we create a disk. 
+7. Now we create a snapshot of the drive. In Azure we go to the Disk page and select the managed drive. On top you can click on "create snapshot". After adjusting some settings about the name, type of drive and availabilty you click on create and a snapshot (rogsnapshot) is created.  
+![](https://github.com/techgrounds/techgrounds-Rogier1978/blob/main/00_includes/05_Azure_1/AZ_07%20snapshot.jpg)  
+
+9. Now we need to make a disk from the snapshot to mount on the second VM. So we select the snapshot, click on create disk and we create a disk. 
 
 
 2. 
