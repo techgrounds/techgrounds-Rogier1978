@@ -32,6 +32,7 @@ Important here is the 0.0.0.0/0 route to the internet. This is the default route
 4. We can adjust routes also via the "Route table" service. I created one to block internet traffic to subnet 1. I created a route with the name "nointernet" with address 0.0.0.0/0 and a next hop type of "none". This will block internet traffic.  
 ![](https://github.com/techgrounds/techgrounds-Rogier1978/blob/main/00_includes/05_Azure_1/AZ_10%20route%20nointernet.png)  
 If I place the Route tables on the subnet-1 subnet this will block the internet. 
+![](https://github.com/techgrounds/techgrounds-Rogier1978/blob/main/00_includes/05_Azure_1/AZ_10%20route%20table.png)  
 
 
 
