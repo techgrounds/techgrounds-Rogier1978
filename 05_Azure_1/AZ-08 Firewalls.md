@@ -43,7 +43,8 @@ This updates and installs Apache2 on the VM. After loading the VM I could enter 
 
 2. Now I installed the NSG (Network Security Group). At the NSG overview page I saw that port 22 and port 80 are opened. This was because I selected this when I created the VM. When I close port 22, I had disabled my SSH connection in Linux.  
 ![](https://github.com/techgrounds/techgrounds-Rogier1978/blob/main/00_includes/05_Azure_1/AZ_08%20nsg%20overview.png)  
-When I returned to my Linux shell, I was unable to login to my machine. The website however, was still available.  
+
+When I returned to my Linux shell, I was unable to login to my machine. The website however, was still available.   
 ![](https://github.com/techgrounds/techgrounds-Rogier1978/blob/main/00_includes/05_Azure_1/AZ_08%20sshdown%20httpup.png)  
 
 ### Gebruikte bronnen
