@@ -27,7 +27,8 @@ In real world cases, enterprises typically use Azure Firewall when they need to 
 ## Opdracht
 1. First I created a virtual network with the basic ip settings provided in Azure.  
 ![](https://github.com/techgrounds/techgrounds-Rogier1978/blob/main/00_includes/05_Azure_1/AZ_08%20virtual%20network%20ipadr.png)  
-
+I also opened port 22 (SSH) and port 80 (HTTP).  
+![](https://github.com/techgrounds/techgrounds-Rogier1978/blob/main/00_includes/05_Azure_1/AZ_08%20vm%20inbound.png)  
 Within this network I also created a VM with an apache2 script from excercise AZ_06:  
 -    #!/bin/bash  
 -    sudo su  
@@ -36,7 +37,8 @@ Within this network I also created a VM with an apache2 script from excercise AZ
 -    ufw allow 'Apache'  
 -    systemctl enable apache2  
 -    systemctl restart apache2   
-This updates and installs Apache2 on the VM. After loading the VM I could enter the VM via the SSH in Linux and I could see the Apache default page on my webbrowser.
+
+This updates and installs Apache2 on the VM. After loading the VM I could enter the VM via the SSH in Linux and I could see the Apache default page on my webbrowser.  
 
 2. Now I installed the NSG (Network Security Group). At the NSG overview page I saw that port 22 and port 80 are opened. This was because I selected this when I created the VM. When I close port 22, I had disabled my SSH connection in Linux. For double check I also closed port 80, and this resulted in a connection time after reloading the Ubuntu website on my browser.
 
