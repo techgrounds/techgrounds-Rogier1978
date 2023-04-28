@@ -25,7 +25,10 @@ Azure Firewall is a fully managed network, stateful, security service. It is use
 In real world cases, enterprises typically use Azure Firewall when they need to filter traffic to a VNet with its threat intelligence-based filtering capabilities. NSGs are typically used to protect traffic flowing in and out of a subnet.
 
 ## Opdracht
-1. First I created a virtual network with the basic settings. With this network I also created a VM with an apache2 script from excercise AZ_06:  
+1. First I created a virtual network with the basic ip settings provided in Azure.  
+![](https://github.com/techgrounds/techgrounds-Rogier1978/blob/main/00_includes/05_Azure_1/AZ_08%20virtual%20network%20ipadr.png)  
+
+Within this network I also created a VM with an apache2 script from excercise AZ_06:  
 -    #!/bin/bash  
 -    sudo su  
 -    apt update  
