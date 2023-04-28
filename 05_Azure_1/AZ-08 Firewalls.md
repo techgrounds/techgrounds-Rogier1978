@@ -29,6 +29,7 @@ In real world cases, enterprises typically use Azure Firewall when they need to 
 ![](https://github.com/techgrounds/techgrounds-Rogier1978/blob/main/00_includes/05_Azure_1/AZ_08%20virtual%20network%20ipadr.png)  
 I also opened port 22 (SSH) and port 80 (HTTP).  
 ![](https://github.com/techgrounds/techgrounds-Rogier1978/blob/main/00_includes/05_Azure_1/AZ_08%20vm%20inbound.png)  
+
 Within this network I also created a VM with an apache2 script from excercise AZ_06:  
 -    #!/bin/bash  
 -    sudo su  
