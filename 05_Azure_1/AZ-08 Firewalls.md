@@ -61,4 +61,4 @@ https://learn.microsoft.com/en-us/training/modules/intro-to-azure-virtual-machin
 Again it takes some time before adjustments take effect.
 
 ### Resultaat
-[Omschrijf hoe je weet dat je opdracht gelukt is (gebruik screenshots waar nodig).]
+In the end I could not login to my VM via the Linux shell. I could however still see the website. I also tried to block port 80 and this resulted in a blocked website. Just as expected.
