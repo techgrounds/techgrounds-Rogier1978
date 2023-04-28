@@ -19,10 +19,10 @@ Azure NAT Gateway is a fully managed and highly resilient Network Address Transl
 
 ## Opdracht  
 1. I started with creating a VNet by going to Virtual Networks in the Azure services menu and select create and used the info provided with the excercise.  
-![]()  
+![](https://github.com/techgrounds/techgrounds-Rogier1978/blob/main/00_includes/05_Azure_1/AZ_10%20subnets.png)  
 
 2. Next I have built a VM according to the excercise. And I placed it in subnet 2.  
-![]()  
+![](https://github.com/techgrounds/techgrounds-Rogier1978/blob/main/00_includes/05_Azure_1/AZ_10%20vm.png)    
 
 3. Now we need a route to the internet from subgroup. At first I thought I needed a NAT gateway to access the internet. Or at least a tool to route the data. However a lot of these routes have already been made in the VM network interface. In the page "Effective routes", in the help? section of VM's NIC, you can find a list of network routes that are active in the Network interface of the VM. This interface is automatically created with the VM.
 Here a partial overview of the routes.
@@ -34,9 +34,8 @@ Important here is the 0.0.0.0/0 route to the internet. This is the default route
 If I place the Route tables on the subnet-1 subnet this will block the internet. 
 ![](https://github.com/techgrounds/techgrounds-Rogier1978/blob/main/00_includes/05_Azure_1/AZ_10%20route%20table.png)  
 
-
-
-
+5. Now I can see the webpage of Apache. I can switch the route table to subnet-2 and after realoading the website seems unreachable. So this shows that the routingtable is blocking internet traffic. Below is the before nad after:  
+![](https://github.com/techgrounds/techgrounds-Rogier1978/blob/main/00_includes/05_Azure_1/AZ_10%20apache.png)  
 
 
 ### Gebruikte bronnen
@@ -52,4 +51,4 @@ https://learn.microsoft.com/en-us/azure/expressroute/expressroute-introduction
 I expected to create a route instead of blocking one. It was hard to find the effective routes table in the network interface. 
 
 ### Resultaat
-I have also tried to place it on subnet-2 and this caused a failure by the loading of the webpage. Also placing the VM in subnet 1 when the route table was active there, also caused an error in my webbrowser.
+I have also tried to place it on subnet-2 and this caused a failure by the loading of the webpage. Also placing the VM in subnet 1 when the route table was active there, also caused a loading error in my webbrowser.
