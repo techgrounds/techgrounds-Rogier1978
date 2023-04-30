@@ -33,4 +33,4 @@ https://www.youtube.com/watch?v=AhuNgBafmUo
 First real exploration in Azure. I need to learn how things are structured. Lost some of my use sources, and weren't able to find them anymore.
 
 ### Resultaat
-I shared the link of the picture and th website on Slack. My study group could see my website, but not my picture. The picture appeared also in my Storage Explorer app on my PC.
+I shared the link of the picture and the website on Slack. My study group could see my website, but not my picture. The picture appeared also in my Storage Explorer app on my PC.
