@@ -23,7 +23,7 @@ Azure Virtual Machines are image service instances that provide on-demand and sc
 ![](https://github.com/techgrounds/techgrounds-Rogier1978/blob/main/00_includes/05_Azure_1/AZ_06%20vm%20inlog.png)  
 
 ### Ervaren problemen
-Hardest part was the permission for the public key. Maybe use the WSL on Windows next time. The rest of the excersice was almost written step by step in the documentation.
+Hardest part was the permission for the public key. The rest of the excersice was almost written step by step in the documentation.
 
 ### Resultaat  
 The login was a succes
