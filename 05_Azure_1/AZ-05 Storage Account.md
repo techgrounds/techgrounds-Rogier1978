@@ -11,7 +11,7 @@ Azure Blob Storage is Microsoft's object storage solution for the cloud.
 
 
 ## Opdracht  
-1. On the home screen, there is a service called "Storage accounts". After clicking it shows an overview of mine sorage accounts. I have none so I click "+ Create". I enter a form so I fill in and click "Next Advanced":  
+1. On the home screen, there is a service called "Storage accounts". After clicking it shows an overview of mine sorage accounts. I have none so I click "+ Create". I entered a form and I filled it in and clicked "Next Advanced":  
 ![](https://github.com/techgrounds/techgrounds-Rogier1978/blob/main/00_includes/05_Azure_1/AZ_05%20storage%20account%2001.png)  
 
 I have filled in all pages seen on the top, and created a storage account with details below:
