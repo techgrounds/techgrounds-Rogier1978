@@ -61,7 +61,7 @@ https://learn.microsoft.com/en-us/azure/virtual-machines/disks-shared-enable?tab
 
 ### Ervaren problemen
 Lots of variables needs to be right to make this work (availability zones, harddrive types among others). If you forget a thing you need to start over. You need to restart the VM's to make the drives appear in the Linux shell.  
-This was challenging, but I improved my navigation skills in Azure and how (not so) fast things react. I have a basic knowledge about storage in Azure.
+This was challenging, but I improved my navigation skills in Azure and how (not so) fast things react. I now have a basic knowledge about storage in Azure.
 
 ### Resultaat
 In the final screenshot you see the testfile created in step 6 is shown in VM by copying the drive to a snapshot and mount the drive created from the snapshot in VM02.
