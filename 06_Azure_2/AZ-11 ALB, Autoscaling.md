@@ -38,12 +38,16 @@ Azure Virtual Machine Scale Sets let you create and manage a group of load balan
 
 ## Opdracht  
 1. Start with creating a VMSS with the suplied information. On the network page I created a new NIC:  
+![](https://github.com/techgrounds/techgrounds-Rogier1978/blob/main/00_includes/06_Azure-2/AZ_11%2001%20VMSS%20network%20interface.png)  
 
 And I enabled the load balancer:  
+![](https://github.com/techgrounds/techgrounds-Rogier1978/blob/main/00_includes/06_Azure-2/AZ_11%2002%20VMSS%20lb.png)  
 
 On the scaling page I set the scaling options. Here we have a minimum of 1 and a maximum of 4 VM instances. With a 75% CPU threshold measured every 5 minutes it adds a VM. When the threshold drops below 30% it will remove a VM.  
+![](https://github.com/techgrounds/techgrounds-Rogier1978/blob/main/00_includes/06_Azure-2/AZ_11%2003%20VMSS%20scaling%20settings.png)  
 
 After creation these are the resources in the Resource group:  
+![](https://github.com/techgrounds/techgrounds-Rogier1978/blob/main/00_includes/06_Azure-2/AZ_11%2004%20VMSS%20resources%20overview.png)  
 
 
 2. Under the VMSS-ip respurce you cann find the assigned IP address of the loadbalancer. This is 51.142.113.20. You can reach the Apache Default page via this IP address:  
