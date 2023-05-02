@@ -50,15 +50,21 @@ After creation these are the resources in the Resource group:
 ![](https://github.com/techgrounds/techgrounds-Rogier1978/blob/main/00_includes/06_Azure-2/AZ_11%2004%20VMSS%20resources%20overview.png)  
 
 
-2. Under the VMSS-ip respurce you cann find the assigned IP address of the loadbalancer. This is 51.142.113.20. You can reach the Apache Default page via this IP address:  
+2. Under the VMSS-ip resource you can find the assigned IP address of the loadbalancer (left). This is 51.142.113.20. You can reach the Apache Default page via this IP address (right):  
+![](https://github.com/techgrounds/techgrounds-Rogier1978/blob/main/00_includes/06_Azure-2/AZ_11%2005%20apache%20default.png)  
 
 This means that the endpoint of the loadbalancer reaches the VM at the backend.  
 
 3. Now we use a load-test to increase the CPU load on the VMSS over 75%. We do this in Linux with the stress command. For this we log in on one of the VM of this scaler. Via the connect option in the settings pane we can find the ip address.  
 
 We use the command "sudo stress --cpu 80 --timeout 360" to give the CPU a workload of 80% for 360 seconds.  
+![](https://github.com/techgrounds/techgrounds-Rogier1978/blob/main/00_includes/06_Azure-2/AZ_11%2008%20linux%20stress%20test.png)  
 
-You can see the CPU load in graph form in the VMSS resources under "monitoring".  
+You can see the CPU load in graph form in the VMSS resources under "monitoring". Here we see the graph and it is at 100% average CPU load. This is during the load test.  
+![](https://github.com/techgrounds/techgrounds-Rogier1978/blob/main/00_includes/06_Azure-2/AZ_11%2007%20cpu%20graph.png)  
+
+During the load test the CPU took a load of over 75% for over 5 minutes, so it had created additional VM's to handle the extra use. Here we see the resource panel and the VMSS has now 4 VM's, that is the maximum according to the settings I made in the start.  
+![](https://github.com/techgrounds/techgrounds-Rogier1978/blob/main/00_includes/06_Azure-2/AZ_11%2009%20VMSS%20added%20vms.png)  
 
 
 ### Gebruikte bronnen
@@ -74,4 +80,4 @@ https://www.tecmint.com/linux-cpu-load-stress-test-with-stress-ng-tool/
 Took some time to figure out were to open the ports for the virtual machines. The Azure load tester is not very efficient and expensive to use. I finally used Linux with the "stress" command.  
 
 ### Resultaat
-[Omschrijf hoe je weet dat je opdracht gelukt is (gebruik screenshots waar nodig).]
+On the final screen we can see the VMSS worked because it had added extra VM's.
