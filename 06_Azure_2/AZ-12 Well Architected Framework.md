@@ -49,6 +49,7 @@ Cloud applications often use managed services that have access keys. Never check
 - **Sidecar** Deploy components of an application into a separate process or container to provide isolation and encapsulation.  
 - **Strangler Fig** Incrementally migrate a legacy system by gradually replacing specific pieces of functionality with new applications and services.  
   
+    
   
 **Performance efficiency**
 
