@@ -68,9 +68,3 @@ Cloud applications often use managed services that have access keys. Never check
 
 ### Gebruikte bronnen
 https://learn.microsoft.com/en-us/azure/well-architected/)](https://learn.microsoft.com/en-us/azure/well-architected/
-
-### Ervaren problemen
-[Geef een korte beschrijving van de problemen waar je tegenaan bent gelopen met je gevonden oplossing.]
-
-### Resultaat
-[Omschrijf hoe je weet dat je opdracht gelukt is (gebruik screenshots waar nodig).]
