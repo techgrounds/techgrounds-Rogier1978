@@ -49,9 +49,8 @@ Cloud applications often use managed services that have access keys. Never check
 - **Sidecar** Deploy components of an application into a separate process or container to provide isolation and encapsulation.  
 - **Strangler Fig** Incrementally migrate a legacy system by gradually replacing specific pieces of functionality with new applications and services.  
   
-    
   
-**Performance efficiency**
+**Performance efficiency** Performance efficiency is the ability of your workload to scale to meet the demands placed on it by users in an efficient manner. The main ways to achieve performance efficiency include using scaling appropriately and implementing PaaS offerings that have scaling built in.  
 
 ## Key-terms
 [Schrijf hier een lijst met belangrijke termen met eventueel een korte uitleg.]
