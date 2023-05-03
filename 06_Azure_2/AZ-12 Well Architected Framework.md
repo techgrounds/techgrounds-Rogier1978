@@ -39,8 +39,18 @@ Cloud applications often use managed services that have access keys. Never check
   
 **Operational excellence** Operational excellence covers the operations and processes that keep an application running in production. Deployments must be reliable and predictable. Automate deployments to reduce the chance of human error.  
 - **Ambassador** Create helper services that send network requests on behalf of a consumer service or application.  
-
-
+![](https://github.com/techgrounds/techgrounds-Rogier1978/blob/main/00_includes/06_Azure-2/AZ_12%2001%20ambassador.png)  
+- **Anti-corruption Layer pattern** Use an adpater layer to seperate models from other models. Use this to prevent corruption from for example legacy models that needs to de integrated by other models.  
+- **External Configuration Store** Move configuration data externally and away from application deployments (e.g. cloud-based storage service or dedicated configuration service). This provides easier management if adjustments needs to be made.
+- **Gateway Aggregation pattern** Use a gateway to aggregate multiple individual requests into a single request. An application that needs many services for a task may need a gateway to combine the services to create a single task for the app.  
+- **Gateway Offloading** Offload shared or specialized service functionality to a gateway proxy.  
+- **Gateway Routing** Route requests to multiple services using a single endpoint. If a user needs multiple services it can use one gateway.   
+- **Health Endpoint Monitoring** Implement functional checks in an application that external tools can access through exposed endpoints at regular intervals.  
+- **Sidecar** Deploy components of an application into a separate process or container to provide isolation and encapsulation.  
+- **Strangler Fig** Incrementally migrate a legacy system by gradually replacing specific pieces of functionality with new applications and services.  
+  
+  
+**Performance efficiency**
 
 ## Key-terms
 [Schrijf hier een lijst met belangrijke termen met eventueel een korte uitleg.]
