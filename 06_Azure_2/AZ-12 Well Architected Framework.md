@@ -51,13 +51,23 @@ Cloud applications often use managed services that have access keys. Never check
   
   
 **Performance efficiency** Performance efficiency is the ability of your workload to scale to meet the demands placed on it by users in an efficient manner. The main ways to achieve performance efficiency include using scaling appropriately and implementing PaaS offerings that have scaling built in.  
+- **Cache-Aside** Load data on demand into a cache from a data store.
+- **Choreography** Have each component of the system participate in the decision-making process about the workflow. If you expect that for example services need updating frequently, you want those services spread over different resources so you can make adjustments without big disruptions in the services.  
+- **CQRS (Command and Query Responsibility Segregation)** A model that seperates reading and updating processes. This causes the workflow to improve because the resources for these processes are divided over different models (read and write mdoel).  
+-  **Event Sourcing pattern** Instead of storing just the current state of the data in a domain, use an append-only store to record the full series of actions taken on that data. So you only store a chain of changes not only the final result.  
+-  **Deployment Stamps** Deploy multiple independent copies of application components, including data stores. You link a set of users to a set of multiple resources with identical tasks.  
+-  **Geodes** Deploy backend services into a set of geographical nodes, each of which can service any client request in any region.
+- **Index Table** Creat an indexes in data stores the are frequently referenced.  
+- **Materialized View** Generate prepopulated views over the data in one or more data stores when the data isn't ideally formatted for required query operations.  
+- **Priority Queue** Prioritize requests sent to services so that requests with a higher priority are received and processed more quickly than those with a lower priority.  
+- **Queue-Based Load Leveling** Use a queue that acts as a buffer between a task and a service that it invokes in order to smooth intermittent heavy loads.  
+- **Sharding** Divide a data store into a set of horizontal partitions or shards.  
+- **Static Content Hosting** Deploy static content to a cloud-based storage service that can deliver them directly to the client.  
+- **Throttling** Control the consumption of resources used by an instance of an application, an individual tenant, or an entire service. So limit the users access after a certain threshold.
 
-## Key-terms
-[Schrijf hier een lijst met belangrijke termen met eventueel een korte uitleg.]
 
-## Opdracht
 ### Gebruikte bronnen
-[Plaats hier de bronnen die je hebt gebruikt.]
+https://learn.microsoft.com/en-us/azure/well-architected/)](https://learn.microsoft.com/en-us/azure/well-architected/
 
 ### Ervaren problemen
 [Geef een korte beschrijving van de problemen waar je tegenaan bent gelopen met je gevonden oplossing.]
