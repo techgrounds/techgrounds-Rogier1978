@@ -2,7 +2,7 @@
 Study App Service, CDN, Azure DNS, Azure files, Azure Database (+ managed instances).  
 
 ## App Service  
-Azure App Service is an HTTP-based service for hosting web applications, REST APIs, and mobile back ends. You can develop in your favorite language, be it .NET, .NET Core, Java, Ruby, Node.js, PHP, or Python. Applications run and scale with ease on both Windows and Linux-based environments.  
+Azure App Service is an HTTP-based service for hosting web applications, REST APIs, and mobile back ends. You can develop these in your favorite language, be it .NET, .NET Core, Java, Ruby, Node.js, PHP, or Python. Applications run and scale with ease on both Windows and Linux-based environments.  
 An App Service Environment is an Azure App Service feature that provides a fully isolated and dedicated environment for running App Service apps securely at high scale. An App Service Environment can host your Windows web apps, Linux web apps, Docker containers (Windows and Linux), Functions, Logic apps (Standard).
   
 **Mobile Back End** 
