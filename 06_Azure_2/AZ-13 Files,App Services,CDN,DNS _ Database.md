@@ -73,9 +73,9 @@ A non-relational database is a database that does not use the tabular schema of 
 
 #### Opdracht Azure database  
 1. I created an Azure SQL database by cliking "SQL databases" in the service menu and clik "+create". Here we can make settings to creata a new database. After the usual sttings for resourcegroup I selected "new server" and created a server with the setting below:  
-![](  )  
+![](https://github.com/techgrounds/techgrounds-Rogier1978/blob/main/00_includes/06_Azure-2/AZ_13%2010%20database%20overview.png)  
 
-Under "Compute + storage"  we can setup the hardware configurations for the database (max vCores, max memory max storage). I lift it at General Purpose (most budget friendly). We put the "Connectivity endpoint" to public endpoint. So this database can be accessed from outside the network. I also set "Add current client IP address" to firewall to yes, so my local PC will pass the clouds firewall. This is of no real importance for the excercise, because we are not going to access the database from outside. I have left the "Connection policy"and "Encryption connections" at the default settings.  
+Under "Compute + storage"  we can setup the hardware configurations for the database (max vCores, max memory max storage). I lift it at General Purpose (most budget friendly). We put the "Connectivity endpoint" to public endpoint. So this database can be accessed from outside the network. I also set "Add current client IP address" to firewall to yes, so my local PC will pass the clouds firewall. This is of no real importance for the excercise, because we are not going to access the database from outside. I have left the "Connection policy" and "Encryption connections" at the default settings.  
 On the next tab I left the security settings to the default settings as well. And on the "Additional settings" tab I can select Sample at the Data source to create a example database and I click Review+create and create to make a new database.  
 
 2. At the left of the overview screen you can click on "Query editor (preview)". Here you can lookup queries with some commands. I use the following script:  
