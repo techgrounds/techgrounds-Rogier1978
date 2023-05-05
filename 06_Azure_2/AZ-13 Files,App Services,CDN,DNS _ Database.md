@@ -37,16 +37,22 @@ It uses Server Message Block (SMB) to function and this requires an open port 44
 #### Opdracht Azure Files  
 I created a File Share storage account and accessed this in my Linux via a VM.
 1. I create a Storage account by selecting it in the Azure services menu and clicking +create. The I create new resource group "AZ_13" and name the Storage account "fsstorage". I also select LRS (Locally redundant Storage) for the lowest cost. Below is a screenshot of the overview page.  
+![](https://github.com/techgrounds/techgrounds-Rogier1978/blob/main/00_includes/06_Azure-2/AZ_13%2001%20fsstorage.png)  
 
 
 2. On the left under "Data storage" you can click on "File shares" to access the file share settings. Click on "+File share" and create a new "File share" service. In this service I created a directory "+Add directory" called "mydirectory". In this directory I uploaded a jpg-file from my local harddrive (photo-savanna.jpg).  
+![](https://github.com/techgrounds/techgrounds-Rogier1978/blob/main/00_includes/06_Azure-2/AZ_13%2001%20fsstorage.png)  
 
 When I am in my fileshare overview windows I can click on "connect". Here we find info about connecting to the Fileshare from various sources. We select Linux because we want to use Linux to access the File share. On script we find the script we need late in Linux.  
+![](https://github.com/techgrounds/techgrounds-Rogier1978/blob/main/00_includes/06_Azure-2/AZ_13%2003%20script.png)  
 
 3. I created a simple VM that I can access via SSH. When logged in I updated (sudo apt update), installed the firewall (sudo install ufw) and allowed port 22 and 445 (sudo ufw allow 22 and sudo ufw allow 445).  
+![](https://github.com/techgrounds/techgrounds-Rogier1978/blob/main/00_includes/06_Azure-2/AZ_13%2004%20linux%20firwall.png)  
 
 4. I copied the script for the fileshare I mentioned in step 2 in a script file in linux and changed permissions to executable. After running the script it created the directory /mnt/fileshare/mydirectory and in this directory it has stored the file I uploaded.  
-
+![](https://github.com/techgrounds/techgrounds-Rogier1978/blob/main/00_includes/06_Azure-2/AZ_13%2006%20fs%20directory%20linux.png)  
+  
+  
 ## Azure Database (+ managed instance)
 
 Azure SQL is a family of managed, secure, and intelligent products that use the SQL Server database engine in the Azure cloud.
