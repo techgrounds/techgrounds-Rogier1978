@@ -63,7 +63,7 @@ We use the command "sudo stress --cpu 80 --timeout 360" to give the CPU a worklo
 You can see the CPU load in graph form in the VMSS resources under "monitoring". Here we see the graph and it is at 100% average CPU load. This is during the load test.  
 ![](https://github.com/techgrounds/techgrounds-Rogier1978/blob/main/00_includes/06_Azure-2/AZ_11%2007%20cpu%20graph.png)  
 
-During the load test the CPU took a load of over 75% for over 5 minutes, so it had created additional VM's to handle the extra use. Here we see the resource panel and the VMSS has now 4 VM's, that is the maximum according to the settings I made in the start.  
+During the load test the CPU took a load of over 75% for over 5 minutes, so it had created additional VM's to handle the extra use. Here we see the resource panel and the VMSS has now 3 VM's, that is the maximum according to the settings I made in the start.  
 ![](https://github.com/techgrounds/techgrounds-Rogier1978/blob/main/00_includes/06_Azure-2/AZ_11%2009%20VMSS%20added%20vms.png)  
 
 
