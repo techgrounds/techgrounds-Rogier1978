@@ -43,7 +43,7 @@ I created a File Share storage account and accessed this in my Linux via a VM.
 2. On the left under "Data storage" you can click on "File shares" to access the file share settings. Click on "+File share" and create a new "File share" service. In this service I created a directory "+Add directory" called "mydirectory". In this directory I uploaded a jpg-file from my local harddrive (photo-savanna.jpg).  
 ![](https://github.com/techgrounds/techgrounds-Rogier1978/blob/main/00_includes/06_Azure-2/AZ_13%2002%20upload.png)  
 
-When I am in my fileshare overview windows I can click on "connect". Here we find info about connecting to the Fileshare from various sources. We select Linux because we want to use Linux to access the File share. On script we find the script we need late in Linux.  
+When I am in my fileshare overview windows I can click on "connect". Here we find info about connecting to the Fileshare from various sources. We select Linux because we want to use Linux to access the File share. On script we find the script we need later in Linux.  
 ![](https://github.com/techgrounds/techgrounds-Rogier1978/blob/main/00_includes/06_Azure-2/AZ_13%2003%20script.png)  
 
 3. I created a simple VM that I can access via SSH. When logged in I updated (sudo apt update), installed the firewall (sudo install ufw) and allowed port 22 and 445 (sudo ufw allow 22 and sudo ufw allow 445).  
