@@ -23,6 +23,7 @@ You can access this by selecting Monitor in the left hand panel in your home scr
 Now you can select Metric, Alerts and other options to see the data collected over time.  
 
 In the excersis about load-balancing I used  the monitoring option to see if there was a CPU load in my VM:  
+![](https://github.com/techgrounds/techgrounds-Rogier1978/blob/main/00_includes/06_Azure-2/AZ_11%2007%20cpu%20graph.png)  
 
 
 
