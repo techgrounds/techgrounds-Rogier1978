@@ -17,15 +17,19 @@ You can select Sources and Endpoints to communicate (with events). Events can be
 ## Opdracht
 I am going to use Event Grid to send an event and display this in a web app. 
 1. First I am goiing to activate the Event Grid by registering it in the Resource Provider list. I go to "Subscriptions" select "Cloud Student 3" and click on "Resource Providers" under settings in the left menu. In the list I look up Microsoft.EventGrid, select it and click register at the top.  
+![](https://github.com/techgrounds/techgrounds-Rogier1978/blob/main/00_includes/07_Azure_03/AZ_14%20-%2017%20eventgrid%20register.png)  
+
 
 2. Next I create an Event Grid Topic. I lookup event grid topic in the search bar, go to the service and create one. I create a resource group and name it "rogiertopic". In this topic I create a subscription called "rogiersubscr" with a Webhook Endpoint type "https://rogierwebsite.azurewebsites.net/api/updates".
 
 3. Now I am going to create a webapp to function as an endpoint. On the learn.microsoft webpage you can find a prebuilt web app so we use this. On the custom deployment page we fill in the Resource group, the sitename "rogierwebsite", a Hosting plan name "rogierplan" for the app service plan and finally we click create. The resourcegroup now looks like this:  
+![](https://github.com/techgrounds/techgrounds-Rogier1978/blob/main/00_includes/07_Azure_03/AZ_14%20-%2018%20resource%20group.png)    
   
-  
-4. On the App Service "rogierwebsite" int the Azure you can lookup the webaddress for the endpoint.  
+4. On the App Service "rogierwebsite" int the Azure portal you can lookup the webaddress for the endpoint (Default domain).  
+![](https://github.com/techgrounds/techgrounds-Rogier1978/blob/main/00_includes/07_Azure_03/AZ_14%20-%2019%20rogierwebsite.png)  
 
 When you go to the website you see this:  
+![](https://github.com/techgrounds/techgrounds-Rogier1978/blob/main/00_includes/07_Azure_03/AZ_14%20-%2020%20event%20grid%20webpage%201.png)  
 
 5. Now we need to trigger an event. The goal is to see some data appear in the endpoint. I used the CLI to do this. First I entered:  
   
@@ -43,8 +47,10 @@ To create a key. Access keys are used to authenticate an application publishing 
 I am going to insert a record myapp/vehicles/motorcycles. Finally I need to send the event:  
 
 curl -X POST -H "aeg-sas-key: $key" -d "$event" $endpoint  
+![](https://github.com/techgrounds/techgrounds-Rogier1978/blob/main/00_includes/07_Azure_03/AZ_14%20-%2021%20bash.png)  
   
 On the website we see that the event has arrived:  
+![](https://github.com/techgrounds/techgrounds-Rogier1978/blob/main/00_includes/07_Azure_03/AZ_14%20-%2022%20web%20finally.png)  
 
 
 
