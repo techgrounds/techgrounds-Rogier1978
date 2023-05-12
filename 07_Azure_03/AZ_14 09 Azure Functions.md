@@ -10,11 +10,12 @@ Serverless computing enables developers to build applications faster by eliminat
 
 ## Opdracht  
 1. I have installed Microsoft Visual Studio with the Azure pack. Created a project with an Azure Function Template. I gave it the "rogierfunction1". In the "Additional Information"panel I selected "HTTP Trigger" as function and Authorization level to "Anonymous":  
+2. ![](https://github.com/techgrounds/techgrounds-Rogier1978/blob/main/00_includes/07_Azure_03/AZ_14%20-%2009%20azure%20function%20add%20info.png)  
 
 
 2. Visual Studio has now created a boilerplate code (kind of template) which by default is named "Function1". So I changed this in the code and also the filename to "HttpExample(.cs)".  
 The code looks now like this:  
-
+![](https://github.com/techgrounds/techgrounds-Rogier1978/blob/main/00_includes/07_Azure_03/AZ_14%20-%2010%20function%20code.png)  
 
 When pressing [F5] I can run the code locally. And this was the result:  
 
