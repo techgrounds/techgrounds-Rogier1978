@@ -36,6 +36,8 @@ And this is the function in the Azure portal.
 ![](https://github.com/techgrounds/techgrounds-Rogier1978/blob/main/00_includes/07_Azure_03/AZ_14%20-%2015%20function%20in%20portal.png)    
 
 4. After I click on the URL "https://rogierfunction120230510101258.azurewebsites.net" in the above screenshot it opens the following webpage:  
+![](https://github.com/techgrounds/techgrounds-Rogier1978/blob/main/00_includes/07_Azure_03/AZ_14%20-%2016%20azure%20function%20webpage.png)  
+This is the default page of Azure functions.
 
 And after adding "/api/HttpExample?name=Rogier" we get the same result as we did something similar locally.  
 
