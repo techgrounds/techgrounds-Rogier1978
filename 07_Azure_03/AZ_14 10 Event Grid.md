@@ -44,7 +44,7 @@ To create a key. Access keys are used to authenticate an application publishing 
 
 - event='[ {"id": "'"$RANDOM"'", "eventType": "recordInserted", "subject": "myapp/vehicles/motorcycles", "eventTime": "'`date +%Y-%m-%dT%H:%M:%S%z`'", "data":{ "make": "Ducati", "model": "Monster"},"dataVersion": "1.0"} ]'  
   
-I am going to insert a record myapp/vehicles/motorcycles. Finally I need to send the event:  
+I am going to insert a record myapp/vehicles/motorcycles (this is an example). Finally I need to send the event:  
 
 curl -X POST -H "aeg-sas-key: $key" -d "$event" $endpoint  
 ![](https://github.com/techgrounds/techgrounds-Rogier1978/blob/main/00_includes/07_Azure_03/AZ_14%20-%2021%20bash.png)  
