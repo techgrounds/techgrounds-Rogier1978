@@ -37,8 +37,8 @@ And I pasted it on the right panel in the "Items" panel:
 ![](https://github.com/techgrounds/techgrounds-Rogier1978/blob/main/00_includes/07_Azure_03/AZ_14%20-%2007%20DB%20data%20edit.png)  
 
 
-I did this a second time and a tabel grows with anothe item.  
-
+I adjusted the script and the tabel grows with anothe item.  
+![](https://github.com/techgrounds/techgrounds-Rogier1978/blob/main/00_includes/07_Azure_03/AZ_14%20-%2008%20cosmos%20data%20edit%202.png)  
 
 
 ### Gebruikte bronnen
