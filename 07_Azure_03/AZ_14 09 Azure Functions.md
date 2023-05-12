@@ -21,6 +21,8 @@ When pressing [F5] I can run the code locally. And this was the result:
 ![](https://github.com/techgrounds/techgrounds-Rogier1978/blob/main/00_includes/07_Azure_03/AZ_14%20-%2011%20function%20local%20run.png)  
 
 I copied the http-address in my browser and added "?name=Rogier" this was the result:  
+![](https://github.com/techgrounds/techgrounds-Rogier1978/blob/main/00_includes/07_Azure_03/AZ_14%20-%2012%20local%20browser.png)  
+I created a very simple webpage without the use of a webserver.
 
 
 3. Now I want to copy this to a function in my Azure portal. I right-click  on the name of the project in the "Solution Explorer" (right panel) and click "Publish". I must be logged-in on my Azure portal in MS Visual Studio, and I had already created an Resource group and Storage account (this is actually not necessary, but was already created in the study process). After applying some info about my Azure account I checked the box "run from package file" on the final page and click Finish. This brings me to the Publish tab. 
