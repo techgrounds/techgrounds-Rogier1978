@@ -39,7 +39,8 @@ And this is the function in the Azure portal.
 ![](https://github.com/techgrounds/techgrounds-Rogier1978/blob/main/00_includes/07_Azure_03/AZ_14%20-%2016%20azure%20function%20webpage.png)  
 This is the default page of Azure functions.
 
-And after adding "/api/HttpExample?name=Rogier" we get the same result as we did something similar locally.  
+And after adding "/api/HttpExample?name=Rogier" we get the same result as we did earlier in Visual Studio locally.  
+![](https://github.com/techgrounds/techgrounds-Rogier1978/blob/main/00_includes/07_Azure_03/AZ_14%20-%2016%20website%20succes.png)  
 
 
 
