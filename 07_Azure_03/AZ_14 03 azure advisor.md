@@ -10,6 +10,7 @@ You can access Advisor recommendations as Owner, Contributor, or Reader of a sub
 Advisor provides recommendations for Application Gateway, App Services, availability sets, Azure Cache, Azure Data Factory, Azure Database for MySQL, Azure Database for PostgreSQL, Azure Database for MariaDB, Azure ExpressRoute, Azure Cosmos DB, Azure public IP addresses, Azure Synapse Analytics, SQL servers, storage accounts, Traffic Manager profiles, and virtual machines.  
 
 Below an example screenshot:  
+![](https://github.com/techgrounds/techgrounds-Rogier1978/blob/main/00_includes/07_Azure_03/AZ_14%20-%2002%20advisor-dashboard.png)  
 
 
 ## Opdracht
