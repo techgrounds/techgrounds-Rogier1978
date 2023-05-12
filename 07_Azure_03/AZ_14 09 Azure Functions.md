@@ -29,6 +29,7 @@ I created a script for a very simple webpage.
 ![](https://github.com/techgrounds/techgrounds-Rogier1978/blob/main/00_includes/07_Azure_03/AZ_14%20-%2013%20solution%20explorer.png)  
   
 And after clicking Publish, the function is deplyed in Azure  
+![](https://github.com/techgrounds/techgrounds-Rogier1978/blob/main/00_includes/07_Azure_03/AZ_14%20-%2014%20publish%20tab.png)  
   
 
 4. After I click on the URL "https://rogierfunction120230510101258.azurewebsites.net" in the above screenshot it opens the following webpage:  
