@@ -34,6 +34,7 @@ Don't need to set provisions. The billing is per RU's consumed.
     }    
 
 And I pasted it on the right panel in the "Items" panel:  
+![](https://github.com/techgrounds/techgrounds-Rogier1978/blob/main/00_includes/07_Azure_03/AZ_14%20-%2007%20DB%20data%20edit.png)  
 
 
 I did this a second time and a tabel grows with anothe item.  
