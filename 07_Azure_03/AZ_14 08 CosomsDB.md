@@ -21,7 +21,7 @@ Don't need to set provisions. The billing is per RU's consumed.
   
 
 2. After the deployment is finished, I want to create some data. In the left panel I click on Data Explorer. I click new container and I fill in some ID's for the new container were I will store some data.  
-3. ![](https://github.com/techgrounds/techgrounds-Rogier1978/blob/main/00_includes/07_Azure_03/AZ_14%20-%2006%20new%20container.png)  
+![](https://github.com/techgrounds/techgrounds-Rogier1978/blob/main/00_includes/07_Azure_03/AZ_14%20-%2006%20new%20container.png)  
 
 
 3. I found this script on the Microsoft learn page:  
