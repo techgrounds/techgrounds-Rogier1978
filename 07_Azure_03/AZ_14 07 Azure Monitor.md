@@ -13,7 +13,10 @@ Use Azure Monitor to monitor these types of resources in Azure, other clouds, or
 - Databases
 - Security events in combination with Azure Sentinel
 - Networking events and health in combination with Network Watcher
-- Custom sources that use the APIs to get data into Azure Monitor
+- Custom sources that use the APIs to get data into Azure Monitor  
+  
+![](https://github.com/techgrounds/techgrounds-Rogier1978/blob/main/00_includes/07_Azure_03/AZ_14%20-%2003%20azure%20monitor.png)  
+
 
 ## Opdracht  
 You can access this by selecting Monitor in the left hand panel in your home screen, or select Monitor on the resource you want to monitor.  
