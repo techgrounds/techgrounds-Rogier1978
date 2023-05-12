@@ -27,10 +27,14 @@ I created a script for a very simple webpage.
 
 3. Now I want to copy this to a function in my Azure portal. I right-click  on the name of the project in the "Solution Explorer" (right panel) and click "Publish". I must be logged-in on my Azure portal in MS Visual Studio, and I had already created an Resource group and Storage account (this is actually not necessary, but was already created in the study process). After applying some info about my Azure account I checked the box "run from package file" on the final page and click Finish. This brings me to the Publish tab.  
 ![](https://github.com/techgrounds/techgrounds-Rogier1978/blob/main/00_includes/07_Azure_03/AZ_14%20-%2013%20solution%20explorer.png)  
+And this is the function in the Azure portal.  
+![](https://github.com/techgrounds/techgrounds-Rogier1978/blob/main/00_includes/07_Azure_03/AZ_14%20-%2015%20function%20in%20portal.png)  
   
 And after clicking Publish, the function is deplyed in Azure  
 ![](https://github.com/techgrounds/techgrounds-Rogier1978/blob/main/00_includes/07_Azure_03/AZ_14%20-%2014%20publish%20tab.png)  
   
+And this is the function in the Azure portal.  
+![](https://github.com/techgrounds/techgrounds-Rogier1978/blob/main/00_includes/07_Azure_03/AZ_14%20-%2015%20function%20in%20portal.png)    
 
 4. After I click on the URL "https://rogierfunction120230510101258.azurewebsites.net" in the above screenshot it opens the following webpage:  
 
