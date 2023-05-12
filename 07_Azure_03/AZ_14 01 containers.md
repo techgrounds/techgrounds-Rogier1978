@@ -17,7 +17,8 @@ By leveraging Azure Containers, you can achieve better resource utilization, sca
 
 **Containers vs VMs**  
 **Container architecture** A container is an isolated, lightweight silo for running an application on the host operating system. Containers build on top of the host operating system's kernel (which can be thought of as the buried plumbing of the operating system), and contain only apps and some lightweight operating system APIs and services that run in user mode.  
-**Virtual machine architecture** In contrast to containers, VMs run a complete operating system–including its own kernel–as shown in this diagram.
+**Virtual machine architecture** In contrast to containers, VMs run a complete operating system–including its own kernel–as shown in this diagram.  
+![](https://github.com/techgrounds/techgrounds-Rogier1978/blob/main/00_includes/07_Azure_03/AZ_14%20-%2001%20containers%20vs%20VM.png)  
 
 
 **Docker Hub**  
