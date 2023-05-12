@@ -18,6 +18,7 @@ The code looks now like this:
 ![](https://github.com/techgrounds/techgrounds-Rogier1978/blob/main/00_includes/07_Azure_03/AZ_14%20-%2010%20function%20code.png)  
 
 When pressing [F5] I can run the code locally. And this was the result:  
+![](https://github.com/techgrounds/techgrounds-Rogier1978/blob/main/00_includes/07_Azure_03/AZ_14%20-%2011%20function%20local%20run.png)  
 
 I copied the http-address in my browser and added "?name=Rogier" this was the result:  
 
