@@ -54,4 +54,4 @@ https://learn.microsoft.com/en-us/azure/app-service/overview-hosting-plans
 Needed a few tries to make this work. However after I created the resourc group in Azure this worked flawless. I think this has to do with timing of the login of the Azure portal in MS Visual Studio. Was wondering about an app service plan in Australia Central? Didn't expect this.
 
 ### Resultaat
-[Omschrijf hoe je weet dat je opdracht gelukt is (gebruik screenshots waar nodig).]
+I have found a script for a basic webpage, and published this from Visual Studio into the Azure Portal. This is only a script you can remotely trigger via the website "https://rogierfunction120230510101258.azurewebsites.net/api/HttpExample?name=Rogier". In the websitename you will find the name of the script (HTTP example) and my name (Rogier). In the final screenshot of the result, you see the script has run the script and filled in my name. This without the creation of a server in the Azureportal.
