@@ -1,0 +1,274 @@
+#Choose tic-tac-toe, because you can visualize it. Created in steps:
+#-first created playing field. Gave the fields a letter a-i and assigned a number to them to press when interacting.
+#-created input by asking to select a number and changed the value of the corresponding "square" to x.
+#-after slecting there is a check for errors (duplicates?) And when okay the field is redrawn with the number changed t X.
+#-when this worked i copied it for the O side, with some minor adjustments (X is not O after all).
+#-now i placed this in a for-loop to create additional turns. I also added if-elif statemnts for the win conditions.
+#-finally I added some code for a remise. In the final turn of X.
+#-I also made some visual improvements. 
+# The grid was first smaller, added color for clearity and a nice intro, downloaded from the internet.
+
+
+
+import sys, subprocess
+subprocess.run("cls", shell=True)
+exit ="y"
+print()
+print()
+print("               __________ ________    ________.________________________  _________ ")
+print("               \______   \\_____  \  /  _____/|   \_   _____/\______   \/   _____/ ")
+print("                |       _/ /   |   \/   \  ___|   ||    __\_  |       _/\_____  \    ")
+print("                |    |   \/    |    \    \_\  \   ||        \ |    |   \/        \   ")
+print("                |____|_  /\_______  /\______  /___/_______  / |____|_  /_______  /   ")
+print("                       \/         \/        \/            \/         \/        \/     ") 
+print()                 
+print("___________.____________         ________________  _________         ___________________  ___________")
+print("\__    ___/|   \_   ___ \        \__    ___/  _  \ \_   ___ \        \__    ___/\_____  \ \_   _____/")
+print("  |    |   |   /    \  \/   ______ |    | /  /_\  \/    \  \/   ______ |    |    /   |   \ |    __/_ ")
+print("  |    |   |   \     \____ /_____/ |    |/    |    \     \____ /_____/ |    |   /    |    \|        \ ")
+print("  |____|   |___|\______  /         |____|\____|__  /\______  /         |____|   \_______  /_______  /")
+print("                       \/                        \/        \/                           \/        \/ ")
+print()
+print()
+print()
+input ("Press [enter] to continue..")
+while exit == "y":
+    subprocess.run("cls", shell=True)
+    ###STARTINGVALUES OF THE SQUARES IN THE GRID
+    a = "\033[38;5;94m1\033[37m"
+    b = "\033[38;5;94m2\033[37m"
+    c = "\033[38;5;94m3\033[37m"
+    d = "\033[38;5;94m4\033[37m"
+    e = "\033[38;5;94m5\033[37m" 
+    f = "\033[38;5;94m6\033[37m"
+    g = "\033[38;5;94m7\033[37m"
+    h = "\033[38;5;94m8\033[37m"
+    i = "\033[38;5;94m9\033[37m"
+    squares = {"a":"1","b":"2","c":"3","d":"4","e":"5","f":"6","g":"7","h":"8","i":"9"}
+    ###INITIAL SCREEN
+    subprocess.run("cls", shell=True)
+    print()
+    print('       |       |')
+    print('   '+ a +'   |   '+ b +'   |   '+ c +'  ')
+    print('       |       |')
+    print('-------+-------+-------')
+    print('       |       |')
+    print('   '+ d +'   |   '+ e +'   |   '+ f +' ')
+    print('       |       |')
+    print('-------+-------+-------')
+    print('       |       |')
+    print('   '+ g +'   |   '+ h +'   |   '+ i +'  ')
+    print('       |       |')
+    print()
+
+    for turn in range(5):
+    ### - X TURN - 
+    # check - is checking for correct input (no doubles). 
+    # x1 - is the variable input each turn
+        check = False
+        while check == False:
+            
+            #check input for each field in the grid
+            x1 = input ('X turn, press the number of a field where you want to place an X and press enter. ')
+            if x1 == "1" and a != "\033[1mX\033[0m" and a != "\033[1mO\033[0m":
+                a="\033[1mX\033[0m"
+                squares["a"] = "\033[1mX\033[0m"
+                check = True
+            elif x1 == "2" and b != "\033[1mX\033[0m" and b != "\033[1mO\033[0m":
+                b="\033[1mX\033[0m"
+                squares["b"] = "\033[1mX\033[0m" 
+                check = True
+            elif x1 == "3" and c != "\033[1mX\033[0m" and c != "\033[1mO\033[0m":
+                c="\033[1mX\033[0m" 
+                squares["c"] = "\033[1mX\033[0m"
+                check = True
+            elif x1 == "4" and d != "\033[1mX\033[0m" and d != "\033[1mO\033[0m":
+                d="\033[1mX\033[0m" 
+                squares["d"] = "\033[1mX\033[0m"
+                check = True
+            elif x1 == "5" and e != "\033[1mX\033[0m" and e != "\033[1mO\033[0m":
+                e="\033[1mX\033[0m" 
+                squares["e"] = "\033[1mX\033[0m"
+                check = True
+            elif x1 == "6" and f != "\033[1mX\033[0m" and f != "\033[1mO\033[0m":
+                f="\033[1mX\033[0m" 
+                squares["f"] = "\033[1mX\033[0m"
+                check = True
+            elif x1 == "7" and g != "\033[1mX\033[0m" and g != "\033[1mO\033[0m":
+                g="\033[1mX\033[0m" 
+                squares["g"] = "\033[1mX\033[0m"
+                check = True
+            elif x1 == "8" and h != "\033[1mX\033[0m" and h != "\033[1mO\033[0m":
+                h="\033[1mX\033[0m" 
+                squares["h"] = "\033[1mX\033[0m"
+                check = True
+            elif x1 == "9" and i != "\033[1mX\033[0m" and i != "\033[1mO\033[0m":
+                i="\033[1mX\033[0m" 
+                squares["i"] = "\033[1mX\033[0m"
+                check = True
+            else:
+                # action for wrong input
+                print()
+                x1 = input("YOU STUPID, WRONG NUMBER!!! Try again, press enter")
+                check = False
+            #REFRESH SCREEN
+            subprocess.run("cls", shell=True)
+            print()
+            print('       |       |')
+            print('   '+ a +'   |   '+ b +'   |   '+ c +'  ')
+            print('       |       |')
+            print('-------+-------+-------')
+            print('       |       |')
+            print('   '+ d +'   |   '+ e +'   |   '+ f +' ')
+            print('       |       |')
+            print('-------+-------+-------')
+            print('       |       |')
+            print('   '+ g +'   |   '+ h +'   |   '+ i +'  ')
+            print('       |       |')
+            print()
+        #WIN CHECK X
+        if a=="\033[1mX\033[0m" and b=="\033[1mX\033[0m" and c=="\033[1mX\033[0m":
+            print ("X wins!!!")
+            print()
+            break
+        elif d=="\033[1mX\033[0m" and e=="\033[1mX\033[0m" and f=="\033[1mX\033[0m":
+            print ("X wins!!!")
+            print()
+            break
+        elif g=="\033[1mX\033[0m" and h=="\033[1mX\033[0m" and i=="\033[1mX\033[0m":
+            print ("X wins!!!") 
+            print()
+            break
+        elif a=="\033[1mX\033[0m" and e=="\033[1mX\033[0m" and i=="\033[1mX\033[0m":
+            print ("X wins!!!")   
+            print()
+            break
+        elif c=="\033[1mX\033[0m" and e=="\033[1mX\033[0m" and g=="\033[1mX\033[0m":
+            print ("X wins!!!")
+            print()
+            break
+        elif a=="\033[1mX\033[0m" and d=="\033[1mX\033[0m" and g=="\033[1mX\033[0m":
+            print ("X wins!!!")       
+            print()
+            break
+        elif b=="\033[1mX\033[0m" and e=="\033[1mX\033[0m" and h=="\033[1mX\033[0m":
+            print ("X wins!!!")
+            print()
+            break
+        elif c=="\033[1mX\033[0m" and f=="\033[1mX\033[0m" and i=="\033[1mX\033[0m":
+            print ("X wins!!!")
+            print()
+            break
+        elif turn == 4:
+            print ("Everybody loses!!")
+            print ()
+            break
+
+
+    ### - O turn - SIMILAR AS X TURN
+    # check - is checking for correct input (no doubles). 
+    # x1 - is the variable input each turn
+        check = False
+        while check == False:
+            
+            #check input for each field in the grid
+            o1 = input('O turn, press the number of a field where you wantto place an O and press enter. ')
+            if o1 == "1" and a != "\033[1mO\033[0m" and a != "\033[1mX\033[0m":
+                a="\033[1mO\033[0m"
+                squares["a"] = "\033[1mO\033[0m"
+                check = True
+            elif o1 == "2" and b != "\033[1mO\033[0m" and b != "\033[1mX\033[0m":
+                b="\033[1mO\033[0m"
+                squares["b"] = "\033[1mO\033[0m" 
+                check = True
+            elif o1 == "3" and c != "\033[1mO\033[0m" and c != "\033[1mX\033[0m":
+                c="\033[1mO\033[0m" 
+                squares["c"] = "\033[1mO\033[0m"
+                check = True
+            elif o1 == "4" and d != "\033[1mO\033[0m" and d != "\033[1mX\033[0m":
+                d="\033[1mO\033[0m" 
+                squares["d"] = "\033[1mO\033[0m"
+                check = True
+            elif o1 == "5" and e != "\033[1mO\033[0m" and e != "\033[1mX\033[0m":
+                e="\033[1mO\033[0m" 
+                squares["e"] = "\033[1mO\033[0m"
+                check = True
+            elif o1 == "6" and f != "\033[1mO\033[0m" and f != "\033[1mX\033[0m":
+                f="\033[1mO\033[0m" 
+                squares["f"] = "\033[1mO\033[0m"
+                check = True
+            elif o1 == "7" and g != "\033[1mO\033[0m" and g != "\033[1mX\033[0m":
+                g="\033[1mO\033[0m" 
+                squares["g"] = "\033[1mO\033[0m"
+                check = True
+            elif o1 == "8" and h != "\033[1mO\033[0m" and h != "\033[1mX\033[0m":
+                h="\033[1mO\033[0m" 
+                squares["h"] = "\033[1mO\033[0m"
+                check = True
+            elif o1 == "9" and i != "\033[1mO\033[0m" and i != "\033[1mX\033[0m":
+                i="\033[1mO\033[0m" 
+                squares["i"] = "\033[1mO\033[0m"
+                check = True
+            else:
+                # action for wrong input
+                print()
+                o1 = input("YOU STUPID, WRONG NUMBER!!! Try again, press enter") 
+                check = False
+            #REFRESH SCREEN
+            subprocess.run("cls", shell=True)
+            print()
+            print('       |       |')
+            print('   '+ a +'   |   '+ b +'   |   '+ c +'  ')
+            print('       |       |')
+            print('-------+-------+-------')
+            print('       |       |')
+            print('   '+ d +'   |   '+ e +'   |   '+ f +' ')
+            print('       |       |')
+            print('-------+-------+-------')
+            print('       |       |')
+            print('   '+ g +'   |   '+ h +'   |   '+ i +'  ')
+            print('       |       |')
+            print()
+            #WIN CHECK O
+        if a=="\033[1mO\033[0m" and b=="\033[1mO\033[0m" and c=="\033[1mO\033[0m":
+            print ("O wins!!!")
+            print()
+            break
+        elif d=="\033[1mO\033[0m" and e=="\033[1mO\033[0m" and f=="\033[1mO\033[0m":
+            print ("O wins!!!")
+            print()
+            break
+        elif g=="\033[1mO\033[0m" and h=="\033[1mO\033[0m" and i=="\033[1mO\033[0m":
+            print ("O wins!!!") 
+            print()
+            break
+        elif a=="\033[1mO\033[0m" and e=="\033[1mO\033[0m" and i=="\033[1mO\033[0m":
+            print ("O wins!!!")   
+            print()
+            break
+        elif c=="\033[1mO\033[0m" and e=="\033[1mO\033[0m" and g=="\033[1mO\033[0m":
+            print ("O wins!!!")
+            print()
+            break
+        elif a=="\033[1mO\033[0m" and d=="\033[1mO\033[0m" and g=="\033[1mO\033[0m":
+            print ("O wins!!!")       
+            print()
+            break
+        elif b=="\033[1mO\033[0m" and e=="\033[1mO\033[0m" and h=="\033[1mO\033[0m":
+            print ("O wins!!!")
+            print()
+            break
+        elif c=="\033[1mO\033[0m" and f=="\033[1mO\033[0m" and i=="\033[1mO\033[0m":
+            print ("O wins!!!")
+            print()
+            break
+            continue
+    print()
+    print()
+    exit = input ("Wanna play again (y or n + enter)?")
+
+
+if exit != "y":
+    subprocess.run("cls", shell=True)
+    print("Goodbye!")
+    print()
