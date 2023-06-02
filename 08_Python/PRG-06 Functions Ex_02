@@ -1,0 +1,11 @@
+#def myfunction() defines a function. In this case it prints some text in the terminal.
+#You can use this function to repeat this.
+
+
+def myfunction():
+    print()
+    print("Hallo, Rogier!")
+    print()
+myfunction()
+myfunction()
+
