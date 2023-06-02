@@ -1,0 +1,8 @@
+#len(thislist) is the length of the list in this code. 
+#"i" can call for the corresponding item in te list int the for-loop.
+
+thislist = ['Akram', 'Anj', 'Jon', 'Jennifer', 'Sjoerd']
+print()
+for i in range (len(thislist)):
+    print(thislist[i])
+print()
