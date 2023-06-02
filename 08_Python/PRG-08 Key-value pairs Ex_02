@@ -1,0 +1,47 @@
+#Here need to add key-value data from a dictionary to a csv file. 
+#I created a csv file in a text editor called "new_names.csv".
+#Use import csv for the csv module, and "with open" command to access my file to read (r).
+#"info" is the name of the temporary directory where the data is stored before adding to the .csv-file.
+#I have used print cammonds to visualize the progress. 
+#These are not neccessary but gives an overview of what is stored.
+
+#open the csv-file and show its contents
+import csv
+
+with open('new_names.csv', 'r') as csvfile:
+    csv_reader = csv.reader(csvfile)
+    for row in csv_reader:
+        print(row) 
+print()
+
+###add input to the temporary (info) dictionary. This data must eventually be added to the csv-file
+###also a print of the data to update for check
+
+info = {}
+fname = input("First name?")
+lname = input("Last name?")
+job = input("Job?")
+comp = input("Company?")
+
+info.update({"firstname":fname,"lastname":lname,"job":job,"company":comp})
+
+###add prints to check state of dictionary to be added
+
+print()
+print("DICTIONARY")
+print(info)
+print("DICTIONARY VALUES")
+print(info.values())
+print()
+
+###adding the input data to the csv-file (newline is to avoid en empty line in the csv file)
+with open('new_names.csv', 'a', newline='') as csvfile:
+    csv_writer = csv.writer(csvfile)
+    csv_writer.writerow(info.values())
+print()
+
+###add extra print of csv file to check if it is added (for info purposes only)
+with open('new_names.csv', 'r') as csvfile:
+    csv_reader = csv.reader(csvfile)
+    for row in csv_reader:
+        print(row) 
