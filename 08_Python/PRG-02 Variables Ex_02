@@ -1,0 +1,7 @@
+#Create a code to store text to a variable and print it.
+print()
+print("What's your name?")
+name = input("type name here->")
+print()
+print("Hello,", name+"!")
+print()
