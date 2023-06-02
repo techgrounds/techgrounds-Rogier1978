@@ -1,0 +1,7 @@
+#Use value as a variable and see if different inputs cause different data types.
+print()
+value = input("Type in some text! ")
+print()
+print(type(value))
+print("No matter what you use as input, the type is always STRING!")
+print()
