@@ -7,3 +7,4 @@ for i in range(10):
 	# do something here
     for y in range(5):
         print ("the value of x multiplied by the value of i is", x * i)
+![](https://github.com/techgrounds/techgrounds-Rogier1978/blob/main/00_includes/07_Azure_03/AZ_14%20-%2017%20eventgrid%20register.png)  
