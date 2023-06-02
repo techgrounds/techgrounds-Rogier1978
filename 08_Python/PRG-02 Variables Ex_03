@@ -1,0 +1,9 @@
+#Assigning multiple variables
+value1="Rogier"
+value2="23"
+value3="I get the point!"
+print()
+print("Value 1:",value1)
+print("Value 2:",value2)
+print("Value 3:",value3)
+print()
