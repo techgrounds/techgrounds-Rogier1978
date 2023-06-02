@@ -7,4 +7,5 @@ for i in range(10):
 	# do something here
     for y in range(5):
         print ("the value of x multiplied by the value of i is", x * i)
-![](https://github.com/techgrounds/techgrounds-Rogier1978/blob/main/00_includes/08_python/PRG_04%20ex%202%20result.png)  
+
+#![](https://github.com/techgrounds/techgrounds-Rogier1978/blob/main/00_includes/08_python/PRG_04%20ex%202%20result.png)  
