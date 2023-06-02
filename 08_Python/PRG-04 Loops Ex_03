@@ -1,0 +1,9 @@
+#print an array as a list in the terminal using a for-loop
+#the "arr" argument is the number of items in a list.
+
+
+arr = ["Coen", "Casper", "Joshua", "Abdessamad", "Saskia"]
+print()
+for x in arr:
+    print (x)
+print()
