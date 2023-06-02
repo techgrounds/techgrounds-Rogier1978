@@ -1,0 +1,16 @@
+#import random module to access random generating functions and print 5 random numbers.
+#Below two ways of doing this:
+
+
+import random 
+print()
+print (random.randrange(0, 100))
+print (random.randrange(0, 100))
+print (random.randrange(0, 100))
+print (random.randrange(0, 100))
+print (random.randrange(0, 100))
+print()
+
+
+for x in range (5)
+  print (random.randrange(0, 100))
