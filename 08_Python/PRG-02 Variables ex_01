@@ -1,0 +1,14 @@
+#Assigning variables
+x=5
+y=6
+
+#Assigning a variable with a sum
+z=x+y
+
+#printing the results in the terminal (I use empty print lines in the code to make the results in the terminal more clear).
+print()
+print("x=",x)
+print("y=",y)
+print("z=x+y")
+print("z=",z)
+print()
