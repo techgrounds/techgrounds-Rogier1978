@@ -1,0 +1,18 @@
+#Dictionary are recognized by {  :  ,} or {key:value}
+#Use for loop to cycle through the keys and use info[x] to call for the matching value.
+#The result of this script will be:
+#First Name - Casper
+#Last Name - Velzen
+#Job Title - Learning Coach
+#Company - Techgrounds
+
+info = {"First Name":"Casper", 
+        "Last Name":"Velzen", 
+        "Job Title":"Learning Coach", 
+        "Company":"Techgrounds"
+}
+
+print()
+for x in info:
+    print(x,"-",info[x])
+print()
