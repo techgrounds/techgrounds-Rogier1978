@@ -1,0 +1,17 @@
+#create a number guessing game.
+#while true loops forever. I used teh break command to stop the loop at the correct number.
+#if...elif...else will check for conditions to be true, else continue to the next. If true return to the start of loop.
+
+
+while True:
+    print()
+    number = int(input("Type in a number:"))
+
+    if number <= 99:
+        print(number, "is pretty low, isn't it?")
+    elif number >= 101:
+        print("Wow,", number, "is a big number!")
+    else:
+        print(number, "is a nice number indeed") 
+        print()
+        break
