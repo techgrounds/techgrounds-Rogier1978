@@ -1,0 +1,9 @@
+#Create a for loop, it creates a counter (i) that counts 1 up everytime the loop starts(10 times).
+#Within this loop I created another for loop with range 5 (so 5 x 10 = 50 times)
+# The results are 0,0,0,0,0,5,5,5,5,5,10,10,10,10,10 etc. up to 45.
+
+x = 5
+for i in range(10):
+	# do something here
+    for y in range(5):
+        print ("the value of x multiplied by the value of i is", x * i)
