@@ -1,0 +1,23 @@
+#Setting variable according to excrecise
+a = 'int'
+b = 7
+c = False
+d = "18.5"
+#Empty line for overview
+print()
+
+#Use type to find out data types of variables
+print("a=",type(a))
+print("b=",type(b))
+print("c=",type(c))
+print("d=",type(d))
+print()
+
+#Convert b and d to floating variables. I call them bf + df.
+bf = float(b)
+df = float(d)
+
+#Set x by adding bf and df. Then print x
+x = bf + df
+print("The floating value of x is:",x)
+print()
