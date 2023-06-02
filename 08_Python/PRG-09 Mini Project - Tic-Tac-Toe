@@ -8,6 +8,9 @@
 #-I also made some visual improvements. 
 # The grid was first smaller, added color for clearity and a nice intro, downloaded from the internet.
 
+#My conclusion. I am happy, however, there is lot of repeated code. I guess it could be done with half the text. No bugs discovered in this state.
+#There is still a directory in the code that is not used. Maybe I can use it if I ever wanna make a computer opponent, so I left it in.
+
 
 
 import sys, subprocess
