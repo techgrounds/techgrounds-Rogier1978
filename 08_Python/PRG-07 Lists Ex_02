@@ -1,0 +1,30 @@
+#Create a random numberlist and add values with the next and the last with the first.
+#First created the list and printed it to the terminal.
+# Next use a for loop to add value "i" wit value "i"+1.
+#(len(numberlist)-1) counts from the end. -1 is tha last value in the list.
+
+### CREATE RANDOM NUBERLIST
+import random
+numberlist = []
+for i in range(0,5):
+    n = random.randint(1,100)
+    numberlist.append(n)
+    
+print()
+print("Next is my random generated numberlist:")
+print(numberlist)
+
+#MADE UP MY OWN NUMBERLIST BEFORE USING A RANDOM LIST
+#numberlist = [41, 43, 47, 53, 61]
+print()
+
+### MAKE LOOP TO ADD NUMBERS i = NUMBER IN LIST (0,1,2,3,4)
+for i in range (len(numberlist)):
+
+    ### SELECT FINAL NUMBER IN LIST AND ADD TO FIRST
+    if i == (len(numberlist)-1):
+        print(numberlist[i]+numberlist[0])
+        print()
+        break
+    ### REGULAR COMMAND FOR ADDING NUMBERS
+    print (numberlist[i]+numberlist[i+1])
