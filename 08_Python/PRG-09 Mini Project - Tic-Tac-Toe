@@ -65,13 +65,13 @@ while exit == "y":
     print()
 
     for turn in range(5):
-    ### - X TURN - 
+### - X TURN - 
     # check - is checking for correct input (no doubles). 
     # x1 - is the variable input each turn
         check = False
         while check == False:
             
-            #check input for each field in the grid
+#check input for each field in the grid
             x1 = input ('X turn, press the number of a field where you want to place an X and press enter. ')
             if x1 == "1" and a != "\033[1mX\033[0m" and a != "\033[1mO\033[0m":
                 a="\033[1mX\033[0m"
@@ -114,7 +114,7 @@ while exit == "y":
                 print()
                 x1 = input("YOU STUPID, WRONG NUMBER!!! Try again, press enter")
                 check = False
-            #REFRESH SCREEN
+#REFRESH SCREEN
             subprocess.run("cls", shell=True)
             print()
             print('       |       |')
@@ -129,7 +129,7 @@ while exit == "y":
             print('   '+ g +'   |   '+ h +'   |   '+ i +'  ')
             print('       |       |')
             print()
-        #WIN CHECK X
+#WIN CHECK X
         if a=="\033[1mX\033[0m" and b=="\033[1mX\033[0m" and c=="\033[1mX\033[0m":
             print ("X wins!!!")
             print()
@@ -168,13 +168,13 @@ while exit == "y":
             break
 
 
-    ### - O turn - SIMILAR AS X TURN
+### - O turn - SIMILAR AS X TURN
     # check - is checking for correct input (no doubles). 
     # x1 - is the variable input each turn
         check = False
         while check == False:
             
-            #check input for each field in the grid
+#check input for each field in the grid
             o1 = input('O turn, press the number of a field where you wantto place an O and press enter. ')
             if o1 == "1" and a != "\033[1mO\033[0m" and a != "\033[1mX\033[0m":
                 a="\033[1mO\033[0m"
@@ -217,7 +217,7 @@ while exit == "y":
                 print()
                 o1 = input("YOU STUPID, WRONG NUMBER!!! Try again, press enter") 
                 check = False
-            #REFRESH SCREEN
+#REFRESH SCREEN
             subprocess.run("cls", shell=True)
             print()
             print('       |       |')
@@ -232,7 +232,7 @@ while exit == "y":
             print('   '+ g +'   |   '+ h +'   |   '+ i +'  ')
             print('       |       |')
             print()
-            #WIN CHECK O
+#WIN CHECK O
         if a=="\033[1mO\033[0m" and b=="\033[1mO\033[0m" and c=="\033[1mO\033[0m":
             print ("O wins!!!")
             print()
