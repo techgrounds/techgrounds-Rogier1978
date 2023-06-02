@@ -1,0 +1,14 @@
+#Make a code to input a name and check for access.
+#name.lower() means doesn't check for capitals.
+
+
+print ()
+name = str(input("Please input your name: "))
+if name.lower() in ['rogier']:
+    print ()
+    print ("Hello! Welcome,", name+"!")
+    print ()
+else:
+    print ()
+    print ("You are", name+", not Rogier. Please leave.")
+    print ()
