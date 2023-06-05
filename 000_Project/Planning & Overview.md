@@ -16,7 +16,7 @@ Week 1 -
   - Webserver installed automatically with public ip.
   - Admin/Management server from trusted locations (Conditional Access, Azure AD Premium P2)
   - Webserver connection via SSH/RDP only via Admin server
-  - Storage location for BOOTSTRAP-SCRIPTS, accessible via Admin/Management sevrer.
+  - Storage location for BOOTSTRAP-SCRIPTS, accessible via Admin/Management server.
   
 # ASSUMPTIONS
   - Webserver is scalable
