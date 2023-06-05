@@ -1,4 +1,4 @@
-###PLANNING
+# PLANNING
 
 Week 1 - 
   - Study Biceps, Encryption.
