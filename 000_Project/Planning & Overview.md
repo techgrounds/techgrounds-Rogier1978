@@ -1,0 +1,7 @@
+###PLANNING
+
+Week 1 - 
+  - Study Biceps, Encryption.
+  - Overview of services with costs
+  - IP-address planning
+  - 
