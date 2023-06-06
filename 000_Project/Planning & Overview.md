@@ -27,10 +27,10 @@ Week 2 -
   
 # ASSUMPTIONS
   - DDOS protection for Web server
-  - Everything is Billed to one client
+  - One billing
   - Use cheapest available options possible, according to demands (it's learning project)
   - No private network available
-  - Azure AD network monitoring
+  - Azure AD 
   - MFA for Admin/Management
 
 # USER STORIES  
