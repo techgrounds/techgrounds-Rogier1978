@@ -4,8 +4,14 @@ Week 1 -
   - Study BICEPS & IAC, ENCRYPTION, BOOTSTRAP-SCRIPTS.
   - Demands / Assumptions
   - Overview of services with costs
-  - IP-address planning (10.10.10.0/24 and 10.20.20.0/24)
+  - Cost overview
+  - Basic script ready with all modules
+  - Deployment scripts doc.
+    https://learn.microsoft.com/en-us/azure/azure-resource-manager/templates/deployment-script-template
+  - 
 
+Week 2 - 
+  - IP-address planning (10.10.10.0/24 and 10.20.20.0/24)
 
 
 # DEMANDS
@@ -26,3 +32,11 @@ Week 1 -
   - No private network available
   - Azure AD network monitoring
   - MFA for Admin/Management
+
+
+Monday 05-06-2023
+- Demands & Assumptions list
+- Bicep intro
+
+Tuesday - 06-06-2023
+-
