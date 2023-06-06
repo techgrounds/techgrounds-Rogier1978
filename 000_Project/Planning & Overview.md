@@ -34,18 +34,30 @@ Week 2 -
   - MFA for Admin/Management
 
 # USER STORIES  
+## Virtual Networks
+  - I want to use three Vnets. One for the web-server, one for the management-server and one for the PostDeployment-     scripts.
+  - All the V-Nets will be equiped with a NSG to control network traffic.
+  - The V-nets with webserver and deployment scripts will be equiped with VNet-to-VNet VPN gateway connections.
+
 ## Web-server  
-  - Webserver is for low density tracking with some times peakmoments. I use VM's for this, because they scale           better. They are, however, a bit more costly and require some maintenance.
-  - https://dzone.com/articles/microsoft-azure-app-service-cloud-services-or-vms
+  - The installation needs to be done automated.
+    https://learn.microsoft.com/en-us/training/modules/automate-virtual-machine-software-installation-configuration/
+  - Webserver is for low density traffic with some times peakmoments. I use VM's for this, because they scale           better. They are, however, a bit more costly and require some maintenance.
+    https://dzone.com/articles/microsoft-azure-app-service-cloud-services-or-vms
+  - The VM's needs encryption. We can do this via the disk settings. The key for the encryption will be stored in 
+    the Key-Vault.
   - Azure SQL database will be added to store data.
   - https://www.sqlshack.com/azure-sql-database-vs-sql-server-on-azure-virtual-machines/
-
+  - The server need a daily backup, what is stored for 7 days. We implement this with Azure Backup. This also needs     a "Recovery Services Vault" to store the backup. No one needs access to this vault for security reasons.
 
 ## Management-server  
   - https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/manage/azure-server-management/
   - public ip address
   - Conditional Access (use Azure AD)
     https://learn.microsoft.com/en-us/azure/active-directory/conditional-access/plan-conditional-access
+    
+## PostDeployment Scripts
+  - I use a storage account with 
 
 Monday 05-06-2023
 - Demands & Assumptions list
@@ -54,3 +66,4 @@ Monday 05-06-2023
 Tuesday - 06-06-2023
 - Bicep
 - Overview diagram
+- Explorations (see "user stories")
