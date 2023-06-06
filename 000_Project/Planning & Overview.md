@@ -6,7 +6,7 @@ Week 1 -
   - Overview of services with costs
   - Cost overview
   - Basic script ready with all modules
-  - Deployment scripts doc.
+  - Deployment scripts doc  
     https://learn.microsoft.com/en-us/azure/azure-resource-manager/templates/deployment-script-template
   - 
 
