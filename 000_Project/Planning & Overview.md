@@ -35,8 +35,17 @@ Week 2 -
 
 # USER STORIES  
 ## Web-server  
-  - Webserver is for low density tracking with some times peakmoments. I use VM's for this, because they scale better.
+  - Webserver is for low density tracking with some times peakmoments. I use VM's for this, because they scale           better. They are, however, a bit more costly and require some maintenance.
+  - https://dzone.com/articles/microsoft-azure-app-service-cloud-services-or-vms
+  - Azure SQL database will be added to store data.
+  - https://www.sqlshack.com/azure-sql-database-vs-sql-server-on-azure-virtual-machines/
 
+
+## Management-server  
+  - https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/manage/azure-server-management/
+  - public ip address
+  - Conditional Access (use Azure AD)
+    https://learn.microsoft.com/en-us/azure/active-directory/conditional-access/plan-conditional-access
 
 Monday 05-06-2023
 - Demands & Assumptions list
