@@ -52,7 +52,7 @@ Week 2 -
 
 ## Management-server  
   - https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/manage/azure-server-management/
-  - public ip address
+  [x] public ip address
   - Conditional Access (use Azure AD)
     https://learn.microsoft.com/en-us/azure/active-directory/conditional-access/plan-conditional-access
   - Security (NSG of Firewall)
