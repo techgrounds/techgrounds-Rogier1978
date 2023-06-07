@@ -70,3 +70,4 @@ Tuesday - 06-06-2023
 - Explorations (see "user stories")
 
 Wednesday - 07-06-2023
+- Started with Management VNet in Bicep (only security needs to be done)
