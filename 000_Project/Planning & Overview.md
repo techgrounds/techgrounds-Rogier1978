@@ -35,7 +35,7 @@ Week 2 -
 
 # USER STORIES  
 ## Virtual Networks
-  - [ ] I want to use three Vnets. One for the web-server, one for the management-server and one for the PostDeployment-     scripts.
+  - [ ] I want to use three Vnets. One for the web-server, one for the management-server and one for the PostDeployment-Scripts.
   - [ ] All the V-Nets will be equiped with a NSG to control network traffic.
   - [ ] The V-nets with webserver and deployment scripts will be equiped with VNet-to-VNet VPN gateway connections.
 
