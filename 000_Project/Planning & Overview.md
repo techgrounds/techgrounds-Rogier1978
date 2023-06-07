@@ -35,9 +35,9 @@ Week 2 -
 
 # USER STORIES  
 ## Virtual Networks
-  - I want to use three Vnets. One for the web-server, one for the management-server and one for the PostDeployment-     scripts.
-  - All the V-Nets will be equiped with a NSG to control network traffic.
-  - The V-nets with webserver and deployment scripts will be equiped with VNet-to-VNet VPN gateway connections.
+  - [ ] I want to use three Vnets. One for the web-server, one for the management-server and one for the PostDeployment-     scripts.
+  - [ ] All the V-Nets will be equiped with a NSG to control network traffic.
+  - [ ] The V-nets with webserver and deployment scripts will be equiped with VNet-to-VNet VPN gateway connections.
 
 ## Web-server  
   - [ ] The installation needs to be done automated.
@@ -50,14 +50,15 @@ Week 2 -
   - [ ]  The server need a daily backup, what is stored for 7 days. We implement this with Azure Backup. This also needs a "Recovery Services Vault" to store the backup. No one needs access to this vault for security reasons.
 
 ## Management-server  
-  - https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/manage/azure-server-management/
-  [x] public ip address
-  - Conditional Access (use Azure AD)
-    https://learn.microsoft.com/en-us/azure/active-directory/conditional-access/plan-conditional-access
-  - Security (NSG of Firewall)
+  - [ ] https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/manage/azure-server-management/
+  - [x] public ip address
+  - [ ] The VM's needs encryption. We can do this via the disk settings. The key for the encryption will be stored in the Key-Vault.
+  - [ ] Conditional Access (use Azure AD)
+        https://learn.microsoft.com/en-us/azure/active-directory/conditional-access/plan-conditional-access
+  - [ ] Security (NSG of Firewall)
     
 ## PostDeployment Scripts
-  - I use a storage account with 
+  - [ ] I use a storage account with blob storage (can store all sorts of data and is cheap)
 
 Monday 05-06-2023
 - Demands & Assumptions list
