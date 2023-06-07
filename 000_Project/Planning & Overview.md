@@ -1,7 +1,7 @@
 # PLANNING
 
 Week 1 - 
-  - Study BICEPS & IAC, ENCRYPTION, BOOTSTRAP-SCRIPTS.
+  - [ ] Study BICEPS & IAC, ENCRYPTION, BOOTSTRAP-SCRIPTS.
   - Demands / Assumptions
   - Overview of services with costs
   - Cost overview
