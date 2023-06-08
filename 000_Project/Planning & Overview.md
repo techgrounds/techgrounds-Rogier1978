@@ -74,4 +74,8 @@ Tuesday - 06-06-2023
 Wednesday - 07-06-2023
 - Started with Management VNet in Bicep (only security needs to be done)
 
+Thursday - 08-06-2023
+- Brainstorming about deployment scripts.
+- State of network today
+![](https://github.com/techgrounds/techgrounds-Rogier1978/blob/main/000_Project/000-project%20-%20network.png)
 
