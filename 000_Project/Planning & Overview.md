@@ -46,7 +46,7 @@ Week 2 -
         https://dzone.com/articles/microsoft-azure-app-service-cloud-services-or-vms
   - [ ] The VM's needs encryption. We can do this via the disk settings. The key for the encryption will be stored in the Key-Vault.
   - [x] Azure SQL database will be added to store data.
-        https://www.sqlshack.com/azure-sql-database-vs-sql-server-on-azure-virtual-machines/
+        https://www.sqlshack.com/azure-sql-database-vs-sql-server-on-azure-virtual-machines/  
         08-06-2023 Not needed. I use Appservices, option WebApps + Database
   - [ ] The server need a daily backup, what is stored for 7 days. We implement this with Azure Backup. This also needs a "Recovery Services Vault" to store the backup. No one needs access to this vault for security reasons.
 
