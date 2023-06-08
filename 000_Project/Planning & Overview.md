@@ -4,14 +4,13 @@ Week 1 -
   - [ ] Study BICEPS & IAC, ENCRYPTION, BOOTSTRAP-SCRIPTS.
   - [ ] Demands / Assumptions
   - [ ] Overview of services with costs
-  - [ ] Cost overview
   - [ ] Basic script ready with all modules
   - [ ] Deployment scripts documentation  
-        https://learn.microsoft.com/en-us/azure/azure-resource-manager/templates/deployment-script-template
-  - 
+        https://learn.microsoft.com/en-us/azure/azure-resource-manager/templates/deployment-script-template 
 
 Week 2 - 
   - [ ] IP-address planning (10.10.10.0/24 and 10.20.20.0/24)
+  - [ ] Cost overview
 
 
 # DEMANDS
@@ -58,7 +57,8 @@ Week 2 -
   - [ ] Security (NSG of Firewall)
     
 ## PostDeployment Scripts
-  - [ ] I use a storage account with blob storage (can store all sorts of data and is cheap)
+  - [ ] I am going to make a AppServices webserver en use pipeline for automatic deployment of the website.
+  - [ ] Needs automated deployment to web-server. Use Azure Automation.
 
 Monday 05-06-2023
 - Demands & Assumptions list
@@ -71,3 +71,5 @@ Tuesday - 06-06-2023
 
 Wednesday - 07-06-2023
 - Started with Management VNet in Bicep (only security needs to be done)
+
+
