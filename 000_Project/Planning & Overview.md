@@ -76,6 +76,6 @@ Wednesday - 07-06-2023
 
 Thursday - 08-06-2023
 - Brainstorming about deployment scripts.
-- State of network today
+- State of network today. There are some security issues here, and it is incomplete but it's a work in progress.
 ![](https://github.com/techgrounds/techgrounds-Rogier1978/blob/main/000_Project/000-project%20-%20network.png)
 
