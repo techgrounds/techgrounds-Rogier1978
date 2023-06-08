@@ -62,7 +62,11 @@ Week 2 -
   - [ ] I am going to make a AppServices webserver en use pipeline for automatic deployment of the website.
   - [ ] Needs automated deployment to web-server. Use Azure Automation/Azure functions.
 
+## Azure AD
+  - [ ] Make overview of user roles (week 3)
 
+## Security
+  - [ ] 
 
 Monday 05-06-2023
 - Demands & Assumptions list
