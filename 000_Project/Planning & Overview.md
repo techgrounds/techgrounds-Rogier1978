@@ -41,12 +41,14 @@ Week 2 -
 ## Web-server  
   - [ ] The installation needs to be done automated.
         https://learn.microsoft.com/en-us/training/modules/automate-virtual-machine-software-installation-configuration/
-  - [ ] Webserver is for low density traffic with some times peakmoments. I use VM's for this, because they scale better. They are, however, a bit more costly and require some maintenance.
+  - [ ] Webserver is for low density traffic with some times peakmoments. I use VM's for this, because they scale better. They are, however, a bit more costly and require some maintenance. 
+        08-06-2023 After some research I am going to use Azure Appservices for this. Selecting the option Web App + Database.
         https://dzone.com/articles/microsoft-azure-app-service-cloud-services-or-vms
   - [ ] The VM's needs encryption. We can do this via the disk settings. The key for the encryption will be stored in the Key-Vault.
-  - [ ] Azure SQL database will be added to store data.
+  - [x] Azure SQL database will be added to store data.
         https://www.sqlshack.com/azure-sql-database-vs-sql-server-on-azure-virtual-machines/
-  - [ ]  The server need a daily backup, what is stored for 7 days. We implement this with Azure Backup. This also needs a "Recovery Services Vault" to store the backup. No one needs access to this vault for security reasons.
+        08-06-2023 Not needed. I use Appservices, option WebApps + Database
+  - [ ] The server need a daily backup, what is stored for 7 days. We implement this with Azure Backup. This also needs a "Recovery Services Vault" to store the backup. No one needs access to this vault for security reasons.
 
 ## Management-server  
   - [ ] https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/manage/azure-server-management/
