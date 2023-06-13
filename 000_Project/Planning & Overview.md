@@ -42,7 +42,7 @@ Week 2 -
   - [ ] The installation needs to be done automated.
         https://learn.microsoft.com/en-us/training/modules/automate-virtual-machine-software-installation-configuration/
   - [ ] Webserver is for low density traffic with some times peakmoments. I use VM's for this, because they scale better. They are, however, a bit more costly and require some maintenance.  
-        08-06-2023 After some research I am going to use Azure Appservices for this. Selecting the option Web App + Database.
+        08-06-2023 After some research I am going to use Azure WebAppservices for this. Selecting the option Web App + Database. Easy to use, scalable.
         https://dzone.com/articles/microsoft-azure-app-service-cloud-services-or-vms
   - [ ] The VM's needs encryption. We can do this via the disk settings. The key for the encryption will be stored in the Key-Vault.
   - [x] Azure SQL database will be added to store data.
@@ -69,6 +69,9 @@ Week 2 -
   - [ ] Firewall on each subnet
   - [ ] Conditional access to management server
   - [ ] Public webaccess only via port 80 aand 443
+  - [ ] Encryption of all harddrives
+  - [ ] Traffic encrypted
+  - [ ] key-vault to store sensitive data
 
 
 ## WEEK 1
