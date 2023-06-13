@@ -68,7 +68,7 @@ Week 2 -
 ## Security
 
 
-### WEEK 1
+## WEEK 1
 
 Monday 05-06-2023
 - Demands & Assumptions list
@@ -90,12 +90,12 @@ Thursday - 08-06-2023
 Friday - 09-06-2023
 -Learning module
 
-End of week review:
+### End of week review:
 I have the basics thought out, and have created 2 v-nets, one for webappservices and one for management services. They are two different files at the moment, but the idea is to create one bicep code for the complete project. This will avoid issues about connecting different modules.
 There are however two issues that needs to be solver before the end of next week:
 - I have a child-parent connection that causes error in de appservice
 - The appservice needs to be placed within the its own v-net.
-When I can manage this I have a code of the backbone of the project. I can use the next two weeks to create the following:
+When I can manage this I have a code of the backbone of the project. I use the next two weeks to create the following:
 - post-deployment storage and deployment
 - app server backup
 - security / firewalls / access control
@@ -104,5 +104,7 @@ When I can manage this I have a code of the backbone of the project. I can use t
 - tags
 I have estimated two days per subject to tackle the above issues.
 
-WEEK 2
+## WEEK 2
+Monday 12-06-2023
+- Merged the managemet server with web server
 
