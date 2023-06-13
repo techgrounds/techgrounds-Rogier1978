@@ -95,6 +95,7 @@ I have the basics thought out, and have created 2 v-nets, one for webappservices
 There are however two issues that needs to be solver before the end of next week:
 - I have a child-parent connection that causes error in de appservice
 - The appservice needs to be placed within the its own v-net.  
+
 When I can manage this I have a code of the backbone of the project. 
 I also need to make an overview of the expected cost.  
 
