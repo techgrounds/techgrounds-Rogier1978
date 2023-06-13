@@ -25,11 +25,11 @@ Week 2 -
   - [ ] Webserver is scalable (Q&A 6-6-2023)
   
 # ASSUMPTIONS
-  - [ ] DDOS protection for Web server
-  - [ ] One billing
+  - [x] DDOS protection for Web server. Not needed, the product owner is developing own security.
+  - [x] One billing
   - [ ] Use cheapest available options possible, according to demands (it's learning project)
-  - [ ] No private network available
-  - [ ] Azure AD 
+  - [x] No private network available
+  - [x] Azure AD 
   - [ ] MFA for Admin/Management
 
 # USER STORIES  
@@ -66,6 +66,9 @@ Week 2 -
   - [ ] Make overview of user roles (week 3)
 
 ## Security
+  - [ ] Firewall on each subnet
+  - [ ] Conditional access to management server
+  - [ ] Public webaccess only via port 80 aand 443
 
 
 ## WEEK 1
