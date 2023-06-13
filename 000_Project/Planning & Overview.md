@@ -120,3 +120,6 @@ I have estimated two days per subject to tackle the above issues.
 Monday 12-06-2023
 - Merged the managemet server with web server
 
+Tuesday 13-06-2023
+- Decided to use VMs for webapp. Akram said it would be easier so let's find out. Have now two Vnet both with a subnet and a VM. Made a start for a storage account. This will be in the management Network in its own sub net.
+
