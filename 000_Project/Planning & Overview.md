@@ -94,7 +94,7 @@ Friday - 09-06-2023
 I have the basics thought out, and have created 2 v-nets, one for webappservices and one for management services. They are two different files at the moment, but the idea is to create one bicep code for the complete project. This will avoid issues about connecting different modules.
 There are however two issues that needs to be solver before the end of next week:
 - I have a child-parent connection that causes error in de appservice
-- The appservice needs to be placed within the its own v-net.
+- The appservice needs to be placed within the its own v-net.  
 When I can manage this I have a code of the backbone of the project. 
 I also need to make an overview of the expected cost.  
 
