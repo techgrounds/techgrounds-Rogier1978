@@ -95,14 +95,17 @@ I have the basics thought out, and have created 2 v-nets, one for webappservices
 There are however two issues that needs to be solver before the end of next week:
 - I have a child-parent connection that causes error in de appservice
 - The appservice needs to be placed within the its own v-net.
-When I can manage this I have a code of the backbone of the project. I use the next two weeks to create the following:
+When I can manage this I have a code of the backbone of the project. 
+I also need to make an overview of the expected cost.  
+
+I use the next two weeks to create the following:
 - post-deployment storage and deployment
 - app server backup
 - security / firewalls / access control
 - secret key-vault
 - azure active directory
 - tags
-I have estimated two days per subject to tackle the above issues.
+I have estimated two days per subject to tackle the above issues.  
 
 ## WEEK 2
 Monday 12-06-2023
