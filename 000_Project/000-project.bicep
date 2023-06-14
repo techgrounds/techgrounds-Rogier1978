@@ -1,6 +1,6 @@
+
+
 param location string = resourceGroup().location
-
-
 
 param vmSize string = 'Standard_B1s'
 
@@ -9,31 +9,33 @@ param managementUsername string = 'rogier'
 @secure()
 param managementPassword string
 
-param ManagementserverName string = 'managementserver'
-var ManagementnicName = '${ManagementserverName}-nic'
-var Managementvnetserver = 'ManagementVNet'
-var Managementsubnetserver = 'ManagementSubnet'
+param ManagementserverName string = 'ManagementServer'
+param vnet1Name string = 'management-prd-vnet'
+param subNet1Name string = 'managementSubnet'
+var nic1Name = '${vnet1Name}-nic'
+
+//Storage account for deployment
+param storageKind string = 'StorageV2'
+param storageSKU string = 'Standard_LRS'
 
 //web
-param webUsername string = 'rogier'
+param appUsername string = 'rogier'
 @secure()
-param webPassword string
+param appPassword string
 
-param WebserverName string = 'webserver'
-var WebnicName = '${WebserverName}-nic'
-var Webvnetserver = 'WebVNet'
-var Websubnetserver = 'WebSubnet'
-
-
-
+param appServerName string = 'appServer'
+param vnet2Name string = 'app-prd-vnet'
+param subNet2Name string = 'appSubnet'
+var nic2Name = '${vnet2Name}-nic'
 
 
 //==================//
 // MANAGEMENTSERVER //
 //==================//
 
-resource Managementvirtualnetwork 'Microsoft.Network/virtualNetworks@2022-11-01' = {
-  name: Managementvnetserver
+
+resource vNet1 'Microsoft.Network/virtualNetworks@2022-11-01' = {
+  name: vnet1Name
   location: location
   properties: {
     addressSpace: {
@@ -41,27 +43,27 @@ resource Managementvirtualnetwork 'Microsoft.Network/virtualNetworks@2022-11-01'
         '10.20.20.0/24'
       ]
     }
-    subnets: [
-      {
-        name: Managementsubnetserver
-        properties: {
-          addressPrefix: '10.20.20.0/24'
-        }
-      }
-    ]
   }
 }
 
-resource managementpublicIP 'Microsoft.Network/publicIPAddresses@2021-02-01' = {
-  name: '${ManagementserverName}-publicIP'
+resource subNet1 'Microsoft.Network/virtualNetworks/subnets@2022-11-01' = { 
+  name: subNet1Name
+  parent: vNet1
+  properties: {
+    addressPrefix: '10.20.20.0/24'
+  }
+}
+
+resource pubIP1 'Microsoft.Network/publicIPAddresses@2021-02-01' = {
+  name: '${vnet1Name}-publicIP'
   location: location
   properties: {
     publicIPAllocationMethod: 'Dynamic'
   }
 }
 
-resource managementnic 'Microsoft.Network/networkInterfaces@2022-11-01' = {
-  name: ManagementnicName
+resource nic1 'Microsoft.Network/networkInterfaces@2022-11-01' = {
+  name: nic1Name
   location: location
   
   properties: {
@@ -70,11 +72,11 @@ resource managementnic 'Microsoft.Network/networkInterfaces@2022-11-01' = {
         name: 'ipconfig1'
         properties: {
           subnet: {
-            id: resourceId('Microsoft.Network/virtualNetworks/subnets', Managementvnetserver, Managementsubnetserver)
+            id: subNet1.id
           }
           privateIPAllocationMethod: 'Dynamic'
           publicIPAddress: {
-            id: managementpublicIP.id
+            id: pubIP1.id
           }
         }  
       }
@@ -82,7 +84,7 @@ resource managementnic 'Microsoft.Network/networkInterfaces@2022-11-01' = {
   }
 }
 
-resource mngmntas 'Microsoft.Compute/availabilitySets@2022-11-01' = {
+resource mngmntAs 'Microsoft.Compute/availabilitySets@2022-11-01' = {
   name: 'MngmntAvail'
   location: location
   sku: {
@@ -94,12 +96,12 @@ resource mngmntas 'Microsoft.Compute/availabilitySets@2022-11-01' = {
   }
 }
 
-resource Managementvm 'Microsoft.Compute/virtualMachines@2022-03-01' = {
+resource managementVM 'Microsoft.Compute/virtualMachines@2022-03-01' = {
   name: ManagementserverName
   location: location
   properties: {
     availabilitySet: {
-      id: mngmntas.id
+      id: mngmntAs.id
     } 
     hardwareProfile: {
       vmSize: vmSize
@@ -123,7 +125,7 @@ resource Managementvm 'Microsoft.Compute/virtualMachines@2022-03-01' = {
     networkProfile: {
       networkInterfaces: [
         {
-          id: managementnic.id
+          id: nic1.id
           properties: {
             deleteOption: 'Detach'
             primary: true
@@ -134,13 +136,42 @@ resource Managementvm 'Microsoft.Compute/virtualMachines@2022-03-01' = {
   }
 }
 
-//==========================//
-// WEBSERVER (webappserver) //
-//==========================//
+//================================//
+// STORAGE ACCOUNT FOR DEPLOYMENT //
+//================================//
+
+resource storageAccount 'Microsoft.Storage/storageAccounts@2022-09-01'={
+  name: '000project'
+  location: location
+  sku: {
+    name: storageSKU
+  }
+  kind:storageKind  
+  
+}
+
+resource service 'Microsoft.Storage/storageAccounts/fileServices@2022-09-01' = {
+  parent: storageAccount
+  name: 'default'
+}
+
+resource share 'Microsoft.Storage/storageAccounts/fileServices/shares@2022-09-01' = {
+  parent: service
+  name: 'deployshare'
+  properties: {
+    accessTier: 'hot'
+  }  
+}
 
 
-resource Webvirtualnetwork 'Microsoft.Network/virtualNetworks@2022-11-01' = {
-  name: Webvnetserver
+
+//=======================//
+// WEBSERVER (appserver) //
+//=======================//
+
+
+resource vNet2 'Microsoft.Network/virtualNetworks@2022-11-01' = {
+  name: vnet2Name
   location: location
   properties: {
     addressSpace: {
@@ -148,40 +179,40 @@ resource Webvirtualnetwork 'Microsoft.Network/virtualNetworks@2022-11-01' = {
         '10.10.10.0/24'
       ]
     }
-    subnets: [
-      {
-        name: Websubnetserver
-        properties: {
-          addressPrefix: '10.10.10.0/24'
-        }
-      }
-    ]
-  }  
-}  
+  }
+}
 
-resource webpublicIP 'Microsoft.Network/publicIPAddresses@2021-02-01' = {
-  name: '${WebserverName}-publicIP'
+resource subNet2 'Microsoft.Network/virtualNetworks/subnets@2022-11-01' = { 
+  name: subNet2Name
+  parent: vNet2
+  properties: {
+    addressPrefix: '10.10.10.0/24'
+  }    
+}
+
+resource pubIP2 'Microsoft.Network/publicIPAddresses@2021-02-01' = {
+  name: '${vnet2Name}-publicIP'
   location: location
   properties: {
     publicIPAllocationMethod: 'Dynamic'
   }
 }
 
-resource webnic 'Microsoft.Network/networkInterfaces@2022-11-01' = {
-  name: WebnicName
+resource nic2 'Microsoft.Network/networkInterfaces@2022-11-01' = {
+  name: nic2Name
   location: location
   
   properties: {
     ipConfigurations: [
       {
-        name: 'ipconfig1'
+        name: 'ipconfig2'
         properties: {
           subnet: {
-            id: resourceId('Microsoft.Network/virtualNetworks/subnets', Webvnetserver, Websubnetserver)
+            id: subNet2.id
           }
           privateIPAllocationMethod: 'Dynamic'
           publicIPAddress: {
-            id: webpublicIP.id
+            id: pubIP2.id
           }
         }  
       }
@@ -202,7 +233,7 @@ resource webas 'Microsoft.Compute/availabilitySets@2022-11-01' = {
 }
 
 resource Webvm 'Microsoft.Compute/virtualMachines@2022-03-01' = {
-  name: WebserverName
+  name: appServerName
   location: location
   properties: {
     availabilitySet: {
@@ -223,14 +254,14 @@ resource Webvm 'Microsoft.Compute/virtualMachines@2022-03-01' = {
       }
     }
     osProfile: {
-      computerName: WebserverName
-      adminUsername: webUsername
-      adminPassword: webPassword
+      computerName: appServerName
+      adminUsername: appUsername
+      adminPassword: appPassword
     }
     networkProfile: {
       networkInterfaces: [
         {
-          id: webnic.id
+          id: nic2.id
           properties: {
             deleteOption: 'Detach'
             primary: true
