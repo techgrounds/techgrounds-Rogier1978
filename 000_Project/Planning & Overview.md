@@ -10,7 +10,8 @@ Week 1 -
 
 Week 2 - 
   - [ ] IP-address planning (10.10.10.0/24 and 10.20.20.0/24)
-  - [ ] Cost overview
+  - [ ] Cost overview  
+  - [ ] Create basics of the project in bicep.
 
 
 # DEMANDS
