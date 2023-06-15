@@ -1,0 +1,10 @@
+- 2x Vnet with subnet
+- 2x nsg
+- VM with linux and apache for webserver
+- VM with linux for management server
+- 2x firewall or nsg (one for each subnet)
+- azure bastion for ssh/rdp connection
+- storage account with blob storage (for deployment scripts)
+- azure recovery services vault (for webserver and database backup)
+- azure key vault
+- azure active directory
