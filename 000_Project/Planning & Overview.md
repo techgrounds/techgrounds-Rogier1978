@@ -42,12 +42,11 @@ Week 2 -
   - [ ] The installation needs to be done automated.
         https://learn.microsoft.com/en-us/training/modules/automate-virtual-machine-software-installation-configuration/
   - [ ] Webserver is for low density traffic with some times peakmoments. I use VM's for this, because they scale better. They are, however, a bit more costly and require some maintenance.  
-        08-06-2023 After some research I am going to use Azure WebAppservices for this. Selecting the option Web App + Database. Easy to use, scalable.
-        https://dzone.com/articles/microsoft-azure-app-service-cloud-services-or-vms
+        https://dzone.com/articles/microsoft-azure-app-service-cloud-services-or-vms  
+  - [ ] Need Bastion for SSH/RDP connection of the VM(s). You can use this service to easily and safely connect to your VMs in a Vnet via SSH/RDP.
   - [ ] The VM's needs encryption. We can do this via the disk settings. The key for the encryption will be stored in the Key-Vault.
   - [x] Azure SQL database will be added to store data.
         https://www.sqlshack.com/azure-sql-database-vs-sql-server-on-azure-virtual-machines/  
-        08-06-2023 Not needed. I use Appservices, option WebApps + Database
   - [ ] The server need a daily backup, what is stored for 7 days. We implement this with Azure Backup. This also needs a "Recovery Services Vault" to store the backup. No one needs access to this vault for security reasons.
 
 ## Management-server  
@@ -56,14 +55,18 @@ Week 2 -
   - [ ] The VM's needs encryption. We can do this via the disk settings. The key for the encryption will be stored in the Key-Vault.
   - [ ] Conditional Access (use Azure AD)
         https://learn.microsoft.com/en-us/azure/active-directory/conditional-access/plan-conditional-access
-  - [ ] Security (NSG of Firewall)
+  - [ ] Security (NSG of Firewall)  
+  - [ ] Via managemnet-server we need to cennect to web-servers (via Bastion), post-deploymentscripts, 
     
 ## PostDeployment Scripts
-  - [ ] I am going to make a AppServices webserver en use pipeline for automatic deployment of the website.
-  - [ ] Needs automated deployment to web-server. Use Azure Automation/Azure functions.
+  - [ ] This will be a blobstorage. 
+  - [ ] Needs a connection from the management server for posting updated script, and to the webvm to deploy these scripts.
 
 ## Azure AD
   - [ ] Make overview of user roles (week 3)
+
+## Key Vault
+  - [ ] To store all the secret info. (encryption, passwords etc.)
 
 ## Security
   - [ ] Firewall on each subnet
@@ -121,5 +124,11 @@ Monday 12-06-2023
 - Merged the managemet server with web server
 
 Tuesday 13-06-2023
-- Decided to use VMs for webapp. Akram said it would be easier so let's find out. Have now two Vnet both with a subnet and a VM. Made a start for a storage account. This will be in the management Network in its own sub net.
+- Decided to use VMs for the webapp. Akram said it would be easier so let's find out. Have now two Vnet both with a subnet and a VM. Made a start for a storage account. This will be in the management Network in its own sub net.
+
+Wednesday 14-06-2023
+- Need more attention to what file to deploy. Spent too much time deploying the wrong file to the portal and wondering why the errors keep coming! Lesson learnt. Have now to VM's within Vnet and subnet. Also created a storage account. Made a fileshare, but I think blob storage is easier to handle a variety of filetypes. I created some order in the params and vars in the bicep code. It was a mess. I placed my subnets out of my Vnets (they were nested there), but now I can't deploy my script a second time without errors. Says it can't remove a subnet. 
+
+Thursday 15-06-2023
+
 
