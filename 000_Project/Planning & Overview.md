@@ -144,6 +144,7 @@ Schematic of the project as of the end of week 2.
 
 The project gets more shape. Lot of the tings are deployed. They only need to connect to each other. It deplys without error, so that's good. In the final week I need to split it up in modules. I need this for the resourcegroup creation and for the Azure AD to make the key-vault work. I will do this in the final week. 
 Next week I want to to fix:  
+- Azure Bastion to connect managementserver with appserver with SSH and RDP
 - peerings  
 - security
 - backup
