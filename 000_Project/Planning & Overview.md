@@ -130,14 +130,16 @@ Tuesday 13-06-2023
 Wednesday 14-06-2023
 - Need more attention to what file to deploy. Spent too much time deploying the wrong file to the portal and wondering why the errors keep coming! Lesson learnt. Have now to VM's within Vnet and subnet. Also created a storage account. Made a fileshare, but I think blob storage is easier to handle a variety of filetypes. I created some order in the params and vars in the bicep code. It was a mess. I placed my subnets out of my Vnets (they were nested there), but now I can't deploy my script a second time without errors. Says it can't remove a subnet. 
 
-Thursday 15-06-2023
-Vnets and subnets are working now. VM's are inside the subnets and I can deploy my scripts multiple times. I made a start with a keyvault. I als need Azure AD for this. I guess I have to use modules to make this work with one command for the bicep. I am going to find this out next week.
+Thursday 15-06-2023  
+- Vnets and subnets are working now. VM's are inside the subnets and I can deploy my scripts multiple times. I made a start with a keyvault. I als need Azure AD for this. I guess I have to use modules to make this work with one command for the bicep. I am going to find this out next week.
 
-Friday 16-06-2023
-Study day. I studied the Microsoft learning modules about Bicep. Not too much to worry about. Naming services logical and clearly reamains challenging.
+Friday 16-06-2023  
+- Study day. I studied the Microsoft learning modules about Bicep. Not too much to worry about. Naming services logical and clearly reamains challenging.
 
-## WEEK 3
+![](https://github.com/techgrounds/techgrounds-Rogier1978/blob/main/000_Project/000-project(3).png)
+
+## WEEK 3  
 Monday 19-06-2023  
-Created MY Nsg's and peering for the Vnets. It's all working now. However I am not sure how to check the state of my portconfiguration for the webserver. I wanted to deploy an apache server on the Appserver-vm. But I am not sure how to make tis work.
+- Created MY Nsg's and peering for the Vnets. It's all working now. However I am not sure how to check the state of my portconfiguration for the webserver. I wanted to deploy an apache server on the Appserver-vm. But I am not sure how to make tis work.
 
 
