@@ -100,7 +100,7 @@ Thursday - 08-06-2023
 Friday - 09-06-2023
 -Learning module
 
-### End of week review:
+### END OF WEEK 1 REVIEW:
 I have the basics thought out, and have created 2 v-nets, one for webappservices and one for management services. They are two different files at the moment, but the idea is to create one bicep code for the complete project. This will avoid issues about connecting different modules.
 There are however two issues that needs to be solver before the end of next week:
 - I have a child-parent connection that causes error in de appservice
@@ -136,7 +136,19 @@ Thursday 15-06-2023
 Friday 16-06-2023  
 - Study day. I studied the Microsoft learning modules about Bicep. Not too much to worry about. Naming services logical and clearly reamains challenging.
 
-![](https://github.com/techgrounds/techgrounds-Rogier1978/blob/main/000_Project/000-project(3).png)
+### END OF WEEK 2 REVIEW  
+
+Schematic of the project as of the end of week 2.  
+
+![](https://github.com/techgrounds/techgrounds-Rogier1978/blob/main/000_Project/000-project(3).png)  
+
+The project gets more shape. Lot of the tings are deployed. They only need to connect to each other. It deplys without error, so that's good. In the final week I need to split it up in modules. I need this for the resourcegroup creation and for the Azure AD to make the key-vault work. I will do this in the final week. 
+Next week I want to to fix:  
+- peerings  
+- security
+- backup
+- webserver deployment
+- key vault with azure ad  
 
 ## WEEK 3  
 Monday 19-06-2023  
