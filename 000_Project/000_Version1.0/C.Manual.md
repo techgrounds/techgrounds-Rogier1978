@@ -7,7 +7,7 @@ Follow the instructions below to deploy the files:
 - In powershell go to the map where you stored you bicep files. (cd desktop\"name of folder")
 - Type "az login" and press enter. A screen in your webbrowser will open and you login to your azure account.
 - Type "az deployment sub create --location westeurope --template-file main.bicep"
-- Now enter usernames and passwords for management server, web server and database. Usernames can be a maximum of 20 characters in length and cannot end in a period ("."). Passwords must also meet 3 out of the following 4 complexity requirements: Have lower characters, have upper characters, have a digit and have a special character.
+- Now enter usernames and passwords for management server, web server and database. Usernames can be a maximum of 20 characters in length and cannot end in a period ("."). Passwords must also meet 3 out of the following 4 complexity requirements: Have lower characters, have upper characters, have a digit and/or have a special character.
 Remember these, you will need them later on.
 
 The deployment begins and you have to wait till it is finished. This will take a few minutes.
