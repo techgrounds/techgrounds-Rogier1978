@@ -81,19 +81,19 @@ Next week I want to to fix:
 Monday 19-06-2023  
 - Created MY Nsg's and peering for the Vnets. It's all working now. However I am not sure how to check the state of my portconfiguration for the webserver. I wanted to deploy an apache server on the Appserver-vm. But I am not sure how to make tis work.
 
-Tuesday 20-06-2023
+Tuesday 20-06-2023  
 -Got my Apache script in the portal but not deployed. I stop with it for now. Return to it later. I make a start with backup. It is deployed but not connected. I think lot of the info on Microsofts website is very cryptic.
 
-Wednesday 21-06-2023
+Wednesday 21-06-2023  
 -Splitting it up in modules. I want to create a resourcegroup when deployng so ni choice. I use the VSC bicep visualizer as starting point. This is lot of work to get it working.
 
-Thursday 22-06-2023
+Thursday 22-06-2023  
 -Modules start to work nicely. Organised the labeling of params etc. This takes some experience to get right. Made key-vault and stored passwords. Are they coming back? I think they are stored somewhere in memory and in the key-vault.
 
-Friday 23-06-2023
+Friday 23-06-2023  
 - Studied keyvault. When removing key-vault it doesn't remove. You need to purge it and need permissions to do so.
 
-### END OF WEEK 3 REVIEW
+### END OF WEEK 3 REVIEW  
 Basicaly eveything van be deployed. But not eveything is connected. It's gonna be busy next week cause a lot has to be done.
 Here's a list:  
 - Key-vault with managed identity
@@ -102,21 +102,21 @@ Here's a list:
 - backup, I have this started but not working
 - blob-storage needs connection to management server.
 
-## WEEK 4
-Monday 26-06-2023
+## WEEK 4  
+Monday 26-06-2023  
 - Working with the key-vault. Nothing seems to work. All day the error no access. Everybody working on it in the team is having troubles here. This day was not very productive.
 
-Tuesday 27-06-2023
+Tuesday 27-06-2023  
 - Finally is my Apache working. Busy with the database. Got something working. I need an endpoint to my webserver. I am not sure if this is gonna work. I realise that this project is not completely finished this Friday.
 
-Wednesday 28-06-2023
+Wednesday 28-06-2023  
 - I managed to log into my managment Windows server and could connect to my Linux VM via SSH. Need powershell not powershellx86, that's pretty nice. Cleaning up my code a bit for delivery. Everything goes slow this week. All the easy stuf is done I guess.
 
-Thursday 29-06-2023
+Thursday 29-06-2023  
 - Last day for delivery. Dive into keyvault and encryption today. The keyencryption will not access the vault. Took me the whole day to not make this work.
 
-Friday 30-06-2023
+Friday 30-06-2023  
 - Day for documentation.
 
-### END OF WEEK 4 REVIEW
+### END OF WEEK 4 REVIEW  
 I know the easy things have been deployed. Everything takes more time then before. Need to change my mindset. First weekend
