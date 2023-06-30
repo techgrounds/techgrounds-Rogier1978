@@ -110,7 +110,7 @@ Tuesday 27-06-2023
 - Finally is my Apache working. Busy with the database. Got something working. I need an endpoint to my webserver. I am not sure if this is gonna work. I realise that this project is not completely finished this Friday.
 
 Wednesday 28-06-2023  
-- I managed to log into my managment Windows server and could connect to my Linux VM via SSH. Need powershell not powershellx86, that's pretty nice. Cleaning up my code a bit for delivery. Everything goes slow this week. All the easy stuf is done I guess.
+- I managed to log into my managment Windows server and could connect to my Linux VM via SSH. Need powershell not powershellx86, that's pretty nice. Cleaning up my code a bit for delivery. Everything goes slow this week. All the easy stuff is done I guess.
 
 Thursday 29-06-2023  
 - Last day for delivery. Dive into keyvault and encryption today. The keyencryption will not access the vault. Took me the whole day to not make this work.
