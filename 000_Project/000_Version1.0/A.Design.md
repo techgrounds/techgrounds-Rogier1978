@@ -23,7 +23,7 @@ Finally there will be a keyvault to store sensitive information. This is the pla
 
 After deploying the infrastructure looks like this. You can find this overview if you login to the azureportal, go to the resourcegroup 000-project and click on 'Resource visualizer' on the left panel underneath overview:
 
-IMG IMG IMG IMG IMG IMG
+![](https://github.com/techgrounds/techgrounds-Rogier1978/blob/main/000_Project/000_Version1.0/x-000-project-resource%20visualizer.png)
 
 ## User stories
 Below is an overview of the situation of the version 1.0 release:
