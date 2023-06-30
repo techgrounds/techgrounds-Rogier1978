@@ -13,4 +13,8 @@ Also connections to the postdeployment storage, the database and the recoverysys
 
 The second part (the web server) is also a VM. The specs for this VM are Standard B2s (2 vcpus, 4 GiB memory) and it runs Linux (ubuntu 20.04). Because Linux is a less demanding program, we can do with lower specs. On the Linux machine there is an Apache module installed to deploy websites. Also this VM is nested in a subnet with a NSG. This NSG will allow only traffic on port 80 via public addres to enter the webserver and opens port 22 and 3389 for private address. This final route allows a connection between our management server and the webserver via SSH or RDP.  
 
+## Storage  
+The webserver will be equiped with a MySQL single server database for storing received data from the website. This sort of  databaseoffers a wide range of features like indexing, data replication, backup and recovery mechanism and user access control.  For the postdeploymentscripts there will be a blob storage. This is a convenient solution that is costeffective, secure and scaleable. Both the database and postsployment-storage will be accessible from the management server.
+
+
 
