@@ -26,4 +26,4 @@ Later you need the PUBLIC addres of the management server, and the PRIVATE addre
 Now click on the new stored pc and a new window will open with a Windows Server 2022 Datacenter Azure Edition running.
 
 - To access the webserver via SSH you open the start menu, select "Windows Powershell" and click on "Powershell" (without (x86)).
-- When the powershell windows opens type the command "ssh 'username'@10.10.10.10" where username is the username for the webserver you choose at the start of the deployment. Type "yes" to continue. And finally the matching password with the username is aked to login.
+- When the powershell windows opens type the command "ssh 'username'@10.10.10.10" where username is the username for the webserver you choose at the start of the deployment. Type "yes" to continue. And finally the matching password with the username is asked to login.
