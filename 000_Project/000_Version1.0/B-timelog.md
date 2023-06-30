@@ -82,13 +82,13 @@ Monday 19-06-2023
 - Created MY Nsg's and peering for the Vnets. It's all working now. However I am not sure how to check the state of my portconfiguration for the webserver. I wanted to deploy an apache server on the Appserver-vm. But I am not sure how to make tis work.
 
 Tuesday 20-06-2023  
--Got my Apache script in the portal but not deployed. I stop with it for now. Return to it later. I make a start with backup. It is deployed but not connected. I think lot of the info on Microsofts website is very cryptic.
+- Got my Apache script in the portal but not deployed. I stop with it for now. Return to it later. I make a start with backup. It is deployed but not connected. I think lot of the info on Microsofts website is very cryptic.
 
 Wednesday 21-06-2023  
--Splitting it up in modules. I want to create a resourcegroup when deployng so ni choice. I use the VSC bicep visualizer as starting point. This is lot of work to get it working.
+- Splitting it up in modules. I want to create a resourcegroup when deployng so ni choice. I use the VSC bicep visualizer as starting point. This is lot of work to get it working.
 
 Thursday 22-06-2023  
--Modules start to work nicely. Organised the labeling of params etc. This takes some experience to get right. Made key-vault and stored passwords. Are they coming back? I think they are stored somewhere in memory and in the key-vault.
+- Modules start to work nicely. Organised the labeling of params etc. This takes some experience to get right. Made key-vault and stored passwords. Are they coming back? I think they are stored somewhere in memory and in the key-vault.
 
 Friday 23-06-2023  
 - Studied keyvault. When removing key-vault it doesn't remove. You need to purge it and need permissions to do so.
