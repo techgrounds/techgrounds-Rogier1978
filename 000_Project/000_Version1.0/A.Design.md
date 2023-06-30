@@ -25,6 +25,15 @@ After deploying the infrastructure looks like this. You can find this overview i
 
 IMG IMG IMG IMG IMG IMG
 
+## User stories
+Below is an overview of the situation of the version 1.0 release:
+
+We have a basic structure that is in a working condition. We can access the management server via one ip address. and have a webserver that is only accessibble for http traffic, but can be accessed via SSH via the management server.
+The biggest issue I have encountered is the key-vault. The key-vault allows me to store the data but unfortunately not to retrieve the data. This is the biggest issue that needs to be resolved to use this application safely.  
+I also have a hard time connecting the services together. Everything can be deployed but the connections between the services is not yet fully working.  
+Als I am not sure about the database decision. I read recently that this service will be retired in 2024, so if time allows me I will reconsider this one.
+
+
 
 
 
