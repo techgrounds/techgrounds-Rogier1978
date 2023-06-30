@@ -5,7 +5,7 @@ Document B is an overview of desicions I made to get to the endresult.
 Document C is an overview of the timelog of the 4 weeks and how progress is made.
 
 ## The infrastructure  
-I see this infrastructure concisting of 2 main parts. Both parts housed in a virtual network containing subnets. Furthermore there are some additiional resources to cover general tasks.  
+I see this infrastructure concisting of 2 main parts. Both parts housed in a virtual network containing subnets. Furthermore there are some additiional resources to cover general tasks like datastorage, backup and a keyvault to store sensitive data.
 
 The first part (the management server) is the core of the infrastructure. In here we find a virtual machine (VM) with Standard D2ds v4 (2 vcpus, 8 GiB memory) and Windows Server 2022 Datacenter Azure Edition running. I think this is sufficient to perform the tasks to be done here. 
 At the moment it has a dynamic public IP adres to get access to this environment. Only one IP address is allowed to secure access to this part of the infrastructure. This is done by the NSG (Network Security Group).
