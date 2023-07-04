@@ -49,6 +49,9 @@ Week 2 -
   - [x] Azure SQL database will be added to store data.
         https://www.sqlshack.com/azure-sql-database-vs-sql-server-on-azure-virtual-machines/  
   - [ ] The server need a daily backup, what is stored for 7 days. We implement this with Azure Backup. This also needs a "Recovery Services Vault" to store the backup. No one needs access to this vault for security reasons.
+# Web-server version 1.1
+  - [ ] This will be an VM scaleset for 1-3 instances, connected to an application gateway. The app-gateway will take care of the routing and loadbalancing of the web traffic. It will accept HTTP & HTTPS connections and  converts this to HTTP through the backend to he scale set.
+
 
 ## Management-server  
   - [ ] https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/manage/azure-server-management/
