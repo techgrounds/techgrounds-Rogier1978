@@ -9,13 +9,17 @@ param vNet1id string
 param subNet1id string
 
 
-param privateEndpointName string = 'myPrivateEndpoint'
-
+param storageEndpointName string = 'storageEndpoint'
+param storagePrivateEndpointName string = 'storagePrivateEndpoint'
 
 
 //param containerNames string = 'deploymentstorage'
 
 // STORAGE ACCOUNT FOR DEPLOYMENT //
+
+resource vnet1 'Microsoft.Network/virtualNetworks@2022-11-01'existing = {
+  name: vNet1id
+}
 
 resource storageAccount 'Microsoft.Storage/storageAccounts@2022-09-01'={
   name: storageAccountName
@@ -41,8 +45,8 @@ resource storageContainer 'Microsoft.Storage/storageAccounts/blobServices/contai
   }
 }
 
-resource privateEndpoint 'Microsoft.Network/privateEndpoints@2021-05-01' = {
-  name: privateEndpointName
+resource storageEndpoint 'Microsoft.Network/privateEndpoints@2022-11-01' ={
+  name: storageEndpointName
   location: location
   properties: {
     subnet: {
@@ -50,18 +54,17 @@ resource privateEndpoint 'Microsoft.Network/privateEndpoints@2021-05-01' = {
     }
     privateLinkServiceConnections: [
       {
-        name: privateEndpointName
+        name: storagePrivateEndpointName
         properties: {
           privateLinkServiceId: storageAccount.id
           groupIds: [
-            'blobService'
+            'myStorageID'
           ]
         }
       }
     ]
   }
-  // dependsOn: [
-  //   vNet1id
-  // ]
+  dependsOn: [
+    vnet1
+  ]
 }
-

@@ -2,7 +2,7 @@
 
 targetScope='subscription'
 
-@description('inquiries for login')
+@description('inquiries for login, passwords filled-in for convenience while developping')
 param managementUserName string = 'Rogier'
 @secure()
 param managementPassword string = 'Pass@1234'
@@ -11,9 +11,9 @@ param webUserName string = 'Rogier'
 @secure()
 param webPassword string = 'Pass@1234'
 
-// param dbUserName string 
-// @secure()
-// param dbPassword string 
+param dbUserName string = 'Rogier'
+@secure()
+param dbPassword string = 'Pass@1234'
 
 
 
@@ -41,8 +41,6 @@ module kv './keyvault.bicep' ={
   name: 'projectKeyvault'
   params: {
     location: resourceGroupLocation
-    // managementPassword: managementPassword
-    // webPassword: webPassword
   }
 }
   
@@ -87,16 +85,16 @@ module peering './peering.bicep' ={
   }
 }
 
-@description('module storage')
-module storage './storage.bicep' ={
-  scope: az.resourceGroup(newRG.name)
-  name: 'deploymentStorage'
-  params: {
-    location: resourceGroupLocation
-    vNet1id: management.outputs.vNet1ID
-    subNet1id: management.outputs.subNet1ID
-  }
-}
+// @description('module storage')
+// module storage './storage.bicep' ={
+//   scope: az.resourceGroup(newRG.name)
+//   name: 'deploymentStorage'
+//   params: {
+//     location: resourceGroupLocation
+//     vNet1id: management.outputs.vNet1ID
+//     subNet1id: management.outputs.subNet1ID
+//   }
+// }
 
 // @description('module backup')
 // module backup './backup.bicep' = {
@@ -107,15 +105,15 @@ module storage './storage.bicep' ={
 // }
 
 
-// @description('module for SQL database')
-// module sqlDatabase 'sqldatabase.bicep' = {
-//   scope: az.resourceGroup(newRG.name)
-//   name: 'projectSqlDatabase'
-//   params: {
-//     location: resourceGroupLocation
-//     dbUserName: dbUserName 
-//     dbPassword: dbPassword 
-//     // subNet2Id: webserver.outputs.subnetWebId 
-//     // webServerId: webserver.outputs.webServerId
-//   }
-// }
+@description('module for SQL database')
+module sqlDatabase 'sqldatabase.bicep' = {
+  scope: az.resourceGroup(newRG.name)
+  name: 'projectSqlDatabase'
+  params: {
+    location: resourceGroupLocation
+    dbUserName: dbUserName 
+    dbPassword: dbPassword 
+    subNet2Id: webserver.outputs.subnetVmssId
+    vNet2ID: webserver.outputs.vNet2ID
+  }
+}

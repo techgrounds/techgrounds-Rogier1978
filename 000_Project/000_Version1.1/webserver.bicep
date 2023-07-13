@@ -13,10 +13,8 @@ param location string = resourceGroup().location
 @description('Size of the virtual machine.')
 param vmSize string = 'Standard_DS2_v2'
 
-var vmssName = 'myVmssVM'
+var vmssName = 'myVmss'
 var virtualNetworkName = 'myVNet'
-var networkInterfaceName = 'net-int'
-var ipconfigName = 'ipconfig'
 
 var nsgAGName = 'appgat_nsg'
 var nsgVmssName = 'vmss_nsg'
@@ -46,6 +44,19 @@ resource nsgAG 'Microsoft.Network/networkSecurityGroups@2022-11-01' = {
           destinationAddressPrefix: '*'
           sourcePortRange: '*'
           destinationPortRange: '80'
+        }
+      }
+      {
+        name: 'openPorts65200-65535In'
+        properties: {
+          priority: 300
+          direction: 'Inbound'
+          access: 'Allow'
+          protocol: 'tcp'
+          sourceAddressPrefix: '*'
+          destinationAddressPrefix: '*'
+          sourcePortRange: '*'
+          destinationPortRange: '65200-65535'
         }
       }
     ]
@@ -104,10 +115,10 @@ resource virtualNetwork 'Microsoft.Network/virtualNetworks@2022-11-01' = {
           addressPrefix: subnetPrefix
           privateEndpointNetworkPolicies: 'Enabled'
           privateLinkServiceNetworkPolicies: 'Enabled'
-        //   networkSecurityGroup: nsgAG.id == '' ? null : {
-        //   id: nsgAG.id
-        // }
-      }
+          networkSecurityGroup: nsgAG.id == '' ? null : {
+          id: nsgAG.id
+          }
+        }
       }
       {
         name: 'myBackendSubnet'
@@ -195,7 +206,7 @@ resource vmScaleSet 'Microsoft.Compute/virtualMachineScaleSets@2023-03-01' = {
     }
   }
   dependsOn: [
-    networkInterface
+    applicationGateWay
   ]
 }
 resource autoscalehost 'Microsoft.Insights/autoscalesettings@2022-10-01' = {
@@ -292,7 +303,7 @@ resource applicationGateWay 'Microsoft.Network/applicationGateways@2022-11-01' =
         properties: {
           privateIPAllocationMethod: 'Dynamic'
           publicIPAddress: {
-            id: resourceId('Microsoft.Network/publicIPAddresses', 'publicIPAddressName')
+            id: publicIPAddress.id
           }
         }
       }
@@ -324,8 +335,7 @@ resource applicationGateWay 'Microsoft.Network/applicationGateways@2022-11-01' =
           port: 80
           protocol: 'Http'
           cookieBasedAffinity: 'Disabled'
-          // pickHostNameFromBackendAddress: false
-          // requestTimeout: 20
+          requestTimeout: 20
         }
       }
       {
@@ -421,9 +431,6 @@ resource applicationGateWay 'Microsoft.Network/applicationGateways@2022-11-01' =
       maxCapacity: 10
     }
   }
-  dependsOn: [
-    virtualNetwork
-  ]
 }
 
 resource publicIPAddress 'Microsoft.Network/publicIPAddresses@2022-11-01' =  {
@@ -439,42 +446,47 @@ resource publicIPAddress 'Microsoft.Network/publicIPAddresses@2022-11-01' =  {
   }
 }
 
-resource networkInterface 'Microsoft.Network/networkInterfaces@2022-11-01' = {
-  name: networkInterfaceName
-  location: location
-  properties: {
-    ipConfigurations: [
-      {
-        name: ipconfigName
-        properties: {
-          privateIPAllocationMethod: 'Dynamic'
-          subnet: {
-            id: resourceId('Microsoft.Network/virtualNetworks/subnets', virtualNetworkName, 'myBackendSubnet')
-          }
-          primary: true
-          privateIPAddressVersion: 'IPv4'
-          applicationGatewayBackendAddressPools: [
-            {
-              id: resourceId('Microsoft.Network/applicationGateways/backendAddressPools', applicationGateWayName, 'myBackendPool')
-            }
-          ]
-        }
-      }
-    ]
-    enableAcceleratedNetworking: false
-    enableIPForwarding: false
-    networkSecurityGroup: {
-      id: resourceId('Microsoft.Network/networkSecurityGroups', nsgAGName)
-    }
-  }
-  dependsOn: [
-    applicationGateWay
-    nsgAG
-  ]
+// resource networkInterface 'Microsoft.Network/networkInterfaces@2022-11-01' = {
+//   name: networkInterfaceName
+//   location: location
+//   properties: {
+//     ipConfigurations: [
+//       {
+//         name: ipconfigName
+//         properties: {
+//           privateIPAllocationMethod: 'Dynamic'
+//           subnet: {
+//             id: resourceId('Microsoft.Network/virtualNetworks/subnets', virtualNetworkName, 'myBackendSubnet')
+//           }
+//           primary: true
+//           privateIPAddressVersion: 'IPv4'
+//           applicationGatewayBackendAddressPools: [
+//             {
+//               id: resourceId('Microsoft.Network/applicationGateways/backendAddressPools', applicationGateWayName, 'myBackendPool')
+//             }
+//           ]
+//         }
+//       }
+//     ]
+//     enableAcceleratedNetworking: false
+//     enableIPForwarding: false
+//     networkSecurityGroup: {
+//       id: resourceId('Microsoft.Network/networkSecurityGroups', nsgAGName)
+//     }
+//   }
+//   dependsOn: [
+//     applicationGateWay
+//     nsgAG
+//   ]
   
-}
+// }
 
 
 @description('outputs for vnet')
 output vNet2ID string = virtualNetwork.id
 output vNet2Name string = virtualNetwork.name
+
+output subnetWebId string = virtualNetwork.properties.subnets[0].id
+output subnetVmssId string = virtualNetwork.properties.subnets[1].id
+
+output webServerId string = vmScaleSet.id
