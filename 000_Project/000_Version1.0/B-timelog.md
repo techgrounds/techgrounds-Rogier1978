@@ -150,12 +150,12 @@ Friday 07-07-2023
 Got my diskencryption working on VMSS and management server.  
 
 ### END OF WEEK 5 REVIEW  
-Got VMSS with application gateway working with diskencryption. Things that need to be done:
+Got VMSS with application gateway working with diskencryption. Things that need to be done for MVP:
 - Database
 - Postdeployment scripts (there is a storage account with blob drive but not functioning as desired)
 - Recovery vault
 - Redeployment
-- HTTPS & TLS on webserver
+- HTTPS & TLS on webserver (can you make a certificate with a keyvault?)
 - Health checks with auto restore for webserver
 
 
