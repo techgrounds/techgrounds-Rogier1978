@@ -138,16 +138,16 @@ Made an overview of version 1.1. Things to change:
 Started with scaleset and application gateway. Hope this will work at the end of the week.
 
 Tuesday 04-07-2023  
-Continued with scaleset and VMSS. I can replace my complete 'webserver' module. Also try to make an application gateway run with two VM's. This works.
+- Continued with scaleset and VMSS. I can replace my complete 'webserver' module. Also try to make an application gateway run with two VM's. This works.
 
 Wednesday 05-07-2023  
-Short day because of appointment with possible employer. Tried to make VMSS work.
+- Short day because of appointment with possible employer. Tried to make VMSS work.
 
 Thursday 06-07-2023  
-Made VMSS work with application gateway. Security rules needs adjustments but will fix this when making the HTTPS connection.
+- Made VMSS work with application gateway. Security rules needs adjustments but will fix this when making the HTTPS connection.
 
 Friday 07-07-2023  
-Got my diskencryption working on VMSS and management server.  
+- Got my diskencryption working on VMSS and management server.  
 
 ### END OF WEEK 5 REVIEW  
 Got VMSS with application gateway working with diskencryption. Things that need to be done for MVP:
@@ -161,13 +161,26 @@ Got VMSS with application gateway working with diskencryption. Things that need 
 
 ## WEEK 6  
 Monday 10-07-2023  
+- Got failure with deployment 'Bad parameter request'-error. Can't find out why.
 
 Tuesday 11-07-2023  
+- Found the error. Had access policy set to 'all' and was not allowed. Took me a day.  
 
 Wednesday 12-07-2023  
+- Continuing database.
 
 Thursday 13-07-2023  
+- Continue with database. Need private endpoints for this.
 
-Friday 14-07-2023
+Friday 14-07-2023  
+- Improvement day. Renamed some resources and modules for clarity. Made some minor adjustments.
 
-### END OF WEEK 5 REVIEW  
+### END OF WEEK 6 REVIEW  
+Not much time left and quite some stuf to do. This is what I still need to do next week:
+- database connection check
+- making blob storage connection to management server for postdeployment scripts
+- health checks in the App Gateway
+- recovery vault
+- certificiate/TLS1.2 for the web server
+Recovery vault and certificate have priority.
+
