@@ -75,6 +75,9 @@ IMG IMG IMG IMG IMG IMG
  - [ ] Certificate TLS 1.2
  - [ ] Health check
 
+The idea is that the end result will look like this:
+![](https://github.com/techgrounds/techgrounds-Rogier1978/blob/main/000_Project/000_Version1.1/docs/x-000-project1.1.png)
+
 
 
 
