@@ -118,5 +118,37 @@ Thursday 29-06-2023
 Friday 30-06-2023  
 - Day for documentation.
 
+
 ### END OF WEEK 4 REVIEW  
-I know the easy things have been deployed. Everything takes more time then before. Need to change my mindset. First weekend
+I know the easy things have been deployed. Everything takes more time then before. Need to change my mindset. Things that need to be done:
+- Database  
+- Postdeployment scripts (there is a storage account but not functioning as desired)  
+- Recovery vault  
+- (Version 1.1)  
+
+## WEEK 5  
+Monday 03-07-2023  
+
+Tuesday 04-07-2023  
+
+Wednesday 05-07-2023  
+
+Thursday 06-07-2023  
+
+Friday 07-07-2023
+
+### END OF WEEK 5 REVIEW  
+
+
+## WEEK 6  
+Monday 10-07-2023  
+
+Tuesday 11-07-2023  
+
+Wednesday 12-07-2023  
+
+Thursday 13-07-2023  
+
+Friday 14-07-2023
+
+### END OF WEEK 5 REVIEW  
