@@ -122,22 +122,41 @@ Friday 30-06-2023
 ### END OF WEEK 4 REVIEW  
 I know the easy things have been deployed. Everything takes more time then before. Need to change my mindset. Things that need to be done:
 - Database  
-- Postdeployment scripts (there is a storage account but not functioning as desired)  
+- Postdeployment scripts (there is a storage account with blob drive but not functioning as desired)  
 - Recovery vault  
+- Improve Key vault  
+- Redeployment
 - (Version 1.1)  
 
 ## WEEK 5  
 Monday 03-07-2023  
+Made an overview of version 1.1. Things to change:
+- Webserver needs to be a proxy server. Can make an application gateway for this?
+- HTTPS connection with TLS 1.2 or up, make certificate for the website. Also when accessing via HTTP.  
+- Health checks with automatic restore.
+- Scaleset for 1-3 instances.
+Started with scaleset and application gateway. Hope this will work at the end of the week.
 
 Tuesday 04-07-2023  
+Continued with scaleset and VMSS. I can replace my complete 'webserver' module. Also try to make an application gateway run with two VM's. This works.
 
 Wednesday 05-07-2023  
+Short day because of appointment with possible employer. Tried to make VMSS work.
 
 Thursday 06-07-2023  
+Made VMSS work with application gateway. Security rules needs adjustments but will fix this when making the HTTPS connection.
 
-Friday 07-07-2023
+Friday 07-07-2023  
+Got my diskencryption working on VMSS and management server.  
 
 ### END OF WEEK 5 REVIEW  
+Got VMSS with application gateway working with diskencryption. Things that need to be done:
+- Database
+- Postdeployment scripts (there is a storage account with blob drive but not functioning as desired)
+- Recovery vault
+- Redeployment
+- HTTPS & TLS on webserver
+- Health checks with auto restore for webserver
 
 
 ## WEEK 6  
