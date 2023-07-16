@@ -184,3 +184,6 @@ Not much time left and quite some stuf to do. This is what I still need to do ne
 - certificiate/TLS1.2 for the web server
 Recovery vault and certificate have priority.
 
+Deployment 16-07-2023:
+![](https://github.com/techgrounds/techgrounds-Rogier1978/blob/main/000_Project/000_Version1.1/docs/x-deployment1.1a.png)
+
