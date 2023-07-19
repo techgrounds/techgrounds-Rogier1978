@@ -1,6 +1,3 @@
-// az deployment sub create --location westeurope  --template-file .\000-project\modules1.1\main.bicep
-//@description ('loginSQL from webserver')
-// mysql -h sqldbserver000proj.mysql.database.azure.com -u Rogier@sqldbserver000proj -p
 targetScope='subscription'
 
 @description('inquiries for login, passwords filled-in for convenience while developping')
